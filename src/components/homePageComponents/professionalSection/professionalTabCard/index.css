@@ -1,0 +1,42 @@
+.professional-tab-card {
+  display: flex;
+  border-radius: 20px;
+  /* align-items: center; */
+  align-content: center;
+  border: 1px solid #ececec;
+  background: #fff;
+  box-shadow: 0px 16px 20px 0px rgba(0, 0, 0, 0.25);
+  padding: 5px;
+}
+.professional-tab-card-img-div {
+  width: 130px;
+}
+.professional-tab-card-img {
+  width: 100%;
+}
+.professional-tab-card-head {
+  color: #424242;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.professional-tab-card-para {
+  color: #343434;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.professional-tab-card-hr-line{
+  border: 1px solid rgba(179, 179, 179, 1);
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.professional-card-content-div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 25px;
+}
