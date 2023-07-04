@@ -150,6 +150,19 @@
   font-weight: 400;
   line-height: 140.9%;
 }
+
+
+/* profession main div */
+.profession-main-div{
+  background-color: #EBEBEB;
+  border-radius: 7px;
+  display: flex;
+  justify-content: center;
+  padding: 60px 0px;
+  width: 100%;
+}
+
+
 @media screen and (min-width: 1024px) {
   .home-banner-img-outline {
     width: 450px;
