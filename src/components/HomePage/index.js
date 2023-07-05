@@ -26,7 +26,20 @@ const HomePage = () => {
             </div>
             <div className="home-banner-heading-div">
               <h1 className="home-banner-heading main-head-color">
-                Hi! I am Abhijeet. This is My Journey of
+                Hi! I am Abhijeet. This is My Journey of{" "}
+                <div class="scroller">
+                  <span>
+                    Cool
+                    <br />
+                    Art
+                    <br />
+                    Intruiging
+                    <br />
+                    sai
+                    <br />
+                    Challenging
+                  </span>
+                </div>
                 {/* <div class="carousel">
               <div class="change_outer">
                 <div class="change_inner">
@@ -149,7 +162,6 @@ const HomePage = () => {
               />
             </div>
             <ProfessionalSection />
-            
           </div>
         </div>
       </div>

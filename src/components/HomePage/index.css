@@ -155,10 +155,10 @@
 /* profession main div */
 .profession-main-div{
   background-color: #EBEBEB;
-  border-radius: 7px;
+  border-radius: 30px;
   display: flex;
   justify-content: center;
-  padding: 60px 0px;
+  padding: 40px 0px;
   width: 100%;
 }
 
@@ -257,6 +257,11 @@
     height: 240px;
     border-radius: 120px;
   }
+
+  /* profession section */
+  .profession-main-div{
+    border-radius: 77px;
+  }
 }
 
 .carousel {
@@ -332,5 +337,40 @@
   }
   100% {
     transform: translateY(-180px);
+  }
+}
+
+
+
+/* scrolling style */
+.scroller {
+  height: 1.2em;
+  line-height: 1.2em;
+  position: relative;
+  overflow: hidden;
+  width: 10em;
+}
+.scroller > span {
+  position: absolute;
+  top: 0;
+  animation: slide 5s infinite;
+  font-weight: bold;
+  
+}
+@keyframes slide {
+  0% {
+    top: 0;
+  }
+  20% {
+    top: -1.2em;
+  }
+  40% {
+    top: -2.4em;
+  }
+  60% {
+    top: -3.6em;
+  }
+  80% {
+    top: -4.8em;
   }
 }

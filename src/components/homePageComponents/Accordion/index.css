@@ -1,0 +1,75 @@
+.accordian-item-div {
+  display: flex;
+  align-items: center;
+}
+.accordian-item-img {
+  width: 80px;
+}
+.Professional-accordionSection-mai-div {
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+  gap: 60px;
+  margin-top: 20px;
+}
+
+.Professional-accordionSection-content-card-div {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.Professional-accordionSection-taps-div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: start;
+}
+
+.professional-accordion-disply-flex-row {
+  display: grid;
+  grid-template-columns: 8fr 4fr;
+  margin: 5px 0px;
+}
+.professional-accordion-disply-flex-row div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.profession-section-my-role-content {
+  display: flex;
+}
+.professional-accordion-secton-my-role-text {
+  width: 93px;
+}
+.professional-accordion-secton-my-role-ul {
+  padding-top: 15px;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.accordian-item-div-para-2 {
+  font-size: 16px;
+}
+
+.accordianItemhead {
+  font-size: 20px;
+  color: #424242;
+  font-weight: 600;
+  margin-bottom: 3px;
+}
+
+@media screen and (max-width: 576px) {
+  .accordian-item-div-para-2 {
+    font-size: 12px;
+  }
+
+  .accordianItemhead {
+    font-size: 16px;
+    color: #424242;
+    font-weight: 600;
+    margin-bottom: 3px;
+  }
+}

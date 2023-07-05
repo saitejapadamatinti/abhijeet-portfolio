@@ -1,27 +1,20 @@
 import React from "react";
 import "./index.css";
 
-const ProfessionalTabCard = () => {
+const ProfessionalTabCard = (props) => {
+  const { selectedCompany, professionalCardData } = props;
+
+  const selectedTabColor =
+    selectedCompany === professionalCardData.companyName
+      ? "professional-tab-card-active"
+      : "";
+  console.log(selectedCompany + selectedTabColor);
+
   return (
-    // <div className="box">
-    //   <div className="frame-wrapper">
-    //     <div className="frame">
-    //       <div className="overlap-group">
-    //         <h1 className="text-wrapper">Innovation Hacks AI Pvt. Ltd.</h1>
-    //         <div className="product-marketing">Product Marketing &amp; Management</div>
-    //         <img className="line" alt="Line" src="line-4.svg" />
-    //         <img
-    //           className="original-logo-symbol"
-    //           alt="Original logo symbol"
-    //           src="original-logo-symbol-removebg-preview-1.png"
-    //         />
-    //       </div>
-    //     </div>
-    //   </div>
-    // </div>
-    <div className="professional-tab-card">
+    <div className={`${selectedTabColor} professional-tab-card`}>
       <div className="professional-tab-card-img-div">
-        <img alt="dd"
+        <img
+          alt="dd"
           className="professional-tab-card-img"
           src="/images/Original_Logo_Symbol-removebg-preview 1.png"
         />
@@ -31,10 +24,10 @@ const ProfessionalTabCard = () => {
 
       <div className="professional-card-content-div">
         <h4 className="professional-tab-card-head">
-          Innovation Hacks AI Pvt. Ltd.{" "}
+          {professionalCardData.companyName}
         </h4>
         <p className="professional-tab-card-para">
-          Product Marketing & Management
+          {professionalCardData.role}
         </p>
       </div>
     </div>
