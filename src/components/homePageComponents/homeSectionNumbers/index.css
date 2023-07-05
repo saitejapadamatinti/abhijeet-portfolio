@@ -1,10 +1,10 @@
 .home-section-number-main-div {
   display: flex;
   align-items: last baseline;
-  gap: 15px;
+  gap: 10px;
 }
 .home-section-number {
-  font-size: 58px;
+  font-size: 40px;
   font-style: normal;
   font-weight: 800;
   background: -webkit-linear-gradient(
@@ -15,11 +15,11 @@
   -webkit-text-fill-color: transparent;
 }
 .home-section-name {
-  font-size: 24px;
+  font-size: 15px;
   font-style: normal;
   font-weight: 800;
-  line-height: 26px;
-  width: 200px;
+  line-height: 16px;
+  width: 178px;
 }
 
 
