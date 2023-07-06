@@ -26,7 +26,7 @@ const HomePage = () => {
             </div>
             <div className="home-banner-heading-div">
               <h1 className="home-banner-heading main-head-color">
-                Hi! I am Abhijeet. <a href ="#ss"> This </a> is My Journey of{" "}
+                Hi! I am Abhijeet. <a href="#ss"> This </a> is My Journey of{" "}
                 <div class="scroller">
                   <span>
                     Cool
@@ -59,7 +59,6 @@ const HomePage = () => {
               </p>
               <div className="home-banner-buttons-div">
                 <button className="outline-button">
-                  {" "}
                   <BiDownload className="download-button-icon" /> Resume
                 </button>
                 <button className="color-button">Resume</button>
@@ -73,7 +72,7 @@ const HomePage = () => {
               <HomeSectionNumber number={"01"} content={"About Me"} />
             </div>
             <div className="about-main-container">
-              <div className="about-images-container">
+              {/* <div className="about-images-container">
                 <div className="about-images-div-1">
                   <div className="about-images-1">
                     <img
@@ -111,6 +110,15 @@ const HomePage = () => {
                   <div className="about-images-6"></div>
                   <div className="about-images-7"></div>
                 </div>
+              </div> */}
+              <div className="about-images-container">
+                {/* <div className="about-card-user-box">
+                  <div class="about-box-card-animation">
+                    <div class="wave -one"></div>
+                    <div class="wave -two"></div>
+                    <div class="wave -three"></div>
+                  </div>
+                </div> */}
               </div>
               <div className="about-section-content">
                 <p>

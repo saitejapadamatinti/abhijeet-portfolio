@@ -190,7 +190,7 @@ export default function AccordionComponent() {
                 <div>
                   <p className="accordianItemhead">MAMS</p>
                   <p className="accordian-item-div-para-2">
-                    Social Media Marketing Intern
+                    Product Marketing & Management
                   </p>
                 </div>
               </div>

@@ -6,7 +6,7 @@ import AccordionComponent from "../../Accordion";
 const professionalTabs = [
   {
     id: 1,
-    companyName: "Innovation Hacks AI Pvt. Ltd.",
+    companyName: "Innovation Hacks AI",
     role: "Innovation Hacks AI Pvt. Ltd",
   },
   {
@@ -200,22 +200,18 @@ const ProfessionalSection = () => {
                       Present)
                     </h4>
                     <ul className="primary-para professional-secton-my-role-ul">
-                      {ProductMarketingandManagement.map(
-                        (eachItemsAs) => (
-                          <li>{eachItemsAs}</li>
-                        )
-                      )}
+                      {ProductMarketingandManagement.map((eachItemsAs) => (
+                        <li>{eachItemsAs}</li>
+                      ))}
                     </ul>
                     <br />
                     <h4 className="heading-3">
                       Marketing Strategist | Fulltime (Aug. 2022 – Jan. 2023)
                     </h4>
                     <ul className="primary-para professional-secton-my-role-ul">
-                      {MarketingStrategist.map(
-                        (eachItemsAs) => (
-                          <li>{eachItemsAs}</li>
-                        )
-                      )}
+                      {MarketingStrategist.map((eachItemsAs) => (
+                        <li>{eachItemsAs}</li>
+                      ))}
                     </ul>
                   </div>
                 </div>
@@ -230,9 +226,11 @@ const ProfessionalSection = () => {
                 <h1 className="heading-1">MAMS</h1>
                 <div>
                   <div className="professional-disply-flex-row">
-                    <h4 className="heading-3">Social Media Marketing Intern</h4>{" "}
+                    <h4 className="heading-3">
+                      Product Marketing & Management
+                    </h4>
                     <div>
-                      <h4 className="heading-3">Aug. 2020 - Nov. 2020</h4>{" "}
+                      <h4 className="heading-3">Aug. 2020 - Nov. 2020</h4>
                     </div>
                   </div>
                   {/* <div className="professional-disply-flex-row">
