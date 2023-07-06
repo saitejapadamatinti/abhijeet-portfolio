@@ -16,7 +16,7 @@ const professionalTabs = [
   },
   {
     id: 3,
-    companyName: "Bafna Cars Pvt. Ltd.",
+    companyName: "Bafna Cars",
     role: "Marketing & Brand Management Intern",
   },
   {
@@ -137,7 +137,7 @@ const FrozenCreation = [
 
 const ProfessionalSection = () => {
   const [selectedCompanyName, setSelectedCompanyName] = useState(
-    "Innovation Hacks AI Pvt. Ltd."
+    "Innovation Hacks AI"
   );
 
   return (
@@ -156,7 +156,7 @@ const ProfessionalSection = () => {
         </div>
         <div>
           {/* item 1 */}
-          {selectedCompanyName === "Innovation Hacks AI Pvt. Ltd." && (
+          {selectedCompanyName === "Innovation Hacks AI" && (
             <div className="ProfessionalSection-content-card-div">
               <div className="proffesional-section-content-top-card">
                 <h1 className="heading-1">Innovation Hacks AI Pvt. Ltd. </h1>
@@ -278,7 +278,7 @@ const ProfessionalSection = () => {
           )}
 
           {/* item 3 */}
-          {selectedCompanyName === "Bafna Cars Pvt. Ltd." && (
+          {selectedCompanyName === "Bafna Cars" && (
             <div className="ProfessionalSection-content-card-div">
               <div className="proffesional-section-content-top-card">
                 <h1 className="heading-1">Bafna Cars Pvt. Ltd.</h1>
