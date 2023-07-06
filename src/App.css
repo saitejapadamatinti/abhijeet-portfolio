@@ -17,6 +17,7 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  font-family: 'Montserrat';
 }
 .App-header {
   background-color: #282c34;
@@ -167,7 +168,7 @@
 @media screen and (max-width : 576px) {
   .heading-1 {
   
-    font-size: 24px;
+    font-size: 18px;
   }
   .heading-3{
     font-size: 14px;
@@ -177,7 +178,12 @@
     font-size: 14px;
   }
 }
-
+@media screen and (max-width:1023px) {
+  .heading-1 {
+  
+    font-size: 20px;
+  }
+}
 @media screen and (min-width: 1024px) {
   .middle-width-container {
     width: 90%;

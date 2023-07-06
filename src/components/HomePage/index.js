@@ -5,6 +5,21 @@ import ProfessionalTabCard from "../homePageComponents/professionalSection/profe
 import ProfessionalSection from "../homePageComponents/professionalSection/professionalSection";
 import { BiDownload } from "react-icons/bi";
 import AccordionComponent from "../homePageComponents/Accordion";
+import SkillCard from "../homePageComponents/skillsCard";
+
+const skills = [
+  "Marketing Strategy",
+  "Digital Marketing",
+  "Analytics and Data Interpretation",
+  "Branding",
+  "Market Research",
+  "Copywriting and Content Creation",
+  "Communication Skills",
+  "Project Management",
+  "Creative Thinking",
+  "UI/UX",
+  "Wordpress",
+];
 
 const HomePage = () => {
   return (
@@ -65,6 +80,7 @@ const HomePage = () => {
               </div>
             </div>
           </div>
+
           <div>
             {/* <img className="about-section-line" src="/images/Vector 2.png" />
           <img className="about-section-arrow-icon" src="/images/Add a heading (12) 1.png" /> */}
@@ -112,13 +128,13 @@ const HomePage = () => {
                 </div>
               </div> */}
               <div className="about-images-container">
-                {/* <div className="about-card-user-box">
+                <div className="about-card-user-box">
                   <div class="about-box-card-animation">
                     <div class="wave -one"></div>
                     <div class="wave -two"></div>
                     <div class="wave -three"></div>
                   </div>
-                </div> */}
+                </div>
               </div>
               <div className="about-section-content">
                 <p>
@@ -174,6 +190,33 @@ const HomePage = () => {
           </div>
         </div>
       </div>
+      <div id="ss" className="main-width-container">
+        <div className="middle-width-container">
+          <div className="section-number-div">
+            <HomeSectionNumber number={"02"} content={"Skills"} />
+          </div>
+        </div>
+      </div>
+      {/* <marquee scrollamount="10"> */}
+      <div id="to-left-scroll-container">
+        <div id="to-left-scroll-text">
+          <div className="skill-card-div">
+            {skills.slice(0, 6).map((eachSkill) => (
+              <SkillCard skillName={eachSkill} />
+            ))}
+          </div>
+        </div>
+      </div>
+      <div id="to-right-scroll-container">
+        <div id="to-right-scroll-text">
+          <div className="skill-card-div">
+            {skills.slice(6).map((eachSkill) => (
+              <SkillCard skillName={eachSkill} />
+            ))}
+          </div>
+        </div>
+      </div>
+      {/* </marquee> */}
     </>
   );
 };
