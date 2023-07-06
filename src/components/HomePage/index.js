@@ -193,7 +193,7 @@ const HomePage = () => {
       <div id="ss" className="main-width-container">
         <div className="middle-width-container">
           <div className="section-number-div">
-            <HomeSectionNumber number={"02"} content={"Skills"} />
+            <HomeSectionNumber number={"03"} content={"Skills"} />
           </div>
         </div>
       </div>
