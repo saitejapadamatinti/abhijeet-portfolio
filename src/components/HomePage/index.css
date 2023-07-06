@@ -525,7 +525,7 @@ margin-bottom: 50px;
   /* animation properties */
   -moz-transform: translateX(-100%);
   -webkit-transform: translateX(-100%);
-  transform: translateX(-130%);
+  transform: translateX(-100%);
 
   -moz-animation: my-animation 30s linear infinite;
   -webkit-animation: my-animation 30s linear infinite;
@@ -562,5 +562,93 @@ margin-bottom: 50px;
     -moz-transform: translateX(100%);
     -webkit-transform: translateX(100%);
     transform: translateX(100%);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------------------------------------------------------- */
+/* body {
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
+  background-color: #212121;
+} */
+
+section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.scrollssss {
+  display: flex;
+  width: 100%;
+  box-shadow: 0 8px 16px rgba(#000000, 0.5);
+
+  div {
+    font-weight: 900;
+    font-size: 4em;
+    text-transform: uppercase;
+    white-space: nowrap;
+    color: #212121;
+    background-color: #fff;
+    animation: animate 40s -40s linear infinite;
+    will-change: transform;
+
+    &:nth-child(2) {
+      animation: animate2 40s -20s linear infinite;
+    }
+  }
+
+  span {
+    -webkit-text-stroke: 2px #000000;
+    color: #ffffff;
+  }
+}
+
+.text1 {
+  transform: rotate(30deg) translate(-200px, 200px);
+}
+
+.text2 {
+  transform: rotate(-25deg) translate(-200px, 120px);
+}
+
+.text3 {
+  transform: rotate(25deg) translate(-200px, 300px);
+}
+
+.text3 {
+  transform: rotate(-2deg) translate(-200px, -150px);
+}
+
+.text5 {
+  transform: rotate(5deg) translate(-200px, 250px);
+}
+
+@keyframes animate {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes animate2 {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-200%);
   }
 }

@@ -199,12 +199,12 @@ export default function AccordionComponent() {
           >
             <div>
               <div className="Professional-accordionSection-content-card-div">
-                <h1 className="heading-1">Social Media Marketing Intern </h1>
+                <h1 className="heading-1">MAMS </h1>
                 <div>
                   <div className="professional-accordion-disply-flex-row">
                     <h4 className="heading-3">
-                      Product Marketing & Management
-                    </h4>{" "}
+                    Social Media Marketing Intern
+                    </h4>
                     <div>
                       <h4 className="heading-3">Aug. 2020 - Nov. 2020</h4>{" "}
                     </div>
@@ -294,6 +294,12 @@ export default function AccordionComponent() {
                     <h4 className="heading-3 professional-accordion-secton-my-role-text">
                       My Role:
                     </h4>
+                  </div>
+                  <div>
+                    <h4 className="heading-3">
+                    Marketing & Brand Management Intern | Internship (Oct. 2019 - Mar. 2020)
+                    </h4>
+
                     <ul className="primary-para professional-accordion-secton-my-role-ul">
                       {BafnaCarsPvtLtd.map((eachItem) => (
                         <li>{eachItem}</li>
@@ -331,12 +337,7 @@ export default function AccordionComponent() {
                       <h4 className="heading-3">Aug. 2019 – Nov. 2021</h4>{" "}
                     </div>
                   </div>
-                  <div className="professional-accordion-disply-flex-row">
-                    <h4 className="heading-3">Marketing Executive</h4>{" "}
-                    <div>
-                      <h4 className="heading-3">Aug. 2022 - Jan. 2022</h4>{" "}
-                    </div>
-                  </div>
+                 
                 </div>
                 <div>
                   <p className="primary-para">

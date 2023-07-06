@@ -216,6 +216,18 @@ const HomePage = () => {
           </div>
         </div>
       </div>
+      <section>
+        <div class="scrollssss text4">
+          <div>
+            Online <span>Tutorials - </span> Online <span>Tutorials - </span>{" "}
+            Online <span>Tutorials - </span> Online <span>Tutorials - </span>
+          </div>
+          <div>
+            Online <span>Tutorials - </span> Online <span>Tutorials - </span>{" "}
+            Online <span>Tutorials - </span> Online <span>Tutorials - </span>
+          </div>
+        </div>
+      </section>
       {/* </marquee> */}
     </>
   );
