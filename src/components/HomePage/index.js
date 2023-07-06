@@ -26,7 +26,7 @@ const HomePage = () => {
             </div>
             <div className="home-banner-heading-div">
               <h1 className="home-banner-heading main-head-color">
-                Hi! I am Abhijeet. This is My Journey of{" "}
+                Hi! I am Abhijeet. <a href ="#ss"> This </a> is My Journey of{" "}
                 <div class="scroller">
                   <span>
                     Cool
@@ -152,13 +152,13 @@ const HomePage = () => {
           </div>
         </div>
       </div>
-      <div id="sss" className="main-width-container">
+      <div id="ss" className="main-width-container">
         <div className="profession-main-div">
           <div className="middle-width-container">
             <div>
               <HomeSectionNumber
-                number={"03"}
-                content={"Profesional Experiance"}
+                number={"02"}
+                content={"Professional Experience"}
               />
             </div>
 

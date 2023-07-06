@@ -294,13 +294,6 @@ export default function AccordionComponent() {
                     <h4 className="heading-3 professional-accordion-secton-my-role-text">
                       My Role:
                     </h4>
-                  </div>
-                  <div>
-                    <h4 className="heading-3">
-                      Marketing & Brand Management Intern | Internship (Aug.
-                      2020 - Nov. 2020)
-                    </h4>
-
                     <ul className="primary-para professional-accordion-secton-my-role-ul">
                       {BafnaCarsPvtLtd.map((eachItem) => (
                         <li>{eachItem}</li>
