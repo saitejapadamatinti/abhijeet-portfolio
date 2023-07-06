@@ -190,7 +190,7 @@ export default function AccordionComponent() {
                 <div>
                   <p className="accordianItemhead">MAMS</p>
                   <p className="accordian-item-div-para-2">
-                    Product Marketing & Management
+                  Social Media Marketing Intern
                   </p>
                 </div>
               </div>
@@ -340,7 +340,8 @@ export default function AccordionComponent() {
                 </div>
                 <div>
                   <p className="primary-para">
-                    <span className="heading-3">Overview:</span> A At Frozen
+                    <span className="heading-3">Overview:</span> 
+                    <span className="heading-3">Overview:</span> At Frozen
                     Creation, we are a passionate and driven full-service
                     strategic media house that fuels the growth of small
                     businesses by helping them thrive digitally and generate
@@ -348,15 +349,17 @@ export default function AccordionComponent() {
                     range of premium media products and compelling content
                     across diverse channels, including print, digital, audio,
                     and social media. Our core media offerings cater to a broad
-                    audience, ensuring maximum reach and engagement. Operating
-                    with a mission to create impactful content and operate media
-                    platforms, we deliver direct and tangible results for our
-                    clients. Through our expertise in digital marketing, lead
-                    generation, and media production, we provide targeted
-                    business opportunities that drive success. With Frozen
-                    Creation, small businesses gain access to a comprehensive
-                    suite of strategic media solutions, unlocking their digital
-                    potential and achieving significant growth.
+                    audience, ensuring maximum reach and engagement.
+                    <br />
+                    <br />
+                    Operating with a mission to create impactful content and
+                    operate media platforms, we deliver direct and tangible
+                    results for our clients. Through our expertise in digital
+                    marketing, lead generation, and media production, we provide
+                    targeted business opportunities that drive success. With
+                    Frozen Creation, small businesses gain access to a
+                    comprehensive suite of strategic media solutions, unlocking
+                    their digital potential and achieving significant growth.
                   </p>
                 </div>
                 <div className="profession-section-my-role-content">

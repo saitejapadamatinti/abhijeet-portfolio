@@ -226,9 +226,7 @@ const ProfessionalSection = () => {
                 <h1 className="heading-1">MAMS</h1>
                 <div>
                   <div className="professional-disply-flex-row">
-                    <h4 className="heading-3">
-                      Product Marketing & Management
-                    </h4>
+                    <h4 className="heading-3">Social Media Marketing Intern</h4>
                     <div>
                       <h4 className="heading-3">Aug. 2020 - Nov. 2020</h4>
                     </div>
@@ -366,15 +364,17 @@ const ProfessionalSection = () => {
                     range of premium media products and compelling content
                     across diverse channels, including print, digital, audio,
                     and social media. Our core media offerings cater to a broad
-                    audience, ensuring maximum reach and engagement. Operating
-                    with a mission to create impactful content and operate media
-                    platforms, we deliver direct and tangible results for our
-                    clients. Through our expertise in digital marketing, lead
-                    generation, and media production, we provide targeted
-                    business opportunities that drive success. With Frozen
-                    Creation, small businesses gain access to a comprehensive
-                    suite of strategic media solutions, unlocking their digital
-                    potential and achieving significant growth.
+                    audience, ensuring maximum reach and engagement.
+                    <br />
+                    <br />
+                    Operating with a mission to create impactful content and
+                    operate media platforms, we deliver direct and tangible
+                    results for our clients. Through our expertise in digital
+                    marketing, lead generation, and media production, we provide
+                    targeted business opportunities that drive success. With
+                    Frozen Creation, small businesses gain access to a
+                    comprehensive suite of strategic media solutions, unlocking
+                    their digital potential and achieving significant growth.
                   </p>
                 </div>
                 <div className="profession-section-my-role-content">
