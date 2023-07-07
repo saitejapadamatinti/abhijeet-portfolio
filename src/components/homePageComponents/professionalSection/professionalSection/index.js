@@ -7,7 +7,7 @@ const professionalTabs = [
   {
     id: 1,
     companyName: "Innovation Hacks AI",
-    role: "Innovation Hacks AI Pvt. Ltd",
+    role: "Product Marketing & Management",
   },
   {
     id: 2,

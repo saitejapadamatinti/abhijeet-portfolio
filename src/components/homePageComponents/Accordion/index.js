@@ -120,7 +120,7 @@ export default function AccordionComponent() {
           >
             <div>
               <div className="Professional-accordionSection-content-card-div">
-                <h1 className="heading-1">Innovation Hacks AI Pvt. Ltd. </h1>
+                <h1 className="heading-1">Innovation Hacks AI </h1>
                 <div>
                   <div className="professional-accordion-disply-flex-row">
                     <h4 className="heading-3">
@@ -190,7 +190,7 @@ export default function AccordionComponent() {
                 <div>
                   <p className="accordianItemhead">MAMS</p>
                   <p className="accordian-item-div-para-2">
-                  Social Media Marketing Intern
+                    Social Media Marketing Intern
                   </p>
                 </div>
               </div>
@@ -202,9 +202,7 @@ export default function AccordionComponent() {
                 <h1 className="heading-1">MAMS </h1>
                 <div>
                   <div className="professional-accordion-disply-flex-row">
-                    <h4 className="heading-3">
-                    Social Media Marketing Intern
-                    </h4>
+                    <h4 className="heading-3">Social Media Marketing Intern</h4>
                     <div>
                       <h4 className="heading-3">Aug. 2020 - Nov. 2020</h4>{" "}
                     </div>
@@ -254,7 +252,7 @@ export default function AccordionComponent() {
                   src="images/Original_Logo_Symbol-removebg-preview 1.png"
                 />
                 <div>
-                  <p className="accordianItemhead">Bafna Cars Pvt. Ltd.</p>
+                  <p className="accordianItemhead">Bafna Cars</p>
                   <p className="accordian-item-div-para-2">
                     Marketing & Brand Management Intern
                   </p>
@@ -297,7 +295,8 @@ export default function AccordionComponent() {
                   </div>
                   <div>
                     <h4 className="heading-3">
-                    Marketing & Brand Management Intern | Internship (Oct. 2019 - Mar. 2020)
+                      Marketing & Brand Management Intern | Internship (Oct.
+                      2019 - Mar. 2020)
                     </h4>
 
                     <ul className="primary-para professional-accordion-secton-my-role-ul">
@@ -337,20 +336,18 @@ export default function AccordionComponent() {
                       <h4 className="heading-3">Aug. 2019 – Nov. 2021</h4>{" "}
                     </div>
                   </div>
-                 
                 </div>
                 <div>
                   <p className="primary-para">
-                    <span className="heading-3">Overview:</span> 
-                    <span className="heading-3">Overview:</span> At Frozen
-                    Creation, we are a passionate and driven full-service
-                    strategic media house that fuels the growth of small
-                    businesses by helping them thrive digitally and generate
-                    valuable leads. As an umbrella brand, we offer an extensive
-                    range of premium media products and compelling content
-                    across diverse channels, including print, digital, audio,
-                    and social media. Our core media offerings cater to a broad
-                    audience, ensuring maximum reach and engagement.
+                    <span className="heading-3">Overview:</span>
+                    At Frozen Creation, we are a passionate and driven
+                    full-service strategic media house that fuels the growth of
+                    small businesses by helping them thrive digitally and
+                    generate valuable leads. As an umbrella brand, we offer an
+                    extensive range of premium media products and compelling
+                    content across diverse channels, including print, digital,
+                    audio, and social media. Our core media offerings cater to a
+                    broad audience, ensuring maximum reach and engagement.
                     <br />
                     <br />
                     Operating with a mission to create impactful content and

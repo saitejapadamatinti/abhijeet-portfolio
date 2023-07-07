@@ -6,6 +6,7 @@ import ProfessionalSection from "../homePageComponents/professionalSection/profe
 import { BiDownload } from "react-icons/bi";
 import AccordionComponent from "../homePageComponents/Accordion";
 import SkillCard from "../homePageComponents/skillsCard";
+import Education from "../homePageComponents/education";
 
 const skills = [
   "Marketing Strategy",
@@ -19,6 +20,27 @@ const skills = [
   "Creative Thinking",
   "UI/UX",
   "Wordpress",
+];
+
+const educationData = [
+  {
+    id: "1",
+    univercityName: "Cranfield University",
+    course: "Cranfield School of Management",
+    stream: "MSc in Strategic Marketing",
+    date: "Sep. 2023 - Sep. 2024",
+    location: "Bedfordshire, United Kingdom",
+    image: "/images/education-logo-1.png",
+  },
+  {
+    id: "2",
+    univercityName: "Dr. Vishwanath Karad MIT World Peace University",
+    course: "Bachelor of Technology (B. Tech)",
+    stream: "Civil Engineering (CGPA 8.37)",
+    date: "Jun. 2018 - Jun. 2022",
+    location: "Pune, Maharashtra, India",
+    image: "/images/education-logo-2.png",
+  },
 ];
 
 const HomePage = () => {
@@ -216,19 +238,21 @@ const HomePage = () => {
           </div>
         </div>
       </div>
-      <section>
-        <div class="scrollssss text4">
+
+      {/* </marquee> */}
+      <div className="main-width-container">
+        <div className="middle-width-container">
           <div>
-            Online <span>Tutorials - </span> Online <span>Tutorials - </span>{" "}
-            Online <span>Tutorials - </span> Online <span>Tutorials - </span>
+            <HomeSectionNumber number={"04"} content={"Education"} />
           </div>
-          <div>
-            Online <span>Tutorials - </span> Online <span>Tutorials - </span>{" "}
-            Online <span>Tutorials - </span> Online <span>Tutorials - </span>
+          <br />
+          <div className="education-div-main-component">
+            {educationData.map((each) => (
+              <Education educationData={each} />
+            ))}
           </div>
         </div>
-      </section>
-      {/* </marquee> */}
+      </div>
     </>
   );
 };

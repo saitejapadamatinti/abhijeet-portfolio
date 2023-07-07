@@ -52,7 +52,18 @@
 
 .itemBtnExpanded {
   /* background-color: #e7e7e7; */
-  border-bottom: 1px solid #efefef;
+  /* box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px; */
+  /* box-shadow: 0 0 6px 3px rgba(0, 0, 0, 0.3); */
+  border-bottom: 4px solid #e5e5e5;
+}
+.itemBtnExpanded::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: 0 0 6px 3px rgba(0, 0, 0, 0.3);
+  z-index: -1;
 }
 
 .itemContent {
@@ -73,8 +84,4 @@
   transform: rotate(180deg);
 }
 
-
-
 /* ----------------------------------------- */
-
-
