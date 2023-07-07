@@ -108,7 +108,7 @@ export default function AccordionComponent() {
                 />
                 <div>
                   <p className="accordianItemhead">
-                    Innovation Hacks AI Pvt. Ltd.
+                    Innovation Hacks AI
                   </p>
                   <p className="accordian-item-div-para-2">
                     Product Marketing & Management
@@ -120,7 +120,7 @@ export default function AccordionComponent() {
           >
             <div>
               <div className="Professional-accordionSection-content-card-div">
-                <h1 className="heading-1">Innovation Hacks AI </h1>
+                <h1 className="heading-1">Innovation Hacks AI Pvt. Ltd.</h1>
                 <div>
                   <div className="professional-accordion-disply-flex-row">
                     <h4 className="heading-3">

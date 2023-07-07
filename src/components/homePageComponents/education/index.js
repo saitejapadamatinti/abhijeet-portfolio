@@ -24,7 +24,7 @@ const Education = ({educationData}) => {
           <p className="education-para">{educationData.location}</p>
         </div>
         <div>
-        <p className="education-head-3">{educationData.course}</p>
+        <p className="education-head-3">{educationData.stream}</p>
         </div>
       </div>
     </div>

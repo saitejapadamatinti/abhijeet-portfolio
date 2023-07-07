@@ -10,10 +10,10 @@
   flex-direction: column;
   gap: 10px;
   border-top-left-radius: 20px;
-  border-top-right-radius:20px ;
+  border-top-right-radius: 20px;
 }
 .professional-section-card-scrool {
-  padding:20px 30px;
+  padding: 20px 30px;
   overflow: auto;
   height: 100%;
   margin-bottom: 30px;
@@ -30,11 +30,14 @@
   display: flex;
   flex-direction: column;
   animation: fadeIn 2s;
-  
-} 
+}
 @keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 .ProfessionalSection-taps-div {
   /* display: grid;
@@ -44,7 +47,7 @@
   flex-direction: column;
   justify-content: space-between;
   height: 71vh;
- align-content: space-between;
+  align-content: space-between;
 }
 
 .professional-disply-flex-row {
@@ -54,7 +57,7 @@
 }
 .profession-section-my-role-content {
   display: flex;
-margin-top: 10px;
+  margin-top: 10px;
   flex-direction: row;
   gap: 0px;
 }

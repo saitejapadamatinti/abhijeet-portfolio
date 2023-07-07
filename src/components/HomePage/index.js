@@ -30,7 +30,7 @@ const educationData = [
     stream: "MSc in Strategic Marketing",
     date: "Sep. 2023 - Sep. 2024",
     location: "Bedfordshire, United Kingdom",
-    image: "/images/education-logo-1.png",
+    image: "/images/education-logo-2.png",
   },
   {
     id: "2",
@@ -39,7 +39,7 @@ const educationData = [
     stream: "Civil Engineering (CGPA 8.37)",
     date: "Jun. 2018 - Jun. 2022",
     location: "Pune, Maharashtra, India",
-    image: "/images/education-logo-2.png",
+    image: "/images/education-logo-1.png",
   },
 ];
 
@@ -48,7 +48,7 @@ const HomePage = () => {
     <>
       <div className="main-width-container">
         <div className="middle-width-container">
-          <div className="home-banner-div">
+          <div className="home-banner-div height-100vh">
             <div className="home-banner-image-main-div">
               <div className="home-banner-img-outline">
                 <div className=" home-banner-img-outline-2">
@@ -109,7 +109,7 @@ const HomePage = () => {
             <div className="section-number-div">
               <HomeSectionNumber number={"01"} content={"About Me"} />
             </div>
-            <div className="about-main-container">
+            <div className="about-main-container height-100vh">
               {/* <div className="about-images-container">
                 <div className="about-images-div-1">
                   <div className="about-images-1">
@@ -198,7 +198,7 @@ const HomePage = () => {
           </div>
         </div>
       </div>
-      <div id="ss" className="main-width-container">
+      <div id="ss" className="main-width-container height-100vh">
         <div className="profession-main-div">
           <div className="middle-width-container">
             <div>
@@ -207,12 +207,11 @@ const HomePage = () => {
                 content={"Professional Experience"}
               />
             </div>
-
             <ProfessionalSection />
           </div>
         </div>
       </div>
-      <div id="ss" className="main-width-container">
+      <div id="ss" className="main-width-container" >
         <div className="middle-width-container">
           <div className="section-number-div">
             <HomeSectionNumber number={"03"} content={"Skills"} />
@@ -240,7 +239,7 @@ const HomePage = () => {
       </div>
 
       {/* </marquee> */}
-      <div className="main-width-container">
+      <div className="main-width-container height-100vh">
         <div className="middle-width-container">
           <div>
             <HomeSectionNumber number={"04"} content={"Education"} />

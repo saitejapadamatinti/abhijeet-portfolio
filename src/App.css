@@ -17,7 +17,7 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
 }
 .App-header {
   background-color: #282c34;
@@ -164,13 +164,11 @@
   transition: all 0.9s linear;
 }
 
-
-@media screen and (max-width : 576px) {
+@media screen and (max-width: 576px) {
   .heading-1 {
-  
     font-size: 18px !important;
   }
-  .heading-3{
+  .heading-3 {
     font-size: 14px;
     line-height: 18px;
   }
@@ -178,13 +176,18 @@
     font-size: 14px;
   }
 }
-@media screen and (max-width:1023px) {
+@media screen and (max-width: 1023px) {
   .heading-1 {
-  
     font-size: 28px;
   }
 }
 @media screen and (min-width: 1024px) {
+  .height-100vh{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   .middle-width-container {
     width: 90%;
   }
@@ -209,8 +212,6 @@
     height: 79px;
   }
 }
-
-
 
 /* scroll bar styles */
 *::-webkit-scrollbar {
