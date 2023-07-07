@@ -1,0 +1,29 @@
+.home-blog-section-main-div {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 60px;
+}
+
+.home-blog-button-section{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+@media screen and (max-width: 991px) {
+  .home-blog-section-main-div {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .home-blog-section-main-div {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .home-blog-card-content-container{
+    height: auto;
+    gap: 10px
+  }
+}

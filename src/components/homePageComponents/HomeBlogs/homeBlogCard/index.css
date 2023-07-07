@@ -1,0 +1,117 @@
+.home-blog-card-main-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 34px;
+  background-color: #f9f9f9;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  padding: 10px;
+  height: 560px;
+  transition: all 0.4s linear;
+}
+.home-blog-card-main-div:hover {
+  box-shadow: 0px 16px 20px 0px rgba(0, 0, 0, 0.25);
+  transition: all 0.4s linear;
+}
+.home-blog-card-content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  height: 100%;
+}
+.home-blog-card-image-div {
+  width: 100%;
+  height: 266px;
+}
+.home-blog-card-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+  display: block;
+}
+.home-blog-head-heading {
+  color: #424242;
+  font-size: 40px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 800;
+}
+.home-blog-love-icon-span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #F24E1E;
+}
+.home-blog-description-para {
+  color: #343434;
+  font-size: 20px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.home-blog-card-date-text {
+  color: #aaa;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+}
+.home-blog-para-read-more-text-link {
+  text-decoration: none;
+}
+.home-blog-para-read-more-text {
+  color: #0038ff;
+  font-size: 18px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+}
+.home-blog-card-date-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.home-blog-card-date-and-heart-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+}
+.home-blog-card-dot-icon {
+  font-size: 28px;
+  color: #aaa;
+}
+.home-blog-card-heart-icon {
+  color: red;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.home-blog-card-heading-2 {
+  color: #424242;
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 133.9%;
+}
+
+@media screen and (max-width: 991px) {
+  .home-blog-section-main-div {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .home-blog-card-heading-2 {
+    font-size: 20px;
+  }
+  .home-blog-card-main-div {
+    height: auto;
+  }
+}

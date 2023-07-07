@@ -7,6 +7,8 @@ import { BiDownload } from "react-icons/bi";
 import AccordionComponent from "../homePageComponents/Accordion";
 import SkillCard from "../homePageComponents/skillsCard";
 import Education from "../homePageComponents/education";
+import Certificates from "../homePageComponents/certifications";
+import HomeBlogs from "../homePageComponents/HomeBlogs";
 
 const skills = [
   "Marketing Strategy",
@@ -211,7 +213,7 @@ const HomePage = () => {
           </div>
         </div>
       </div>
-      <div id="ss" className="main-width-container" >
+      <div id="ss" className="main-width-container">
         <div className="middle-width-container">
           <div className="section-number-div">
             <HomeSectionNumber number={"03"} content={"Skills"} />
@@ -250,6 +252,15 @@ const HomePage = () => {
               <Education educationData={each} />
             ))}
           </div>
+        </div>
+      </div>
+      <div>
+        <Certificates />
+      </div>
+      <div id="ss" className="main-width-container height-100vh">
+        <div className="middle-width-container">
+          <HomeBlogs />
+          
         </div>
       </div>
     </>

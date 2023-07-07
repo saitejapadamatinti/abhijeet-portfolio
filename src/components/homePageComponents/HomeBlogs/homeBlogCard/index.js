@@ -19,61 +19,43 @@ const BlogCard = ({ blogData }) => {
   const blogMonth = getMonthName(blogMonthnumber);
 
   return (
-    <motion.div
-      initial={{
-        x: -1500,
-        y: 0,
-        scale: 1,
-        rotate: 0,
-      }}
-      animate={{
-        x: 0,
-        y: 0,
-        scale: 1,
-        rotate: 0,
-      }}
-      transition={{
-        ease: "linear",
-        duration: 2,
-        x: { duration: 1 },
-      }}
-      className="blog-card-main-div"
-    >
-      <div className="blog-card-image-div">
+    <div className="home-blog-card-main-div">
+      <div className="home-blog-card-image-div">
         <img
-          className="blog-card-image"
+          className="home-blog-card-image"
           alt="blog-imag-1"
           src="/images/blog-image-1.png"
         />
       </div>
-      <div className="blog-card-content-container">
-        <h1 className="heading-2">{blogData.bloghead}</h1>
-        <p className="blog-description-para">{blogData.blogContent}</p>
+      <div className="home-blog-card-content-container">
+        <h1 className="home-blog-card-heading-2">{blogData.bloghead}</h1>
+        <p className="home-blog-description-para">{blogData.blogContent}</p>
 
-        <div className="blog-card-date-div">
-          <div className="blog-card-date-and-heart-card">
+        <div className="home-blog-card-date-div">
+          <div className="home-blog-card-date-and-heart-card">
             <span className="text-light-color">
               {blogMonth} {blogDay}, {blogYear}
             </span>
             <span>
-              <BsDot className="blog-card-dot-icon" />
+              <BsDot className="home-blog-card-dot-icon" />
             </span>
-            <span>
-              <AiFillHeart className="blog-card-heart-icon" />
+            <span className="home-blog-love-icon-span">
+              <AiFillHeart className="home-blog-card-heart-icon" />
             </span>
             <span className=" text-light-color">{blogData.likes}</span>
           </div>
           <Link
+            className="home-blog-para-read-more-text-link"
             onClick={() => {
               window.location.href = `/blog/${blogData._id}`;
             }}
             to={`/blog/${blogData._id}`}
           >
-            <span className="blog-para-read-more-text">Read more</span>
+            <span className="home-blog-para-read-more-text">Read more</span>
           </Link>
         </div>
       </div>
-    </motion.div>
+    </div>
   );
 };
 
