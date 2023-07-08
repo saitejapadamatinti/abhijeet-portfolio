@@ -1,26 +1,129 @@
-// import React from "react";
-// import Carousel from "react-elastic-carousel";
+import React from "react";
+import { Slide } from "react-slideshow-image";
+import "react-slideshow-image/dist/styles.css";
+import "./index.css";
 
-// const breakPoints = [
-//   { width: 1, itemsToShow: 1 },
-//   { width: 550, itemsToShow: 2, itemsToScroll: 2, pagination: false },
-//   { width: 850, itemsToShow: 3 },
-//   { width: 1150, itemsToShow: 4, itemsToScroll: 2 },
-//   { width: 1450, itemsToShow: 5 },
-//   { width: 1750, itemsToShow: 6 },
-// ];
+const responsiveSettings = [
+  {
+    breakpoint: 800,
+    settings: {
+      slidesToShow: 6,
+      slidesToScroll: 3,
+    },
+  },
+  {
+    breakpoint: 500,
+    settings: {
+      slidesToShow: 2,
+      slidesToScroll: 2,
+    },
+  },
+];
+const CertificateSlider = () => {
+  return (
+    <div>
+      <Slide
+        className="certificate-slide-div"
+        slidesToScroll={1}
+        slidesToShow={1}
+        indicators={true}
+        autoplay={false}
+        responsive={[
+          {
+            breakpoint: 800,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2,
+            },
+          },
+          {
+            breakpoint: 500,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2,
+            },
+          },
+        ]}
+      >
+        <div>
+          <div>
+            <div className="certificate-card-main-div">
+              <div className="certificate-imag-div">
+                <img src="/images/certificate1.png" />
+              </div>
+              <div>
+                <h1>Innovation, Business Models, and Entrepreneurship</h1>
+                <p>Indian Institute of Technology-Roorkee </p>
+                <p>Online</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div className="certificate-card-main-div">
+              <div className="certificate-imag-div">
+                <img src="/images/certificate1.png" />
+              </div>
+              <div>
+                <h1>Innovation, Business Models, and Entrepreneurship</h1>
+                <p>Indian Institute of Technology-Roorkee </p>
+                <p>Online</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div className="certificate-card-main-div">
+              <div className="certificate-imag-div">
+                <img src="/images/certificate1.png" />
+              </div>
+              <div>
+                <h1>Innovation, Business Models, and Entrepreneurship</h1>
+                <p>Indian Institute of Technology-Roorkee </p>
+                <p>Online</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div>
+            <div className="certificate-card-main-div">
+              <div className="certificate-imag-div">
+                <img src="/images/certificate1.png" />
+              </div>
+              <div>
+                <h1>Innovation, Business Models, and Entrepreneurship</h1>
+                <p>Indian Institute of Technology-Roorkee </p>
+                <p>Online</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div className="certificate-card-main-div">
+              <div className="certificate-imag-div">
+                <img src="/images/certificate1.png" />
+              </div>
+              <div>
+                <h1>Innovation, Business Models, and Entrepreneurship</h1>
+                <p>Indian Institute of Technology-Roorkee </p>
+                <p>Online</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div className="certificate-card-main-div">
+              <div className="certificate-imag-div">
+                <img src="/images/certificate1.png" />
+              </div>
+              <div>
+                <h1>Innovation, Business Models, and Entrepreneurship</h1>
+                <p>Indian Institute of Technology-Roorkee </p>
+                <p>Online</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </Slide>
+    </div>
+  );
+};
 
-// const CertificateSlider = ({ Item }) => {
-//   return (
-//     <Carousel breakPoints={breakPoints}>
-//       <Item>1</Item>
-//       <Item>2</Item>
-//       <Item>3</Item>
-//       <Item>4</Item>
-//       <Item>5</Item>
-//       <Item>6</Item>
-//     </Carousel>
-//   );
-// };
-
-// export default CertificateSlider;
+export default CertificateSlider;

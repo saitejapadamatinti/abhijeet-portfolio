@@ -53,9 +53,8 @@
     left: 0;
     bottom: 0;
     width: 100%;
-    background: var(--accent);
     padding-top: 100px;
-    transform: translateX(-100%);
+    transform: translateX(100%);
     will-change: transform;
     background-color: blue;
     z-index: 10;

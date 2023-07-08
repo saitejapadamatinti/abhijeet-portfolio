@@ -49,7 +49,7 @@ const educationData = [
 const HomePage = () => {
   return (
     <>
-    <Navebar />
+      <Navebar />
       <div className="main-width-container">
         <div className="middle-width-container">
           <div className="home-banner-div height-100vh">
@@ -67,7 +67,7 @@ const HomePage = () => {
             </div>
             <div className="home-banner-heading-div">
               <h1 class="ms-header__title">
-                Hi! I am Abhijeet. <br/> This My Journey <br/> of
+                Hi! I am Abhijeet. <br /> This My Journey <br /> of
                 <div class="ms-slider">
                   <ul class="ms-slider__words">
                     <li class="ms-slider__word ms-slider-word-1">Marketing.</li>
@@ -243,14 +243,25 @@ const HomePage = () => {
           </div>
         </div>
       </div>
-      <div>
-        <Certificates />
+      <div id="ss" className="main-width-container height-100vh">
+        <div className="profession-main-div">
+          <div className="middle-width-container">
+            <div>
+              <HomeSectionNumber
+                number={"02"}
+                content={"Professional Experience"}
+              />
+            </div>
+            {/* <Certificates /> */}
+          </div>
+        </div>
       </div>
       <div id="ss" className="main-width-container height-100vh">
         <div className="middle-width-container">
           <HomeBlogs />
         </div>
       </div>
+      <Certificates />
     </>
   );
 };

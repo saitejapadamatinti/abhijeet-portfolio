@@ -249,7 +249,7 @@
 
 /* scroll bar styles */
 *::-webkit-scrollbar {
-  width: 8px;
+  width: 8px !important;
 }
 
 *::-webkit-scrollbar-track {
@@ -257,7 +257,7 @@
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: #9981d5;
+  background-color: #9981d5 !important;
   /* outline: 1px solid #024f70; */
-  border-radius: 8px;
+  border-radius: 8px !important;
 }

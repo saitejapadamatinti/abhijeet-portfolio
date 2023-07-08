@@ -38,6 +38,7 @@
   font-family: Montserrat;
   font-style: normal;
   font-weight: 800;
+ 
 }
 .home-blog-love-icon-span{
     display: flex;
@@ -99,6 +100,10 @@
   font-size: 22px;
   font-weight: 800;
   line-height: 133.9%;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 @media screen and (max-width: 991px) {
