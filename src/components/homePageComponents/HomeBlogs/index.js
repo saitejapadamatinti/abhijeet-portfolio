@@ -5,6 +5,7 @@ import HomeBlogCard from "./homeBlogCard";
 import "./index.css";
 import { BiDownload } from "react-icons/bi";
 import HomeSectionNumber from "../homeSectionNumbers";
+import { Link } from "react-router-dom";
 
 const projectUrl = "http://localhost:3005/allProjects";
 
@@ -37,9 +38,11 @@ const BlogPage = () => {
           <HomeBlogCard blogData={eachData} />
         ))}
       </div>
-      <div className="home-blog-button-section">
-        <button className="outline-button">Resume</button>
-      </div>
+      <Link className="home-blog-section-link-button" to='/blogs'>
+        <div className="home-blog-button-section">
+          <button className="outline-button-2">View More</button>
+        </div>
+      </Link>
     </>
   );
 };

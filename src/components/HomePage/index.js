@@ -9,6 +9,7 @@ import SkillCard from "../homePageComponents/skillsCard";
 import Education from "../homePageComponents/education";
 import Certificates from "../homePageComponents/certifications";
 import HomeBlogs from "../homePageComponents/HomeBlogs";
+import Navebar from "../navbar/header";
 
 const skills = [
   "Marketing Strategy",
@@ -31,7 +32,7 @@ const educationData = [
     course: "Cranfield School of Management",
     stream: "MSc in Strategic Marketing",
     date: "Sep. 2023 - Sep. 2024",
-    location: "Bedfordshire, United Kingdom",
+    location: "Bedfordshire, UK",
     image: "/images/education-logo-2.png",
   },
   {
@@ -48,6 +49,7 @@ const educationData = [
 const HomePage = () => {
   return (
     <>
+    <Navebar />
       <div className="main-width-container">
         <div className="middle-width-container">
           <div className="home-banner-div height-100vh">
@@ -64,33 +66,19 @@ const HomePage = () => {
               </div>
             </div>
             <div className="home-banner-heading-div">
-              <h1 className="home-banner-heading main-head-color">
-                Hi! I am Abhijeet. <a href="#ss"> This </a> is My Journey of{" "}
-                <div class="scroller">
-                  <span>
-                    Cool
-                    <br />
-                    Art
-                    <br />
-                    Intruiging
-                    <br />
-                    sai
-                    <br />
-                    Challenging
-                  </span>
+              <h1 class="ms-header__title">
+                Hi! I am Abhijeet. <br/> This My Journey <br/> of
+                <div class="ms-slider">
+                  <ul class="ms-slider__words">
+                    <li class="ms-slider__word ms-slider-word-1">Marketing.</li>
+                    <li class="ms-slider__word ms-slider-word-2">Branding.</li>
+                    <li class="ms-slider__word ms-slider-word-3">
+                      Storytelling.
+                    </li>
+                    <li class="ms-slider__word ms-slider-word-4">Crafting.</li>
+                    <li class="ms-slider__word ms-slider-word-1">Engaging.</li>
+                  </ul>
                 </div>
-                {/* <div class="carousel">
-              <div class="change_outer">
-                <div class="change_inner">
-                  <div class="element">Engaging.</div>
-                  <div class="element">Crafting.</div>
-                  <div class="element">Storytelling.</div>
-                  <div class="element">Branding.</div>
-                  <div class="element">Marketing.</div>
-                </div>
-              </div>
-              </div>
-               */}
               </h1>
               <p className="home-banner-para">
                 Creating Impactful Marketing Campaigns and Building Strong
@@ -230,6 +218,7 @@ const HomePage = () => {
           </div>
         </div>
       </div>
+
       <div id="to-right-scroll-container">
         <div id="to-right-scroll-text">
           <div className="skill-card-div">
@@ -260,7 +249,6 @@ const HomePage = () => {
       <div id="ss" className="main-width-container height-100vh">
         <div className="middle-width-container">
           <HomeBlogs />
-          
         </div>
       </div>
     </>

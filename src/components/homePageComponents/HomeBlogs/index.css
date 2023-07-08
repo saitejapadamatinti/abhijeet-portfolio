@@ -4,10 +4,14 @@
   gap: 60px;
 }
 
-.home-blog-button-section{
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
+.home-blog-button-section {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.home-blog-section-link-button {
+  text-decoration: none;
 }
 
 @media screen and (max-width: 991px) {
@@ -22,8 +26,8 @@
     grid-template-columns: 1fr;
     gap: 30px;
   }
-  .home-blog-card-content-container{
+  .home-blog-card-content-container {
     height: auto;
-    gap: 10px
+    gap: 10px;
   }
 }
