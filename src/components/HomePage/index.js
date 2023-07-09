@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./index.css";
 import HomeSectionNumber from "../homePageComponents/homeSectionNumbers";
 import ProfessionalTabCard from "../homePageComponents/professionalSection/professionalTabCard";
@@ -10,6 +10,8 @@ import Education from "../homePageComponents/education";
 import Certificates from "../homePageComponents/certifications";
 import HomeBlogs from "../homePageComponents/HomeBlogs";
 import Navebar from "../navbar/header";
+import ScrollTracker from "../navbar/nav";
+import AboutSection from "../homePageComponents/About";
 
 const skills = [
   "Marketing Strategy",
@@ -47,6 +49,28 @@ const educationData = [
 ];
 
 const HomePage = () => {
+  const [current, setCurrent] = useState("#Education");
+  console.log(current)
+  window.location.replace(`http://localhost:3000/${current}`);
+  const handleScroll = () => {
+    const position = window.pageYOffset;
+    console.log(position);
+    if (772 < position < 1920) {
+      setCurrent("#About");
+    } else if (1921 < position < 2374) {
+      setCurrent("#ProfessionalExperience");
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+
+    // Clean up the event listener when the component unmounts
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <>
       <Navebar />
@@ -93,102 +117,22 @@ const HomePage = () => {
             </div>
           </div>
 
-          <div>
+          <div id="AboutMe">
             {/* <img className="about-section-line" src="/images/Vector 2.png" />
           <img className="about-section-arrow-icon" src="/images/Add a heading (12) 1.png" /> */}
             <div className="section-number-div">
               <HomeSectionNumber number={"01"} content={"About Me"} />
             </div>
             <div className="about-main-container height-100vh">
-              {/* <div className="about-images-container">
-                <div className="about-images-div-1">
-                  <div className="about-images-1">
-                    <img
-                      className="about-user-images"
-                      alt="use-iamge"
-                      src="/images/Rectangle 196.png"
-                    />
-                  </div>
-                  <div className="about-images-2">
-                    <img
-                      className="about-user-images"
-                      alt="use-iamge"
-                      src="/images/user-image.png"
-                    />
-                  </div>
-                </div>
-                <div className="about-images-div-2">
-                  <div className="about-images-3"></div>
-                  <div className="about-images-4">
-                    <img
-                      className="about-user-images"
-                      alt="use-iamge"
-                      src="/images/Rectangle 202.png"
-                    />
-                  </div>
-                </div>
-                <div className="about-images-div-3">
-                  <div className="about-images-5">
-                    <img
-                      className="about-user-images"
-                      alt="use-iamge"
-                      src="/images/Rectangle 200.png"
-                    />
-                  </div>
-                  <div className="about-images-6"></div>
-                  <div className="about-images-7"></div>
-                </div>
-              </div> */}
-              <div className="about-images-container">
-                <div className="about-card-user-box">
-                  <div class="about-box-card-animation">
-                    <div class="wave -one"></div>
-                    <div class="wave -two"></div>
-                    <div class="wave -three"></div>
-                  </div>
-                </div>
-              </div>
-              <div className="about-section-content">
-                <p>
-                  With a deep-rooted passion for marketing and branding, I am
-                  Abhijeet Patil, an experienced professional dedicated to
-                  driving business success through strategic thinking,
-                  innovative ideas, and a relentless pursuit of excellence. As a
-                  marketing enthusiast, I possess a unique blend of skills,
-                  education, and hands-on experiences that set me apart in the
-                  industry.
-                </p>
-                <br />
-                <p>
-                  Combining my technical foundation with a keen business acumen,
-                  I have developed a versatile skill set encompassing strategic
-                  marketing, brand management, product marketing, and lead
-                  generation. My proficiency in market research, competitor
-                  analysis, and consumer behavior allows me to craft effective
-                  marketing strategies that resonate with target audiences and
-                  drive tangible results. Furthermore, my entrepreneurial
-                  mindset empowers me to think outside the box, identifying
-                  innovative solutions and leveraging emerging trends to stay
-                  ahead of the curve.
-                </p>
-                <br />
-                <p>
-                  What truly sets me apart is my unwavering passion for
-                  marketing and branding. I view each project as an opportunity
-                  to tell a captivating story, engage with audiences on a deeper
-                  level, and create lasting connections between brands and
-                  consumers. My innate ability to blend analytical thinking with
-                  creative flair enables me to develop unique strategies that
-                  not only deliver results but also leave a lasting impact. I am
-                  constantly seeking new challenges and opportunities to push
-                  the boundaries of what is possible in the field of marketing.
-                </p>
-              </div>
+             <AboutSection />
             </div>
           </div>
         </div>
       </div>
-      <div id="ss" className="main-width-container height-100vh">
+      <div
+        id="ProfessionalExperience"
+        className="main-width-container height-100vh"
+      >
         <div className="profession-main-div">
           <div className="middle-width-container">
             <div>
@@ -197,11 +141,12 @@ const HomePage = () => {
                 content={"Professional Experience"}
               />
             </div>
+
             <ProfessionalSection />
           </div>
         </div>
       </div>
-      <div id="ss" className="main-width-container">
+      <div id="Skills" className="main-width-container">
         <div className="middle-width-container">
           <div className="section-number-div">
             <HomeSectionNumber number={"03"} content={"Skills"} />
@@ -218,7 +163,6 @@ const HomePage = () => {
           </div>
         </div>
       </div>
-
       <div id="to-right-scroll-container">
         <div id="to-right-scroll-text">
           <div className="skill-card-div">
@@ -230,10 +174,11 @@ const HomePage = () => {
       </div>
 
       {/* </marquee> */}
-      <div className="main-width-container height-100vh">
+      <div id="Education" className="main-width-container height-100vh">
         <div className="middle-width-container">
           <div>
             <HomeSectionNumber number={"04"} content={"Education"} />
+            <p></p>
           </div>
           <br />
           <div className="education-div-main-component">
@@ -243,25 +188,25 @@ const HomePage = () => {
           </div>
         </div>
       </div>
-      <div id="ss" className="main-width-container height-100vh">
+      <div id="Certifications" className="main-width-container height-100vh">
         <div className="profession-main-div">
           <div className="middle-width-container">
-            <div>
+            <div className="section-number-div">
               <HomeSectionNumber
-                number={"02"}
-                content={"Professional Experience"}
+                number={"05"}
+                content={"Certifications"}
               />
             </div>
-            {/* <Certificates /> */}
+            <Certificates />
+
           </div>
         </div>
       </div>
-      <div id="ss" className="main-width-container height-100vh">
+      <div id="Blogs" className="main-width-container height-100vh">
         <div className="middle-width-container">
           <HomeBlogs />
         </div>
       </div>
-      <Certificates />
     </>
   );
 };

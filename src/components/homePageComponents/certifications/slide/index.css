@@ -12,10 +12,20 @@
     background: #efefef;
     text-align: center;
   } */
+  .certificate-card-main-grid {
+    display: flex;
+    flex-direction: column;
+    height: 570px;
+    flex-wrap: wrap;
+    gap: 20px;
+    overflow: auto;
+    padding: 20px;
+  }
 .certificate-slide-div {
   display: flex;
   flex-direction: column;
   height: 600px;
+  
 }
 .certificate-card-main-div {
   width: 650px !important;
@@ -24,9 +34,9 @@
   border-radius: 34px;
   background: #fff;
   align-items: center;
-  padding: 30px;
-  /* box-shadow: 0px 16px 20px 0px rgba(0, 0, 0, 0.25);
-  margin: 30px; */
+  padding: 24px;
+   box-shadow: 0px 16px 20px 0px rgba(0, 0, 0, 0.25);
+height: 157px;
 }
 .certificate-imag-div {
   width: 200px;
@@ -44,7 +54,7 @@
 .certificate-card-content-box h1 {
   color: #424242;
   font-family: Montserrat;
-  font-size: 28px;
+  font-size: 24px;
   font-style: normal;
   font-weight: 800;
   line-height: normal;
@@ -66,11 +76,27 @@
   line-height: normal;
 }
 
-.sdfb {
-  display: flex;
-  flex-direction: column;
-  height: 600px;
-  flex-wrap: wrap;
-  gap: 20px;
-  overflow: auto;
+
+
+
+@media screen and (max-width : 576px) {
+  .certificate-card-main-grid{
+    height: 62vh;
+  }
+  .certificate-imag-div{
+    width: 90px;
+  }
+  .certificate-card-main-div{
+    height: 124px;
+    width: 100% !important;
+  }
+  .certificate-card-content-box h1 {
+    font-size: 14px;
+  }
+  .certificate-card-content-box p{
+    font-size: 12px;
+  }
+  .certificate-card-content-box span{
+    font-size: 12px;
+  }
 }
