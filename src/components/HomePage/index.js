@@ -49,27 +49,27 @@ const educationData = [
 ];
 
 const HomePage = () => {
-  const [current, setCurrent] = useState("#Education");
-  console.log(current)
-  window.location.replace(`http://localhost:3000/${current}`);
-  const handleScroll = () => {
-    const position = window.pageYOffset;
-    console.log(position);
-    if (772 < position < 1920) {
-      setCurrent("#About");
-    } else if (1921 < position < 2374) {
-      setCurrent("#ProfessionalExperience");
-    }
-  };
+  // const [current, setCurrent] = useState("#Education");
+  // console.log(current)
+  // window.location.replace(`http://localhost:3000/${current}`);
+  // const handleScroll = () => {
+  //   const position = window.pageYOffset;
+  //   console.log(position);
+  //   if (772 < position < 1920) {
+  //     setCurrent("#About");
+  //   } else if (1921 < position < 2374) {
+  //     setCurrent("#ProfessionalExperience");
+  //   }
+  // };
 
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
+  // useEffect(() => {
+  //   window.addEventListener("scroll", handleScroll);
 
-    // Clean up the event listener when the component unmounts
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+  //   // Clean up the event listener when the component unmounts
+  //   return () => {
+  //     window.removeEventListener("scroll", handleScroll);
+  //   };
+  // }, []);
 
   return (
     <>
