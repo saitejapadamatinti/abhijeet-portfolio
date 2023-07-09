@@ -14,20 +14,19 @@
   text-decoration: none;
 }
 
-@media screen and (max-width: 991px) {
-  .home-blog-section-main-div {
-    grid-template-columns: 1fr 1fr;
-    gap: 40px;
-  }
-}
 
-@media screen and (max-width: 767px) {
+
+@media screen and (max-width: 991px) {
   .home-blog-section-main-div {
     grid-template-columns: 1fr;
     gap: 30px;
   }
-  .home-blog-card-content-container {
-    height: auto;
-    gap: 10px;
+
+}
+
+
+@media screen and (max-width : 576px) {
+  .home-blog-section-main-div{
+    gap: 12px;
   }
 }

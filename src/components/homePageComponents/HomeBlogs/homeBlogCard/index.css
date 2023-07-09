@@ -108,16 +108,45 @@
 
 @media screen and (max-width: 991px) {
   .home-blog-section-main-div {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 40px;
+  }
+  .home-blog-card-main-div{
+    display: grid;
+    grid-template-columns: 4fr 8fr;
+    height: 100%;
   }
 }
 
 @media screen and (max-width: 576px) {
+  .home-blog-card-image-div{
+    height: 100%;
+  }
+  .home-blog-card-image{
+    
+    border-radius: 8px;
+  }
   .home-blog-card-heading-2 {
-    font-size: 20px;
+    font-size: 10px;
+  }
+  .home-blog-description-para{
+    font-size: 6px;
+    line-height: 8px;
   }
   .home-blog-card-main-div {
     height: auto;
+    border-radius: 8px;
+  }
+  .text-light-color{
+    font-size: 5px;
+  }
+  .home-blog-para-read-more-text{
+    font-size: 5px;
+  }
+  .home-blog-card-content-container{
+    gap: 0px;
+  }
+  .home-blog-card-content-container{
+    padding: 8px;
   }
 }
