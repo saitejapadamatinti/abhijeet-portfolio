@@ -89,23 +89,23 @@ const blogApiLocalData = [
 ];
 
 const BlogPage = () => {
-  const [blogData, setBlogData] = useState([]);
+  const [blogData, setBlogData] = useState(blogApiLocalData);
   const [isLoading, setIsLoading] = useState(false);
 
-  const getProjectDataFromApi = async () => {
-    setIsLoading(true);
-    const data = await Axios(projectUrl);
-    const soretedData = data.data.sort(
-      (objA, objB) =>
-        Number(new Date(objB.blogDate)) - Number(new Date(objA.blogDate))
-    );
-    setBlogData(blogApiLocalData);
-    setIsLoading(false);
-  };
+  // const getProjectDataFromApi = async () => {
+  //   setIsLoading(true);
+  //   const data = await Axios(projectUrl);
+  //   const soretedData = data.data.sort(
+  //     (objA, objB) =>
+  //       Number(new Date(objB.blogDate)) - Number(new Date(objA.blogDate))
+  //   );
+  //   setBlogData(soretedData);
+  //   setIsLoading(false);
+  // };
 
-  useEffect(() => {
-    getProjectDataFromApi();
-  }, []);
+  // useEffect(() => {
+  //   getProjectDataFromApi();
+  // }, []);
 
   return (
     <>
