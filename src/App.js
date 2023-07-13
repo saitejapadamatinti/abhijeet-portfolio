@@ -4,6 +4,7 @@ import BlogPage from "./components/blogs";
 import BlogDetails from "./components/blogDetails";
 import BlogBaackendForm from "./adminComponent/blogAdminForm";
 import HomePage from "./components/HomePage";
+import UserEmailsAdmin from "./adminComponent/userEmailsAdmin";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Route path="/blogs" element={<BlogPage />} />
       <Route path="/blog/:id" element={<BlogDetails />} />
       <Route path="/adminBlogForm" element={<BlogBaackendForm />} />
+      <Route path="/adminUsersEmails" element={<UserEmailsAdmin />} />
     </Routes>
   );
 }

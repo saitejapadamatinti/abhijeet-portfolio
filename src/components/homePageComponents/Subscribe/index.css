@@ -1,0 +1,88 @@
+.subscribe-card-background-image-div {
+  background-image: url("../../../../public/images/subscribe-bg.png");
+  /* height: 543px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  gap: 30px;
+  background-size: cover;
+  border-radius: 100px;
+  padding: 100px 0px;
+}
+
+.subscribe-card-background-image-div h1 {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 133.9%;
+}
+.subscribe-card-background-image-div p {
+  color: #5b5757;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 133.9%;
+  width: 80%;
+}
+.subscribe-input-class-div {
+  width: 50%;
+  height: 60px;
+  display: flex;
+  background-color: #fff;
+  align-items: center;
+}
+.subscribe-input-class {
+  width: 100%;
+  height: 100%;
+  outline: none;
+  border: none;
+  font-size: 24px;
+  padding-left: 20px;
+  font-weight: 600;
+}
+.subscribe-input-class-div button{
+    border: none;
+    background-color: transparent;
+}
+.subscribe-input-send-icon {
+  color: #7773ae;
+  font-size: 40px;
+  margin-right: 10px;
+}
+
+@media screen and (max-width : 576px) {
+    .subscribe-card-background-image-div{
+        padding: 40px 0px;
+        border-radius: 30px;
+        gap: 12px;
+    }
+    .subscribe-card-background-image-div h1{
+        font-size: 20px;
+    }
+    .subscribe-card-background-image-div p{
+        font-size: 14px;
+        width: 80%;
+    }
+    .subscribe-input-class-div{
+        width: 80%;
+    }
+    .subscribe-input-class-div{
+        height: 40px;
+    }
+    .subscribe-input-class{
+        font-size: 16px;
+        font-weight: normal;
+    }
+    .subscribe-input-send-icon{
+        font-size: 22px;
+    }
+}

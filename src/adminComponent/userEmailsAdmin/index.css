@@ -1,0 +1,15 @@
+.admin-user-email-div{
+    width: 100vw;
+    height: 100vh;
+    max-height: 100vh;
+    background-color: rgb(241, 241, 241);
+}
+.admi-user-emain-para{
+    width: 400px;
+    background-color: rgb(205, 178, 231);
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    font-weight: 400;
+    font-size: 20px;
+}

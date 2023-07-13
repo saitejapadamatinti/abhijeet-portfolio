@@ -12,6 +12,7 @@ import HomeBlogs from "../homePageComponents/HomeBlogs";
 import Navebar from "../navbar/header";
 import ScrollTracker from "../navbar/nav";
 import AboutSection from "../homePageComponents/About";
+import SubscribeSection from "../homePageComponents/Subscribe";
 
 const skills = [
   "Marketing Strategy",
@@ -206,6 +207,9 @@ const HomePage = () => {
         <div className="middle-width-container">
           <HomeBlogs />
         </div>
+      </div>
+      <div>
+        <SubscribeSection />
       </div>
     </>
   );
