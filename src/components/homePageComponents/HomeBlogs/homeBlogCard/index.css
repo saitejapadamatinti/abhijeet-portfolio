@@ -97,7 +97,7 @@
 
 .home-blog-card-heading-2 {
   color: #424242;
-  font-size: 22px;
+  font-size: 24px;
   font-weight: 800;
   line-height: 133.9%;
   display: -webkit-box;
@@ -127,21 +127,21 @@
     border-radius: 8px;
   }
   .home-blog-card-heading-2 {
-    font-size: 10px;
+    font-size: 14px;
   }
   .home-blog-description-para{
-    font-size: 6px;
-    line-height: 8px;
+    font-size: 12px;
+    line-height: 14px;
   }
   .home-blog-card-main-div {
     height: auto;
     border-radius: 8px;
   }
   .text-light-color{
-    font-size: 5px;
+    font-size: 10px;
   }
   .home-blog-para-read-more-text{
-    font-size: 5px;
+    font-size: 10px;
   }
   .home-blog-card-content-container{
     gap: 0px;

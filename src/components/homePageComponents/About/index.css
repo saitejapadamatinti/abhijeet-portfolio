@@ -105,6 +105,10 @@
   background-position: bottom;
 }
 
+/* height 276px
+width : 90%
+*/
+
 .about-card-user-box-image {
   width: 100%;
   border-radius: 100px;
@@ -122,7 +126,7 @@
 .about-icons-div {
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 35px;
 }
 .about-icon {
   width: 30px;

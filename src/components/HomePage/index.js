@@ -40,7 +40,7 @@ const educationData = [
   },
   {
     id: "2",
-    univercityName: "Dr. Vishwanath Karad MIT World Peace University",
+    univercityName: "MIT World Peace University",
     course: "Bachelor of Technology (B. Tech)",
     stream: "Civil Engineering (CGPA 8.37)",
     date: "Jun. 2018 - Jun. 2022",
