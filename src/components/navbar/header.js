@@ -3,7 +3,7 @@ import React, { useState, useEffect, history } from "react";
 import { useAnimate, stagger } from "framer-motion";
 import { MenuToggle } from "./menuToggle";
 import { Link } from "react-router-dom";
-import useDocumentScrollThrottled from './useDocumentScrollThrottled';
+import useDocumentScrollThrottled from "./useDocumentScrollThrottled";
 
 function useMenuAnimation(isOpen) {
   const [scope, animate] = useAnimate();
@@ -50,20 +50,61 @@ function useMenuAnimation(isOpen) {
   return scope;
 }
 
+const headerList = [
+  {
+    name: "About Me",
+    path: "AboutMe",
+    for: "radio-1",
+  },
+  {
+    name: "Professional Experience",
+    path: "ProfessionalExperience",
+    for: "radio-2",
+  },
+  {
+    name: "Skills",
+    path: "Skills",
+    for: "radio-3",
+  },
+  {
+    name: "Contact Me",
+    path: "ContactMe",
+    for: "radio-4",
+  },
+  {
+    name: "Newsletter",
+    path: "Newsletter",
+    for: "radio-5",
+  },
+  {
+    name: "Education",
+    path: "Education",
+    for: "radio-6",
+  },
+  {
+    name: "Certifications",
+    path: "Certifications",
+    for: "radio-7",
+  },
+  {
+    name: "Blogs",
+    path: "Blogs",
+    for: "radio-8",
+  },
+];
+
 export default function Navebar() {
-
-
   const [isOpen, setIsOpen] = useState(false);
+  const [activeTab, setActiveTab] = useState("About Me");
 
-
-//   header aimation----------------
-const [shouldHideHeader, setShouldHideHeader] = useState(false);
+  //   header aimation----------------
+  const [shouldHideHeader, setShouldHideHeader] = useState(false);
   const [shouldShowShadow, setShouldShowShadow] = useState(false);
 
   const MINIMUM_SCROLL = 80;
   const TIMEOUT_DELAY = 400;
 
-  useDocumentScrollThrottled(callbackData => {
+  useDocumentScrollThrottled((callbackData) => {
     const { previousScrollTop, currentScrollTop } = callbackData;
     const isScrolledDown = previousScrollTop < currentScrollTop;
     const isMinimumScrolled = currentScrollTop > MINIMUM_SCROLL;
@@ -75,60 +116,51 @@ const [shouldHideHeader, setShouldHideHeader] = useState(false);
     }, TIMEOUT_DELAY);
   });
 
-  const shadowStyle = shouldShowShadow ? 'shadow' : '';
-  const hiddenStyle = shouldHideHeader ? 'hidden' : '';
-//   header aimation----------------
+  const shadowStyle = shouldShowShadow ? "shadow" : "";
+  const hiddenStyle = shouldHideHeader ? "hidden" : "";
+  //   header aimation----------------
 
   const scope = useMenuAnimation(isOpen);
 
-  const headerList = [
-    {
-      name: "About Me",
-      path: "AboutMe",
-    },
-    {
-      name: "Professional Experience",
-      path: "ProfessionalExperience",
-    },
-    {
-      name: "Skills",
-      path: "Skills",
-    },
-    {
-      name: "Contact Me",
-      path: "ContactMe",
-    },
-    {
-      name: "Newsletter",
-      path: "Newsletter",
-    },
-    {
-      name: "Education",
-      path: "Education",
-    },
-    {
-      name: "Certifications",
-      path: "Certifications",
-    },
-    {
-      name: "Blogs",
-      path: "Blogs",
-    },
-  ];
-
   return (
     <>
-     {/* <header className={`header ${shadowStyle} ${hiddenStyle}`}> */}
+      {/* <header className={`header ${shadowStyle} ${hiddenStyle}`}> */}
       <nav className={`large-header-main-div ${shadowStyle} ${hiddenStyle}`}>
         <div>
           <img alt="header-logo" src="/images/header-logo.png" />
         </div>
         <div className="large-header-main-div-items">
           {headerList.map((eachHeader) => (
-            <a href={`#${eachHeader.path}`}>{eachHeader.name}</a>
+            <a
+              className={activeTab === eachHeader.name && "header-active-tab"}
+              onClick={() => setActiveTab(eachHeader.name)}
+              href={`#${eachHeader.path}`}
+            >
+              {eachHeader.name}
+            </a>
           ))}
         </div>
       </nav>
+      {/* <div className="header-container">
+        <div className="header-new-tabs"> */}
+      {/* <input type="radio" id="radio-1" name="tabs" checked="" />
+          <a href="#About">
+          <label className="tab" for="radio-1">
+            About Me
+          </label>
+          </a> */}
+      {/* {headerList.map((eachHeader) => (
+            <>
+              <input type="radio" id={eachHeader.for} name="tabs" />
+              <label className="tab" for={eachHeader.for}>
+                <a href={`#${eachHeader.path}`}>{eachHeader.name}</a>
+              </label>
+            </>
+          ))}
+          <span className="glider"></span>
+        </div>
+      </div> */}
+
       <div className="mobile-main-nav-div" ref={scope}>
         <nav className="mobile-nav-menu">
           {headerList.map((eachHeader) => (

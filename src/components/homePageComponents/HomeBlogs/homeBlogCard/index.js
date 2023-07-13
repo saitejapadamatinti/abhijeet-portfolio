@@ -19,7 +19,7 @@ const BlogCard = ({ blogData }) => {
   const blogMonth = getMonthName(blogMonthnumber);
 
   return (
-    <div className="home-blog-card-main-div">
+    <div className="home-blog-card-main-div shadow">
       <div className="home-blog-card-image-div">
         <img
           className="home-blog-card-image"

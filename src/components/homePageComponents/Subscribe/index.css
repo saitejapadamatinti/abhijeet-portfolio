@@ -1,6 +1,6 @@
 .subscribe-card-background-image-div {
   background-image: url("../../../../public/images/subscribe-bg.png");
-  /* height: 543px; */
+  height: 85vh;
   display: flex;
   flex-direction: column;
   justify-content: center;

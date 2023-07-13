@@ -95,14 +95,15 @@
   box-shadow: 0px 16px 20px 0px rgba(0, 0, 0, 0.25);
 }
 .user-images-div {
-  background-image: url("../../../../public/images/user-about-card.png");
-  height: 408px;
+  background-image: url("../../../../public/images/user-about-card.jpg");
+  height: 338px;
   display: flex;
   justify-content: center;
   align-items: center;
   border-top-left-radius: 100px;
   border-top-right-radius: 100px;
   background-position: bottom;
+  bottom: 50px;
 }
 
 /* height 276px
@@ -119,9 +120,10 @@ width : 90%
   justify-content: center;
   align-items: center;
   text-align: center;
-  gap: 20px;
+  gap: 30px;
   margin: 40px;
-  margin-top: 0px;
+  margin-top: 20px;
+  
 }
 .about-icons-div {
   display: flex;
@@ -144,6 +146,9 @@ width : 90%
 }
 .about-section-content-mobile p{
     line-height: 24px;
+}
+.about-user-image-person{
+    width: 170px;
 }
 
 /* about section css from laptop */
@@ -206,6 +211,7 @@ width : 90%
   }
   .about-card-user-box {
     width: 80%;
+    height: 595px;
   }
   .about-section-content p {
     font-size: 18px;
@@ -219,4 +225,9 @@ width : 90%
   .about-section-content p{
     line-height: 30px;
 }
+}
+@media screen and (max-width : 991px) {
+    .about-card-user-box{
+        width: 401px;
+    }
 }

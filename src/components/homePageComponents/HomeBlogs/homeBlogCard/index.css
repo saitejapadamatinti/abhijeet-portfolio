@@ -4,15 +4,9 @@
   align-items: center;
   border-radius: 34px;
   background-color: #f9f9f9;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
-    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
   height: 496px;
-  transition: all 0.4s linear;
 }
-.home-blog-card-main-div:hover {
-  box-shadow: 0px 16px 20px 0px rgba(0, 0, 0, 0.25);
-  transition: all 0.4s linear;
-}
+
 .home-blog-card-content-container {
   display: flex;
   flex-direction: column;
@@ -38,13 +32,12 @@
   font-family: Montserrat;
   font-style: normal;
   font-weight: 800;
- 
 }
-.home-blog-love-icon-span{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #F24E1E;
+.home-blog-love-icon-span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #f24e1e;
 }
 .home-blog-description-para {
   color: #343434;
@@ -111,7 +104,7 @@
     grid-template-columns: 1fr;
     gap: 40px;
   }
-  .home-blog-card-main-div{
+  .home-blog-card-main-div {
     display: grid;
     grid-template-columns: 4fr 8fr;
     height: 100%;
@@ -119,20 +112,18 @@
 }
 
 @media screen and (max-width: 576px) {
-  .home-blog-card-image-div{
+  .home-blog-card-image-div {
     height: 100%;
   }
-  .home-blog-card-image{
-    
+  .home-blog-card-image {
     border-radius: 8px;
   }
   .home-blog-card-heading-2 {
     font-size: 14px;
- 
     -webkit-line-clamp: 2;
-
+    margin-bottom: 6px;
   }
-  .home-blog-description-para{
+  .home-blog-description-para {
     font-size: 12px;
     line-height: 14px;
     -webkit-line-clamp: 2;
@@ -141,16 +132,16 @@
     height: auto;
     border-radius: 8px;
   }
-  .text-light-color{
+  .text-light-color {
     font-size: 10px;
   }
-  .home-blog-para-read-more-text{
+  .home-blog-para-read-more-text {
     font-size: 10px;
   }
-  .home-blog-card-content-container{
+  .home-blog-card-content-container {
     gap: 0px;
   }
-  .home-blog-card-content-container{
+  .home-blog-card-content-container {
     padding: 8px;
   }
 }

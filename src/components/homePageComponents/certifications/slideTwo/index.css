@@ -12,20 +12,25 @@
     background: #efefef;
     text-align: center;
   } */
-  .certificate-card-main-grid {
-    display: flex;
-    flex-direction: column;
-    height: 570px;
-    flex-wrap: wrap;
-    gap: 20px;
-    overflow: auto;
-    padding: 20px;
+  .sides-main-slide-div button::before{
+    color: rgb(48, 48, 48);
   }
+  .sides-main-slide-div ul{
+    bottom: -37px;
+  }
+.certificate-card-main-grid {
+  display: flex;
+  flex-direction: column;
+  height: 570px;
+  flex-wrap: wrap;
+  gap: 20px;
+  overflow: auto;
+  padding: 20px;
+}
 .certificate-slide-div {
   display: flex;
   flex-direction: column;
   height: 600px;
-  
 }
 .certificate-card-main-div {
   width: 650px !important;
@@ -35,8 +40,8 @@
   background: #fff;
   align-items: center;
   padding: 24px;
-   /* box-shadow: 0px 16px 20px 0px rgba(0, 0, 0, 0.25); */
-height: 157px;
+  /* box-shadow: 0px 16px 20px 0px rgba(0, 0, 0, 0.25); */
+  height: 157px;
 }
 .certificate-imag-div {
   width: 160px;
@@ -46,7 +51,7 @@ height: 157px;
 .certificate-imag-div img {
   width: 100%;
 }
-.certificate-card-content-box{
+.certificate-card-content-box {
   display: flex;
   flex-direction: column;
   gap: 5px;
@@ -76,17 +81,28 @@ height: 157px;
   line-height: normal;
 }
 
+.cetificate-div-slider {
+  display: flex !important;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
 
 
+@media screen and (max-width: 991px) {
+    .profession-main-div{
+        padding-bottom: 30px;
+    }
+}
 
-@media screen and (max-width : 576px) {
-  .certificate-card-main-grid{
+@media screen and (max-width: 576px) {
+  .certificate-card-main-grid {
     height: 474px;
   }
-  .certificate-imag-div{
+  .certificate-imag-div {
     width: 90px;
   }
-  .certificate-card-main-div{
+  .certificate-card-main-div {
     height: 124px;
     width: 100% !important;
     padding: 14px;
@@ -96,10 +112,13 @@ height: 157px;
   .certificate-card-content-box h1 {
     font-size: 14px;
   }
-  .certificate-card-content-box p{
+  .certificate-card-content-box p {
     font-size: 12px;
   }
-  .certificate-card-content-box span{
+  .certificate-card-content-box span {
     font-size: 12px;
+  }
+  .profession-main-div{
+    padding-bottom: 30px;
   }
 }

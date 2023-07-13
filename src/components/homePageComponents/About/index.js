@@ -19,7 +19,6 @@ const AboutSection = () => {
               src="/images/about-user-image.png"
             />
           </div>
-
           <div className="about-images-container-content-div">
             <h2>Abhijeet Patil</h2>
             <div className="about-icons-div">

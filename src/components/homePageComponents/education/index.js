@@ -47,7 +47,7 @@ const Education = ({ educationData }) => {
       </div>
 
       <div>
-        <div className="education-font-div">
+        <div className="education-font-div ">
           <h3 className="education-head-1">{educationData.univercityName}</h3>
           <div>
             <h3 className="education-head-2">{educationData.course}</h3>
