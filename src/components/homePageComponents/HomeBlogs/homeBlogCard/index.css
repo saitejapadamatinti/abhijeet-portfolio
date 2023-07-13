@@ -128,10 +128,14 @@
   }
   .home-blog-card-heading-2 {
     font-size: 14px;
+ 
+    -webkit-line-clamp: 2;
+
   }
   .home-blog-description-para{
     font-size: 12px;
     line-height: 14px;
+    -webkit-line-clamp: 2;
   }
   .home-blog-card-main-div {
     height: auto;
