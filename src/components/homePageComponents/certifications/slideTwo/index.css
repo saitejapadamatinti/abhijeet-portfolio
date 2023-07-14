@@ -13,7 +13,11 @@
     text-align: center;
   } */
   .sides-main-slide-div button::before{
+    font-size: 30px;
     color: rgb(48, 48, 48);
+  }
+  .sides-main-slide-div button:hover{
+    color: red !important;
   }
   .sides-main-slide-div ul{
     bottom: -37px;

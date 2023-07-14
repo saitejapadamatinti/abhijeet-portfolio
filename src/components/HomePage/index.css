@@ -45,14 +45,13 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  gap: 40px;
+  gap: 10px;
 }
 .home-banner-image-icon-1 {
   /* position: absolute; */
 }
 .home-banner-image-icon {
-  
-  animation: animName 5s linear infinite;
+  animation: animName 7s linear infinite;
   position: absolute;
   top: 0;
   min-width: 452px !important;
