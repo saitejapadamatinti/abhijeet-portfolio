@@ -39,10 +39,8 @@ const BlogCard = ({ blogData }) => {
             <span>
               <BsDot className="home-blog-card-dot-icon" />
             </span>
-            <span className="home-blog-love-icon-span">
-              <AiFillHeart className="home-blog-card-heart-icon" />
-            </span>
-            <span className=" text-light-color">{blogData.likes}</span>
+
+            <span className=" text-light-color">3 min read</span>
           </div>
           <Link
             className="home-blog-para-read-more-text-link"

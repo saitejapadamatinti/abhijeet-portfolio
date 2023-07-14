@@ -19,7 +19,7 @@ const SubscribeSection = (e) => {
   return (
     <div id="Blogs" className="main-width-container">
       <div className="middle-width-container">
-        <div>
+        <div className="sebscribe-card-main-flex-div">
           <div className="subscribe-card-background-image-div">
             <h1>Subscribe to Newsletter</h1>
             <p>
@@ -28,14 +28,14 @@ const SubscribeSection = (e) => {
             </p>
             <form
               onSubmit={(e) => handlerSendButton(e)}
-              className="subscribe-input-class-div"
+              className="subscribe-input-class-div shadow"
             >
               <input
                 value={inputEmail}
                 type="email"
                 onChange={(e) => setInputEmail(e.target.value)}
                 placeholder="Enter Email"
-                className="subscribe-input-class"
+                className="subscribe-input-class "
               />
               <button type="submit">
                 <IoMdSend className="subscribe-input-send-icon" />

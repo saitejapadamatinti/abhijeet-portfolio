@@ -4,7 +4,7 @@
   margin-bottom: 20px;
 }
 .home-banner-image-main-div {
-  /* position: relative; */
+  position: relative;
 }
 .home-banner-img-outline {
   width: 330px;
@@ -14,6 +14,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: 1s;
+}
+.hello-hand-icon {
+  -webkit-transition: -webkit-transform 0.2s;
+}
+.hello-hand-icon:hover {
+  transform: scale(1);
+  -webkit-transform: rotate(90deg) translateZ(0);
 }
 .home-banner-img-outline-2 {
   width: 280px;
@@ -29,6 +37,7 @@
   height: 200px;
   border-radius: 100%;
   border: 30px solid rgba(217, 232, 255, 1);
+  z-index: 5;
 }
 .home-banner-div {
   display: flex;
@@ -40,6 +49,54 @@
 }
 .home-banner-image-icon-1 {
   /* position: absolute; */
+}
+.home-banner-image-icon {
+  
+  animation: animName 5s linear infinite;
+  position: absolute;
+  top: 0;
+  min-width: 452px !important;
+  height: 452px;
+}
+@keyframes animName {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+.home-svg-1 {
+  position: absolute;
+  top: -17px;
+  left: 81px;
+}
+.home-svg-2 {
+  position: absolute;
+  top: 21px;
+  left: 327px;
+}
+.home-svg-3 {
+  position: absolute;
+  top: 196px;
+  right: -30px;
+}
+.home-svg-4 {
+  position: absolute;
+  /* top: -24px; */
+  left: 290px;
+  bottom: 12px;
+}
+.home-svg-5 {
+  position: absolute;
+  /* top: -24px; */
+  left: 61px;
+  bottom: 25px;
+}
+.home-svg-6 {
+  position: absolute;
+  top: 186px;
+  left: -18px;
 }
 .home-banner-heading {
   font-size: 30px;
@@ -126,9 +183,9 @@
   gap: 50px;
 }
 
-@media screen and (max-width : 576px) { 
-  .education-div-main-component{
-    grid-template-columns: 1fr ;
+@media screen and (max-width: 576px) {
+  .education-div-main-component {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -214,7 +271,7 @@
   flex: 1 1 100%;
   color: #424242;
   font-family: Montserrat;
-  font-size: 40px;
+  font-size: 74px;
   font-style: normal;
   font-weight: 800;
   line-height: normal;

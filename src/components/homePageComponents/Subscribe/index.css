@@ -1,6 +1,7 @@
 .subscribe-card-background-image-div {
   background-image: url("../../../../public/images/subscribe-bg.png");
-  height: 85vh;
+  height: 543px;
+  width: 1244px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -11,10 +12,13 @@
   background-repeat: no-repeat;
   gap: 30px;
   background-size: cover;
-  border-radius: 100px;
+  border-radius: 40px;
   padding: 100px 0px;
 }
-
+.sebscribe-card-main-flex-div {
+  display: flex;
+  justify-content: center;
+}
 .subscribe-card-background-image-div h1 {
   color: #fff;
   font-family: Montserrat;
@@ -34,8 +38,8 @@
   width: 80%;
 }
 .subscribe-input-class-div {
-  width: 50%;
-  height: 60px;
+  width: 725px;
+  height: 89px;
   display: flex;
   background-color: #fff;
   align-items: center;
@@ -49,9 +53,9 @@
   padding-left: 20px;
   font-weight: 600;
 }
-.subscribe-input-class-div button{
-    border: none;
-    background-color: transparent;
+.subscribe-input-class-div button {
+  border: none;
+  background-color: transparent;
 }
 .subscribe-input-send-icon {
   color: #7773ae;
@@ -59,31 +63,50 @@
   margin-right: 10px;
 }
 
-@media screen and (max-width : 576px) {
-    .subscribe-card-background-image-div{
-        padding: 40px 0px;
-        border-radius: 30px;
-        gap: 12px;
-        height: 224px;
-    }
-    .subscribe-card-background-image-div h1{
-        font-size: 20px;
-    }
-    .subscribe-card-background-image-div p{
-        font-size: 14px;
-        width: 80%;
-    }
-    .subscribe-input-class-div{
-        width: 80%;
-    }
-    .subscribe-input-class-div{
-        height: 40px;
-    }
-    .subscribe-input-class{
-        font-size: 16px;
-        font-weight: normal;
-    }
-    .subscribe-input-send-icon{
-        font-size: 22px;
-    }
+@media screen and (max-width: 991px) {
+  .subscribe-input-class-div {
+    width: 70%;
+  }
+  .subscribe-card-background-image-div {
+    height: 470px;
+    border-radius: 24px;
+  }
+  .subscribe-card-background-image-div h1 {
+    font-size: 36px;
+  }
+  .subscribe-card-background-image-div p {
+    font-size: 26px;
+  }
+  .subscribe-card-background-image-div p {
+    height: 76px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .subscribe-card-background-image-div {
+    padding: 40px 0px;
+    border-radius: 10px;
+    gap: 12px;
+    height: 134px;
+  }
+  .subscribe-card-background-image-div h1 {
+    font-size: 16px;
+  }
+  .subscribe-card-background-image-div p {
+    font-size: 10px;
+    width: 80%;
+  }
+  .subscribe-input-class-div {
+    width: 207px;
+    height: 28.3px;
+  }
+  .subscribe-input-class-div {
+    height: 40px;
+  }
+  .subscribe-input-class {
+    font-size: 16px;
+    font-weight: normal;
+  }
+  .subscribe-input-send-icon {
+    font-size: 22px;
+  }
 }
