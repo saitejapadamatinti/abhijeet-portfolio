@@ -64,6 +64,7 @@
         padding: 40px 0px;
         border-radius: 30px;
         gap: 12px;
+        height: 224px;
     }
     .subscribe-card-background-image-div h1{
         font-size: 20px;

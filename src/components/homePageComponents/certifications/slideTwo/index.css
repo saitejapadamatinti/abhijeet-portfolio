@@ -91,7 +91,7 @@
 
 @media screen and (max-width: 991px) {
     .profession-main-div{
-        padding-bottom: 30px;
+        padding-bottom: 44px;
     }
 }
 
@@ -119,6 +119,6 @@
     font-size: 12px;
   }
   .profession-main-div{
-    padding-bottom: 30px;
+    padding-bottom: 44px;
   }
 }

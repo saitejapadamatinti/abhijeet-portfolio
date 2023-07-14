@@ -88,12 +88,6 @@
   line-height: 150.9%;
 }
 
-.about-card-user-box {
-  width: 100%;
-  /* background-color: rgb(255, 255, 255); */
-  border-radius: 100px;
-  box-shadow: 0px 16px 20px 0px rgba(0, 0, 0, 0.25);
-}
 .user-images-div {
   background-image: url("../../../../public/images/user-about-card.jpg");
   height: 338px;
@@ -109,7 +103,11 @@
 /* height 276px
 width : 90%
 */
-
+.about-card-user-box {
+  /* background-color: rgb(255, 255, 255); */
+  border-radius: 100px;
+  box-shadow: 0px 16px 20px 0px rgba(0, 0, 0, 0.25);
+}
 .about-card-user-box-image {
   width: 100%;
   border-radius: 100px;
@@ -123,7 +121,6 @@ width : 90%
   gap: 30px;
   margin: 40px;
   margin-top: 20px;
-  
 }
 .about-icons-div {
   display: flex;
@@ -144,11 +141,11 @@ width : 90%
 .mobile-about-read-more {
   transition: all 0.5s linear;
 }
-.about-section-content-mobile p{
-    line-height: 24px;
+.about-section-content-mobile p {
+  line-height: 24px;
 }
-.about-user-image-person{
-    width: 170px;
+.about-user-image-person {
+  width: 170px;
 }
 
 /* about section css from laptop */
@@ -210,7 +207,7 @@ width : 90%
     border-radius: 120px;
   }
   .about-card-user-box {
-    width: 80%;
+    width: 80% !important;
     height: 595px;
   }
   .about-section-content p {
@@ -222,12 +219,18 @@ width : 90%
   .about-section-content {
     display: block;
   }
-  .about-section-content p{
+  .about-section-content p {
     line-height: 30px;
+  }
 }
+@media screen and (max-width: 991px) {
+  .about-card-user-box {
+    width: 401px;
+  }
 }
-@media screen and (max-width : 991px) {
-    .about-card-user-box{
-        width: 401px;
-    }
+
+@media screen and (max-width: 576px) {
+  .about-card-user-box {
+    width: 100%;
+  }
 }

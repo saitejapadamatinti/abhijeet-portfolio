@@ -116,7 +116,7 @@ export default function Navebar() {
     }, TIMEOUT_DELAY);
   });
 
-  const shadowStyle = shouldShowShadow ? "shadow" : "";
+  const shadowStyle = shouldShowShadow ? "" : "";
   const hiddenStyle = shouldHideHeader ? "hidden" : "";
   //   header aimation----------------
 
