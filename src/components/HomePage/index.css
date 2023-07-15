@@ -51,7 +51,7 @@
   /* position: absolute; */
 }
 .home-banner-image-icon {
-  animation: animName 12s linear infinite;
+  animation: animName 30s linear infinite;
   position: absolute;
   top: 0;
   min-width: 452px !important;
@@ -360,112 +360,9 @@
 }
 
 /* skill card div */
-.skill-card-div {
-  display: flex;
-  gap: 50px;
-  width: 100%;
-}
-
-#to-left-scroll-container {
-  margin-bottom: 50px;
-  border-radius: 5px;
-  overflow: hidden;
-}
-
-#to-left-scroll-text {
-  /* animation properties */
-  -moz-transform: translateX(100%);
-  -webkit-transform: translateX(100%);
-  transform: translateX(100%);
-
-  -moz-animation: to-left-my-animation 30s linear infinite;
-  -webkit-animation: to-left-my-animation 30s linear infinite;
-  animation: to-left-my-animation 30s linear infinite;
-}
-
-/* for Firefox */
-@-moz-keyframes to-left-my-animation {
-  from {
-    -moz-transform: translateX(140%);
-  }
-  to {
-    -moz-transform: translateX(-140%);
-  }
-}
-
-/* for Chrome */
-@-webkit-keyframes to-left-my-animation {
-  from {
-    -webkit-transform: translateX(140%);
-  }
-  to {
-    -webkit-transform: translateX(-140%);
-  }
-}
-
-@keyframes to-left-my-animation {
-  from {
-    -moz-transform: translateX(140%);
-    -webkit-transform: translateX(140%);
-    transform: translateX(140%);
-  }
-  to {
-    -moz-transform: translateX(-140%);
-    -webkit-transform: translateX(-140%);
-    transform: translateX(-140%);
-  }
-}
-
-#to-right-scroll-container {
-  border-radius: 5px;
-  overflow: hidden;
-  margin-bottom: 60px;
-}
-
-#to-right-scroll-text {
-  text-align: right;
-
-  /* animation properties */
-  -moz-transform: translateX(-100%);
-  -webkit-transform: translateX(-100%);
-  transform: translateX(-100%);
-
-  -moz-animation: my-animation 30s linear infinite;
-  -webkit-animation: my-animation 30s linear infinite;
-  animation: my-animation 30s linear infinite;
-}
-
-/* for Firefox */
-@-moz-keyframes my-animation {
-  from {
-    -moz-transform: translateX(-140%);
-  }
-  to {
-    -moz-transform: translateX(100%);
-  }
-}
-
-/* for Chrome */
-@-webkit-keyframes my-animation {
-  from {
-    -webkit-transform: translateX(-140%);
-  }
-  to {
-    -webkit-transform: translateX(100%);
-  }
-}
-
-@keyframes my-animation {
-  from {
-    -moz-transform: translateX(-140%);
-    -webkit-transform: translateX(-140%);
-    transform: translateX(-140%);
-  }
-  to {
-    -moz-transform: translateX(100%);
-    -webkit-transform: translateX(100%);
-    transform: translateX(100%);
-  }
+.skill-cards-div-flex{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 /* ---------------------------------------------------------------- */
