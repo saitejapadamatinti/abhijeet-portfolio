@@ -3,7 +3,7 @@ import "./index.css";
 import HomeSectionNumber from "../homePageComponents/homeSectionNumbers";
 import ProfessionalTabCard from "../homePageComponents/professionalSection/professionalTabCard";
 import ProfessionalSection from "../homePageComponents/professionalSection/professionalSection";
-import { BiDownload } from "react-icons/bi";
+import { BiDownload, BiSolidUserRectangle } from "react-icons/bi";
 import AccordionComponent from "../homePageComponents/Accordion";
 import SkillCard from "../homePageComponents/skillsCard";
 import Education from "../homePageComponents/education";
@@ -14,6 +14,7 @@ import ScrollTracker from "../navbar/nav";
 import AboutSection from "../homePageComponents/About";
 import SubscribeSection from "../homePageComponents/Subscribe";
 import { motion } from "framer-motion";
+import Footer from "react-multi-date-picker/plugins/range_picker_footer";
 
 const skills = [
   {
@@ -49,8 +50,8 @@ const skills = [
   skillName : "Market Research",
   },
   {
-    skillIcon : <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44" fill="none">
-    <path d="M21.9999 4.58325C21.9999 4.58325 30.2499 8.32325 30.2499 23.8333C30.2499 28.3983 28.3432 34.0449 27.3166 36.6666H16.6833C15.6566 34.0449 13.7499 28.3983 13.7499 23.8333C13.7499 8.32325 21.9999 4.58325 21.9999 4.58325ZM25.6666 20.1666C25.6666 18.1499 24.0166 16.4999 21.9999 16.4999C19.9832 16.4999 18.3333 18.1499 18.3333 20.1666C18.3333 22.1833 19.9832 23.8333 21.9999 23.8333C24.0166 23.8333 25.6666 22.1833 25.6666 20.1666ZM14.0983 37.6199C13.2183 35.3649 11.3116 29.9749 11.0366 25.0249L8.96492 26.3999C7.93825 27.0966 7.33325 28.2333 7.33325 29.4616V40.3333L14.0983 37.6199ZM36.6666 40.3333V29.4616C36.6666 28.2333 36.0616 27.0966 35.0349 26.4183L32.9632 25.0433C32.6882 29.9749 30.7632 35.3833 29.9016 37.6383L36.6666 40.3333Z" fill="#545454"/>
+    skillIcon :<svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 33 33" fill="none">
+    <path d="M2.75001 28.875C2.36042 28.875 2.03363 28.743 1.76963 28.479C1.50563 28.215 1.37409 27.8887 1.375 27.5C1.375 27.1104 1.507 26.7836 1.771 26.5196C2.035 26.2556 2.36134 26.1241 2.75001 26.125H30.25C30.6396 26.125 30.9664 26.257 31.2304 26.521C31.4944 26.785 31.6259 27.1113 31.625 27.5C31.625 27.8896 31.493 28.2164 31.229 28.4804C30.965 28.7444 30.6387 28.8759 30.25 28.875H2.75001ZM5.50001 24.75C4.74376 24.75 4.09613 24.4805 3.55713 23.9415C3.01813 23.4025 2.74909 22.7553 2.75001 22V6.875C2.75001 6.11875 3.01951 5.47113 3.55851 4.93213C4.09751 4.39313 4.74467 4.12409 5.50001 4.125H27.5C28.2563 4.125 28.9039 4.3945 29.4429 4.9335C29.9819 5.4725 30.2509 6.11967 30.25 6.875V22C30.25 22.7563 29.9805 23.4039 29.4415 23.9429C28.9025 24.4819 28.2553 24.7509 27.5 24.75H5.50001Z" fill="#545454"/>
   </svg>,
   skillName : "Digital Marketing",
   },
@@ -315,7 +316,7 @@ const HomePage = () => {
                 <button className="outline-button">
                   <BiDownload className="download-button-icon" /> Resume
                 </button>
-                <button className="color-button">Resume</button>
+                <button className="color-button"><BiSolidUserRectangle className="download-button-icon" /> Contact Me</button>
               </div>
             </motion.div>
           </div>
@@ -395,6 +396,9 @@ const HomePage = () => {
       </div>
       <div>
         <SubscribeSection />
+      </div>
+      <div>
+        {/* <Footer /> */}
       </div>
     </>
   );

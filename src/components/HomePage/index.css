@@ -46,6 +46,7 @@
   align-items: center;
   text-align: center;
   gap: 10px;
+  
 }
 .home-banner-image-icon-1 {
   /* position: absolute; */
@@ -54,8 +55,6 @@
   animation: animName 30s linear infinite;
   position: absolute;
   top: 0;
-  min-width: 452px !important;
-  height: 452px;
 }
 @keyframes animName {
   0% {
@@ -117,151 +116,6 @@
 .download-button-icon {
   font-size: 34px;
   margin-right: 10px;
-}
-
-/* profession main div */
-.profession-main-div {
-  background-color: #ebebeb;
-  border-radius: 30px;
-  display: flex;
-  justify-content: center;
-  padding: 14px 0px;
-  width: 100%;
-  /* height: 100vh; */
-}
-
-@media screen and (min-width: 1024px) {
-  .home-banner-img-outline {
-    width: 450px;
-    height: 450px;
-  }
-  .home-banner-img-outline-2 {
-    width: 370px;
-    height: 370px;
-  }
-  .home-banner-image {
-    width: 330px;
-    height: 330px;
-  }
-  .home-banner-div {
-    text-align: left;
-    height: 100vh;
-  }
-  .home-banner-div {
-    flex-direction: row;
-  }
-  .home-banner-heading-div {
-    order: -1;
-    width: 60%;
-  }
-  .home-banner-heading {
-    font-size: 80px;
-    font-style: normal;
-    font-weight: 800;
-  }
-  .home-banner-para {
-    font-size: 32px;
-  }
-  .home-banner-buttons-div {
-    justify-content: flex-start;
-    gap: 60px;
-  }
-
-  /* profession section */
-  .profession-main-div {
-    border-radius: 77px;
-    height: 100vh;
-  }
-}
-
-/* ------------------------------------- education section ------------------------------------- */
-.education-div-main-component {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-
-  gap: 50px;
-}
-
-@media screen and (max-width: 576px) {
-  .education-div-main-component {
-    grid-template-columns: 1fr;
-  }
-}
-
-.carousel {
-  position: relative;
-  width: 100%;
-  text-align: center;
-  font-size: 30px;
-  line-height: 45px;
-  height: 45px;
-}
-.carousel .pre {
-  position: absolute;
-  top: 0;
-  right: 56%;
-  height: 45px;
-  text-shadow: 2px 2px 2px #e67e22;
-}
-.carousel .change_outer {
-  top: 0;
-  left: 46%;
-  text-align: left;
-  height: 45px;
-  overflow: hidden;
-}
-.carousel .change_outer .change_inner {
-  -webkit-animation: rotate 8s ease-in-out infinite;
-  animation: rotate 8s ease-in-out infinite;
-}
-.carousel .change_outer .element {
-  display: block;
-  font-weight: 700;
-  text-shadow: 2px 2px 2px #e67e22;
-}
-
-@-webkit-keyframes rotate {
-  0%,
-  20% {
-    transform: translateY(0);
-  }
-  25%,
-  45% {
-    transform: translateY(-45px);
-  }
-  50%,
-  70% {
-    transform: translateY(-90px);
-  }
-  75%,
-  95% {
-    transform: translateY(-135px);
-  }
-  100% {
-    transform: translateY(-180px);
-  }
-}
-
-@keyframes rotate {
-  0%,
-  20% {
-    transform: translateY(0);
-  }
-  25%,
-  45% {
-    transform: translateY(-45px);
-  }
-  50%,
-  70% {
-    transform: translateY(-90px);
-  }
-  75%,
-  95% {
-    transform: translateY(-135px);
-  }
-  100% {
-    transform: translateY(-180px);
-  }
 }
 
 /* scrolling style */
@@ -359,10 +213,213 @@
   }
 }
 
+
+/* profession main div */
+.profession-main-div {
+  background-color: #ebebeb;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  padding: 14px 0px;
+  width: 100%;
+  /* height: 100vh; */
+}
+
+@media screen and (min-width: 1024px) {
+  .home-banner-img-outline {
+    width: 450px;
+    height: 450px;
+  }
+  .home-banner-img-outline-2 {
+    width: 370px;
+    height: 370px;
+  }
+  .home-banner-image {
+    width: 330px;
+    height: 330px;
+  }
+  .home-banner-div {
+    text-align: left;
+    height: 100vh;
+  }
+  .home-banner-div {
+    flex-direction: row;
+  }
+  .home-banner-heading-div {
+    order: -1;
+    width: 60%;
+  }
+  .home-banner-heading {
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 800;
+  }
+  .home-banner-para {
+    font-size: 25px;
+  }
+  .home-banner-buttons-div {
+    justify-content: flex-start;
+    gap: 60px;
+  }
+
+  .home-banner-image-icon {
+    width: 452px;
+    height: 452px;
+  }
+  .ms-header__title{
+    text-align: start !important;
+  }
+  
+
+  /* profession section */
+  .profession-main-div {
+    border-radius: 77px;
+    height: 100vh;
+  }
+}
+
+@media screen and (max-width:1023px) {
+  .home-banner-image-icon{
+    width: 332px;
+  height: 332px ;
+  }
+  .home-svg-4{
+    left: 231px;
+    width: 57px;
+  }
+  .home-banner-div{
+    padding-top: 60px;
+  }
+  .hello-hand-icon{
+    width: 50px;
+    height: 35px;
+  }
+  .ms-header__title{
+    font-size: 45px;
+    text-align: center;
+  }
+  .hello-hand-icon{
+    height: 50px;
+  }
+}
+
+@media screen and (max-width:576px) {
+  .ms-header__title{
+    font-size: 30px;
+  }
+}
+
+/* ------------------------------------- education section ------------------------------------- */
+.education-div-main-component {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  gap: 50px;
+}
+
+@media screen and (max-width: 576px) {
+  .education-div-main-component {
+    grid-template-columns: 1fr;
+  }
+}
+
+.carousel {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  font-size: 30px;
+  line-height: 45px;
+  height: 45px;
+}
+.carousel .pre {
+  position: absolute;
+  top: 0;
+  right: 56%;
+  height: 45px;
+  text-shadow: 2px 2px 2px #e67e22;
+}
+.carousel .change_outer {
+  top: 0;
+  left: 46%;
+  text-align: left;
+  height: 45px;
+  overflow: hidden;
+}
+.carousel .change_outer .change_inner {
+  -webkit-animation: rotate 8s ease-in-out infinite;
+  animation: rotate 8s ease-in-out infinite;
+}
+.carousel .change_outer .element {
+  display: block;
+  font-weight: 700;
+  text-shadow: 2px 2px 2px #e67e22;
+}
+
+@-webkit-keyframes rotate {
+  0%,
+  20% {
+    transform: translateY(0);
+  }
+  25%,
+  45% {
+    transform: translateY(-45px);
+  }
+  50%,
+  70% {
+    transform: translateY(-90px);
+  }
+  75%,
+  95% {
+    transform: translateY(-135px);
+  }
+  100% {
+    transform: translateY(-180px);
+  }
+}
+
+@keyframes rotate {
+  0%,
+  20% {
+    transform: translateY(0);
+  }
+  25%,
+  45% {
+    transform: translateY(-45px);
+  }
+  50%,
+  70% {
+    transform: translateY(-90px);
+  }
+  75%,
+  95% {
+    transform: translateY(-135px);
+  }
+  100% {
+    transform: translateY(-180px);
+  }
+}
+
+
+
 /* skill card div */
 .skill-cards-div-flex{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  row-gap: 46px;
+}
+
+@media screen and (max-width:992px) {
+  .skill-cards-div-flex{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width:576px) {
+  .skill-cards-div-flex{
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+  }
 }
 
 /* ---------------------------------------------------------------- */

@@ -121,18 +121,23 @@
 }
 .outline-button {
   display: flex;
-  width: 157px;
-  height: 50px;
+  width: 201px;
+  height: 62px;
   padding: 10px;
   justify-content: center;
   align-items: center;
+  flex-shrink: 0;
   border-radius: 52px;
   border: 1px solid #7d66bb;
-  background-color: #fff;
-  color: #7d66bb;
-  font-size: 16px;
-  font-weight: 500;
+  background: #fff;
   transition: all 0.6s linear;
+  color: #7d66bb;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
 .outline-button:hover {
   background: #f5f5f5;
@@ -149,7 +154,7 @@
   justify-content: center;
   align-items: center;
   border-radius: 52px;
-  border: 1px solid #7D66BB;
+  border: 1px solid #7d66bb;
   background-color: #fff;
   color: #7d66bb;
   font-size: 16px;
@@ -158,7 +163,7 @@
   cursor: pointer;
 }
 .outline-button-2:hover {
-  background: #7D66BB;
+  background: #7d66bb;
   color: #fff;
   box-shadow: 0px 16px 20px 0px rgba(0, 0, 0, 0.25);
   outline: none;
@@ -167,19 +172,23 @@
 }
 .color-button {
   display: flex;
-  width: 157px;
-  height: 50px;
+  width: 201px;
+  height: 64px;
   padding: 10px;
   justify-content: center;
-  outline: none;
-  border: none;
   align-items: center;
   flex-shrink: 0;
   border-radius: 52px;
-  background-color: #9981d5;
+  background: #9981d5;
   color: #fff;
+  text-align: center;
+  font-family: Montserrat;
   font-size: 20px;
+  font-style: normal;
   font-weight: 500;
+  line-height: normal;
+  outline: none;
+  border: none;
   transition: all 0.6s linear;
 }
 .color-button:hover {
@@ -188,15 +197,17 @@
   transition: all 0.6s linear;
 }
 
-.shadow{
+.shadow {
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   transition: all 0.4s linear;
 }
-.shadow:hover{
+.shadow:hover {
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   transition: all 0.4s linear;
   transition: all 0.4s linear;
-  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
+    rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
+    rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
 }
 
 @media screen and (max-width: 576px) {
@@ -210,8 +221,11 @@
   .primary-para {
     font-size: 14px;
   }
-  .download-button-icon{
-    font-size: 23px !important;
+  .download-button-icon {
+    font-size: 38px !important;
+  }
+  .color-button {
+    font-size: 16px;
   }
 }
 @media screen and (max-width: 1023px) {
@@ -220,7 +234,7 @@
   }
 }
 @media screen and (min-width: 1024px) {
-  .height-100vh{
+  .height-100vh {
     height: 100vh;
     display: flex;
     align-items: center;
@@ -249,7 +263,7 @@
     width: 257px;
     height: 79px;
   }
-  
+
   .color-button {
     font-size: 24px;
     width: 257px;
