@@ -1,4 +1,5 @@
 import React from "react";
+import "./styles.css";
 
 const Path = (props) => (
   <path
@@ -11,25 +12,10 @@ const Path = (props) => (
 );
 
 export const MenuToggle = ({ toggle }) => (
-  <button className="mobile-menu-button" onClick={toggle}>
-    <svg width="23" height="18" viewBox="0 0 23 18">
-      <Path
-        d="M 2 2.5 L 20 2.5"
-        className="top"
-        variants={{
-          closed: { d: "M 2 2.5 L 20 2.5" },
-          open: { d: "M 3 16.5 L 17 2.5" }
-        }}
-      />
-      <Path d="M 2 9.423 L 20 9.423" opacity="1" className="middle" />
-      <Path
-        d="M 2 16.346 L 20 16.346"
-        className="bottom"
-        variants={{
-          closed: { d: "M 2 16.346 L 20 16.346" },
-          open: { d: "M 3 2.5 L 17 16.346" }
-        }}
-      />
+
+  < button className="mobile-menu-button" onClick={toggle} >
+    <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31" fill="none">
+      <path d="M5.32812 23.7344H25.6719M5.32812 15.9844H25.6719M5.32812 8.23438H25.6719" stroke="#5F4D8E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
     </svg>
-  </button>
+  </ button>
 );

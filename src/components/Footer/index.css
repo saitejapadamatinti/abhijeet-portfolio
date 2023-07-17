@@ -119,6 +119,20 @@
             display: block;
         }
 
+        .footer-copy-text {
+            width: 100vw;
+            color: #707070;
+            font-family: Montserrat;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 109.9%;
+            display: flex;
+            justify-content: end;
+            padding-right: 60px;
+            padding-top: 40px;
+        }
+
     }
 
     @media screen and (max-width : 576px) {
