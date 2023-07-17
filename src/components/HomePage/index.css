@@ -3,9 +3,11 @@
   justify-content: flex-end;
   margin-bottom: 20px;
 }
+
 .home-banner-image-main-div {
   position: relative;
 }
+
 .home-banner-img-outline {
   width: 330px;
   height: 330px;
@@ -16,13 +18,16 @@
   align-items: center;
   transition: 1s;
 }
+
 .hello-hand-icon {
   -webkit-transition: -webkit-transform 0.2s;
 }
+
 .hello-hand-icon:hover {
   transform: scale(1);
   -webkit-transform: rotate(90deg) translateZ(0);
 }
+
 .home-banner-img-outline-2 {
   width: 280px;
   height: 280px;
@@ -32,6 +37,7 @@
   justify-content: center;
   align-items: center;
 }
+
 .home-banner-image {
   width: 200px;
   height: 200px;
@@ -39,6 +45,7 @@
   border: 30px solid rgba(217, 232, 255, 1);
   z-index: 5;
 }
+
 .home-banner-div {
   display: flex;
   flex-direction: column;
@@ -46,59 +53,71 @@
   align-items: center;
   text-align: center;
   gap: 10px;
-  
+
 }
+
 .home-banner-image-icon-1 {
   /* position: absolute; */
 }
+
 .home-banner-image-icon {
   animation: animName 30s linear infinite;
   position: absolute;
   top: 0;
 }
+
 @keyframes animName {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(-360deg);
   }
 }
+
 .home-svg-1 {
   position: absolute;
   top: -17px;
   left: 81px;
 }
+
 .home-svg-2 {
   position: absolute;
   top: 21px;
   left: 327px;
 }
+
 .home-svg-3 {
   position: absolute;
   top: 196px;
   right: -30px;
 }
+
 .home-svg-4 {
   position: absolute;
   /* top: -24px; */
   left: 290px;
   bottom: 12px;
 }
+
 .home-svg-5 {
   position: absolute;
   /* top: -24px; */
   left: 61px;
   bottom: 25px;
 }
+
 .home-svg-6 {
   position: absolute;
   top: 186px;
   left: -18px;
 }
+
 .home-banner-heading {
   font-size: 30px;
 }
+
 .home-banner-para {
   color: #d42924;
   font-size: 16px;
@@ -107,12 +126,14 @@
   font-weight: 400;
   margin: 20px 0px;
 }
+
 .home-banner-buttons-div {
   margin-top: 30px;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
+
 .download-button-icon {
   font-size: 34px;
   margin-right: 10px;
@@ -142,21 +163,27 @@
   mask-type: luminance;
   mask-mode: alpha;
 }
+
 .ms-slider-word-1 {
   color: #273cf4;
 }
+
 .ms-slider-word-2 {
   color: #9427f4;
 }
+
 .ms-slider-word-3 {
   color: #ffa500;
 }
+
 .ms-slider-word-3 {
   color: #ffa500;
 }
+
 .ms-slider-word-4 {
   color: red;
 }
+
 .ms-slider__words {
   display: inline-block;
   margin: 0;
@@ -171,6 +198,7 @@
   -webkit-animation-duration: 5s;
   animation-duration: 5s;
 }
+
 .ms-slider__word {
   display: block;
   line-height: 1.3em;
@@ -181,15 +209,19 @@
   0% {
     transform: translateY(0%);
   }
+
   20% {
     transform: translateY(-20%);
   }
+
   40% {
     transform: translateY(-40%);
   }
+
   60% {
     transform: translateY(-60%);
   }
+
   80% {
     transform: translateY(-80%);
   }
@@ -199,15 +231,19 @@
   0% {
     transform: translateY(0%);
   }
+
   20% {
     transform: translateY(-20%);
   }
+
   40% {
     transform: translateY(-40%);
   }
+
   60% {
     transform: translateY(-60%);
   }
+
   80% {
     transform: translateY(-80%);
   }
@@ -230,33 +266,41 @@
     width: 450px;
     height: 450px;
   }
+
   .home-banner-img-outline-2 {
     width: 370px;
     height: 370px;
   }
+
   .home-banner-image {
     width: 330px;
     height: 330px;
   }
+
   .home-banner-div {
     text-align: left;
     height: 100vh;
   }
+
   .home-banner-div {
     flex-direction: row;
   }
+
   .home-banner-heading-div {
     order: -1;
     width: 60%;
   }
+
   .home-banner-heading {
     font-size: 80px;
     font-style: normal;
     font-weight: 800;
   }
+
   .home-banner-para {
     font-size: 25px;
   }
+
   .home-banner-buttons-div {
     justify-content: flex-start;
     gap: 60px;
@@ -266,10 +310,11 @@
     width: 452px;
     height: 452px;
   }
-  .ms-header__title{
+
+  .ms-header__title {
     text-align: start !important;
   }
-  
+
 
   /* profession section */
   .profession-main-div {
@@ -279,32 +324,38 @@
 }
 
 @media screen and (max-width:1023px) {
-  .home-banner-image-icon{
+  .home-banner-image-icon {
     width: 332px;
-  height: 332px ;
+    height: 332px;
+    border-radius: 50%;
   }
-  .home-svg-4{
+
+  .home-svg-4 {
     left: 231px;
     width: 57px;
   }
-  .home-banner-div{
+
+  .home-banner-div {
     padding-top: 60px;
   }
-  .hello-hand-icon{
+
+  .hello-hand-icon {
     width: 50px;
     height: 35px;
   }
-  .ms-header__title{
+
+  .ms-header__title {
     font-size: 45px;
     text-align: center;
   }
-  .hello-hand-icon{
+
+  .hello-hand-icon {
     height: 50px;
   }
 }
 
 @media screen and (max-width:576px) {
-  .ms-header__title{
+  .ms-header__title {
     font-size: 30px;
   }
 }
@@ -331,6 +382,7 @@
   line-height: 45px;
   height: 45px;
 }
+
 .carousel .pre {
   position: absolute;
   top: 0;
@@ -338,6 +390,7 @@
   height: 45px;
   text-shadow: 2px 2px 2px #e67e22;
 }
+
 .carousel .change_outer {
   top: 0;
   left: 46%;
@@ -345,10 +398,12 @@
   height: 45px;
   overflow: hidden;
 }
+
 .carousel .change_outer .change_inner {
   -webkit-animation: rotate 8s ease-in-out infinite;
   animation: rotate 8s ease-in-out infinite;
 }
+
 .carousel .change_outer .element {
   display: block;
   font-weight: 700;
@@ -356,44 +411,54 @@
 }
 
 @-webkit-keyframes rotate {
+
   0%,
   20% {
     transform: translateY(0);
   }
+
   25%,
   45% {
     transform: translateY(-45px);
   }
+
   50%,
   70% {
     transform: translateY(-90px);
   }
+
   75%,
   95% {
     transform: translateY(-135px);
   }
+
   100% {
     transform: translateY(-180px);
   }
 }
 
 @keyframes rotate {
+
   0%,
   20% {
     transform: translateY(0);
   }
+
   25%,
   45% {
     transform: translateY(-45px);
   }
+
   50%,
   70% {
     transform: translateY(-90px);
   }
+
   75%,
   95% {
     transform: translateY(-135px);
   }
+
   100% {
     transform: translateY(-180px);
   }
@@ -402,7 +467,7 @@
 
 
 /* skill card div */
-.skill-cards-div-flex{
+.skill-cards-div-flex {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   justify-items: center;
@@ -410,13 +475,13 @@
 }
 
 @media screen and (max-width:992px) {
-  .skill-cards-div-flex{
+  .skill-cards-div-flex {
     grid-template-columns: 1fr 1fr;
   }
 }
 
 @media screen and (max-width:576px) {
-  .skill-cards-div-flex{
+  .skill-cards-div-flex {
     grid-template-columns: 1fr;
     row-gap: 20px;
   }
@@ -486,6 +551,7 @@ section {
   0% {
     transform: translateX(100%);
   }
+
   100% {
     transform: translateX(-100%);
   }
@@ -495,6 +561,7 @@ section {
   0% {
     transform: translateX(0);
   }
+
   100% {
     transform: translateX(-200%);
   }

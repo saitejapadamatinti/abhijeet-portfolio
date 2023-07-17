@@ -71,7 +71,11 @@ const Footer = () => {
               </ul>
             </div>
           </div>
+
+          <div>
+            <p className='footer-copy-text'>Copyright      2023 Abhijeet Patil</p></div>
         </div>
+
       </div>
 
       {/* mobile page */}
@@ -104,7 +108,7 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-            <hr />
+            <hr className='footer-hr-line-color' />
             <div className='footer-div-container'>
               <div className='ul-items-div footer-box-1'>
                 <b>Home</b>
@@ -135,7 +139,10 @@ const Footer = () => {
               </div>
             </div>
           </div>
-
+          <div className=''>
+            <hr className='footer-hr-line footer-hr-line-color' />
+            <p className='footer-copy-text'>Copyright      2023 Abhijeet Patil</p>
+          </div>
         </div>
       </div>
     </>
