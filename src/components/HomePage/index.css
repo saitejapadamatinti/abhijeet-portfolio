@@ -29,8 +29,8 @@
 }
 
 .home-banner-img-outline-2 {
-  width: 280px;
-  height: 280px;
+  width: 234px;
+  height: 234px;
   border-radius: 50%;
   border: 1px solid rgba(217, 232, 255, 1);
   display: flex;
@@ -61,7 +61,7 @@
 }
 
 .home-banner-image-icon {
-  /* animation: animName 30s linear infinite; */
+  animation: animName 30s linear infinite;
   position: absolute;
   top: 0;
 }
@@ -325,13 +325,13 @@
 
 @media screen and (max-width:1023px) {
   .home-banner-image-icon {
-    width: 332px;
-    height: 332px;
+    width: 234px;
+    height: 234px;
     border-radius: 50%;
   }
 
   .home-svg-4 {
-    left: 231px;
+    left: 201px;
     width: 57px;
   }
 
@@ -357,6 +357,12 @@
 @media screen and (max-width:576px) {
   .ms-header__title {
     font-size: 30px;
+  }
+
+  .home-banner-image-icon {
+
+    top: 47px;
+    left: 49px;
   }
 }
 
