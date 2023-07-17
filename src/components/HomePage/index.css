@@ -99,7 +99,6 @@
   /* top: -24px; */
   left: 290px;
   bottom: 12px;
-  transform: rotate(342deg);
 }
 
 .home-svg-5 {
@@ -364,6 +363,11 @@
 
     top: 47px;
     left: 49px;
+  }
+
+  .home-svg-4 {
+
+    transform: rotate(342deg);
   }
 }
 

@@ -57,17 +57,21 @@ const Footer = () => {
             </div>
 
             <div className='ul-items-div footer-box-2'>
-              <b>Home</b>
+              <b>Get in Touch</b>
               <ul>
-                <li>Introduction</li>
-                <li>About me</li>
+                <li>Download resume
+                </li>
+                <li>Contact me
+                </li>
               </ul>
             </div>
             <div className='ul-items-div'>
-              <b>Home</b>
+              <b>Resources</b>
               <ul>
-                <li>Introduction</li>
-                <li>About me</li>
+                <li>Blogs
+                </li>
+                <li>
+                  Newsletter</li>
               </ul>
             </div>
           </div>
@@ -123,17 +127,19 @@ const Footer = () => {
               </div>
               <div>
                 <div className='ul-items-div footer-box-2'>
-                  <b>Home</b>
+                  <b>Get in Touch</b>
                   <ul>
-                    <li>Introduction</li>
-                    <li>About me</li>
+                    <li>Download resume
+                    </li>
+                    <li>Contact me</li>
                   </ul>
                 </div>
                 <div className='ul-items-div'>
-                  <b>Home</b>
+                  <b>Resources</b>
                   <ul>
-                    <li>Introduction</li>
-                    <li>About me</li>
+                    <li>Blogs
+                    </li>
+                    <li>Newsletter</li>
                   </ul>
                 </div>
               </div>
