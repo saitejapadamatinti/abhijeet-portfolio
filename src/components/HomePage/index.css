@@ -61,7 +61,7 @@
 }
 
 .home-banner-image-icon {
-  animation: animName 30s linear infinite;
+  /* animation: animName 30s linear infinite; */
   position: absolute;
   top: 0;
 }

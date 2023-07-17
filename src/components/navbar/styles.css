@@ -34,7 +34,7 @@
   top: 0;
   left: 0;
   bottom: 0;
-  width: 84%;
+  width: 100%;
   padding-top: 100px;
   transform: translateX(100%);
   will-change: transform;
@@ -48,6 +48,7 @@
   backdrop-filter: blur(10px);
   padding-left: 20px;
   align-items: center;
+  padding-right: 110px;
 }
 
 .header-looking-hr-line {
