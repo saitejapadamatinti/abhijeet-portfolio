@@ -24,7 +24,7 @@ const BlogCard = ({ blogData }) => {
         <img
           className="home-blog-card-image"
           alt="blog-imag-1"
-          src="/images/blog-image-1.png"
+          src={blogData.blogImage}
         />
       </div>
       <div className="home-blog-card-content-container">

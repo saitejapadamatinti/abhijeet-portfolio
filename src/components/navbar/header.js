@@ -130,7 +130,9 @@ export default function Navebar() {
       {/* <header className={`header ${shadowStyle} ${hiddenStyle}`}> */}
       <nav className={`large-header-main-div ${shadowStyle} ${hiddenStyle}`}>
         <div className="large-screen-header-logo">
-          <img alt="header-logo" src="/images/logo/Beige Ivory Minimalist Typography Logo (6).png" />
+          <a href={webUrl}>
+            <img alt="header-logo" src="/images/logo/Beige Ivory Minimalist Typography Logo (6).png" />
+          </a>
         </div>
         <div className="large-header-main-div-items">
           {headerList.map((eachHeader) => (

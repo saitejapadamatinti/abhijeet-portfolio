@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./index.css";
+import axios from "axios";
+
 
 const UserEmailsAdmin = () => {
   const [userEmailData, setUserEMailData] = useState([]);
@@ -29,14 +31,23 @@ const UserEmailsAdmin = () => {
     };
     fetcingDataFromEMailAp();
   }, []);
+
+  const onDeleteHandler = (id) => {
+    console.log(id)
+    axios
+      .delete(`http://localhost:3005/subscribedEmails/${id}`)
+      .then((res) => setUserEMailData(res.data));
+  };
+
   return (
     <div className="admin-user-email-div">
       <div>
         {userEmailData.map((eachEmail) => (
           <>
             <p className="admi-user-emain-para">
-              {eachEmail.userEmail} --- {eachEmail.date.slice(0,10)}
+              {eachEmail.userEmail} --- {eachEmail.date.slice(0, 10)} --- <span onClick={() => onDeleteHandler(eachEmail._id)}>delete</span>
             </p>
+
           </>
         ))}
       </div>

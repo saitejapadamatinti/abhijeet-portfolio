@@ -48,12 +48,12 @@ const Footer = () => {
             <div className='ul-items-div footer-box-1'>
               <b>Home</b>
               <ul>
-                <li>Introduction</li>
-                <li>About me</li>
-                <li>Professional Experience</li>
-                <li>Skills</li>
-                <li>Education</li>
-                <li>Certifications</li>
+                <li><a href=''>Introduction</a></li>
+                <li><a href={`${webUrl}/#AboutMe`}>About me</a></li>
+                <li><a href={`${webUrl}/#ProfessionalExperience`}>Professional Experience</a></li>
+                <li><a href={`${webUrl}/#Skills`}>Skills</a></li>
+                <li><a href={`${webUrl}/#Education`}>Education</a></li>
+                <li><a href={`${webUrl}/#Certifications`}>Certifications</a></li>
               </ul>
             </div>
 

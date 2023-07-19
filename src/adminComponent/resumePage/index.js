@@ -40,12 +40,7 @@ const ResumePage = () => {
                 <div><br /><button className="blue-button" type='submit'>add Resume</button></div>
             </form>
             <br />
-            <hr />
-            <br />
 
-            <div>
-                <p>Resumes</p>
-            </div>
         </div>
     )
 }

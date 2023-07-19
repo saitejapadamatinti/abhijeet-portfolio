@@ -48,6 +48,7 @@
 import "./index.css";
 import { useEffect, useState } from "react";
 import axios from "axios";
+import ImageUpload from "../cloudnaryImage";
 
 const baseUrl = "https://projects-4kv4.onrender.com";
 
@@ -211,6 +212,10 @@ function BlogBaackendForm() {
   } else {
     return (
       <div className="BackendForm">
+        <hr />
+        <ImageUpload />
+        <hr />
+
         <>
           <form onSubmit={onSubmitHandler}>
             <div className="form-div">
@@ -239,7 +244,7 @@ function BlogBaackendForm() {
                   className="backend-input-box"
                   value={readMore}
                   onChange={(e) => setReadMore(e.target.value)}
-                  type="text"
+                  type="number"
                 />
               </div>
               <div>
