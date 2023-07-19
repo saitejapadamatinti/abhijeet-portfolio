@@ -23,16 +23,16 @@
 
 .skillcard-bg-image:hover {
   .skill-card-main-text {
-    color: #7D66BB;
+    color: #7D66BB !important;
     transition: all 0.3s linear;
   }
 
   .skill-icon-div-bg {
-    background-color: #55418c4a;
+    background-color: #55418c4a !important;
   }
 
   .skill-icon-div-bg svg {
-    fill: rgba(85, 65, 140, 0.66);
+    fill: rgba(85, 65, 140, 0.66) !important;
     transition: all 0.3s linear;
   }
 }
