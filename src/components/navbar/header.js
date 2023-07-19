@@ -97,6 +97,9 @@ export default function Navebar() {
   const [isOpen, setIsOpen] = useState(false);
   const [activeTab, setActiveTab] = useState("About Me");
 
+  const webUrl = window.origin
+
+
   //   header aimation----------------
   const [shouldHideHeader, setShouldHideHeader] = useState(false);
   const [shouldShowShadow, setShouldShowShadow] = useState(false);
@@ -134,7 +137,7 @@ export default function Navebar() {
             <a
               className={activeTab === eachHeader.name && "header-active-tab"}
               onClick={() => setActiveTab(eachHeader.name)}
-              href={`http://localhost:3000/#${eachHeader.path}`}
+              href={`${webUrl}/#${eachHeader.path}`}
             >
               {eachHeader.name}
             </a>
@@ -173,7 +176,7 @@ export default function Navebar() {
             Connect with me, and let's create a symphony of success together 🎻🎉</p>
           <hr className="header-looking-hr-line" />
           {headerList.map((eachHeader) => (
-            <a onClick={() => setIsOpen(false)} href={`http://localhost:3000/#${eachHeader.path}`}>
+            <a onClick={() => setIsOpen(false)} href={`${webUrl}/#${eachHeader.path}`}>
               {eachHeader.name}
             </a>
           ))}

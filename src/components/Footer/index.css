@@ -88,6 +88,11 @@
         border-color: #DBDBDB;
     }
 
+    .ul-items-div ul li a {
+        text-decoration: none;
+        color: #707070;
+    }
+
     @media screen and (min-width:998px) {
         .footer-copy-text {
             width: 90vw;
