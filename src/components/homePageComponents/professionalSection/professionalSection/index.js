@@ -14,7 +14,7 @@ const professionalTabs = [
     id: 2,
     companyName: "MAMS",
     role: "Social Media Marketing Intern",
-    tabImage: "/images/experiance-images/mams.png"
+    tabImage: "/images/experiance-images/Beige Ivory Minimalist Typography Logo (5).png"
   },
   {
     id: 3,

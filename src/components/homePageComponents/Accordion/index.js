@@ -185,7 +185,7 @@ export default function AccordionComponent() {
                 <img
                   alt="img"
                   className="accordian-item-img"
-                  src="/images/experiance-images/mams.png"
+                  src="/images/experiance-images/Beige Ivory Minimalist Typography Logo (5).png"
                 />
                 <div>
                   <p className="accordianItemhead">MAMS</p>

@@ -247,7 +247,29 @@
   }
 
   .color-button {
-    font-size: 16px;
+    width: 118px;
+    height: 40px;
+    flex-shrink: 0;
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+  .outline-button {
+    width: 118px;
+    height: 40px;
+    flex-shrink: 0;
+    color: #7D66BB;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
   }
 }
 

@@ -384,6 +384,18 @@
 
     transform: rotate(342deg);
   }
+
+  .download-button-icon {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    margin-right: 3px;
+  }
+
+  .home-banner-buttons-div {
+    padding: 0px 60px;
+  }
+
 }
 
 /* ------------------------------------- education section ------------------------------------- */
