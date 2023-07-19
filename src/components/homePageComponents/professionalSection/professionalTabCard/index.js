@@ -16,7 +16,7 @@ const ProfessionalTabCard = (props) => {
         <img
           alt="dd"
           className="professional-tab-card-img"
-          src="/images/Original_Logo_Symbol-removebg-preview 1.png"
+          src={professionalCardData.tabImage}
         />
       </div>
 

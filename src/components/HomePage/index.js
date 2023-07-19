@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./index.css";
+import { Link } from "react-router-dom";
 import HomeSectionNumber from "../homePageComponents/homeSectionNumbers";
 import ProfessionalTabCard from "../homePageComponents/professionalSection/professionalTabCard";
 import ProfessionalSection from "../homePageComponents/professionalSection/professionalSection";
@@ -117,6 +118,7 @@ const educationData = [
     date: "Sep. 2023 - Sep. 2024",
     location: "Bedfordshire, UK",
     image: "/images/education-logo-2.png",
+    univercityImage: "/images/educations/cranfield.jpeg"
   },
   {
     id: "2",
@@ -126,17 +128,20 @@ const educationData = [
     date: "Jun. 2018 - Jun. 2022",
     location: "Pune, Maharashtra, India",
     image: "/images/education-logo-1.png",
+    univercityImage: "/images/educations/MIT-WPU.jpg"
   },
 ];
 
 const HomePage = () => {
   const [resume, setResume] = useState([])
+  console.log(resume)
+
 
   useEffect(() => {
     const fetchingDataFromAPi = async () => {
       const response = await fetch("http://localhost:3005/resume")
       const data = await response.json()
-      console.log(data)
+      setResume(data[0].resume)
     }
     fetchingDataFromAPi()
   }, [])
@@ -271,22 +276,22 @@ const HomePage = () => {
 
             <motion.div className="home-banner-heading-div">
               <h1 class="ms-header__title">
-                <span className="home-main-icon-span">
-                  <svg
-                    className="hello-hand-icon"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="92"
-                    height="83"
-                    viewBox="0 0 92 83"
-                    fill="none"
-                  >
-                    <path
-                      d="M75.9941 15.937C75.9941 15.937 73.8277 28.8919 74.1564 35.1306C74.5865 43.291 78.9216 48.3673 78.3184 56.5577C75.9078 66.63 76.0158 68.1217 56.6706 73.3732C49.5833 75.298 27.653 75.9527 27.653 75.9527C24.6371 76.0661 19.6174 77.8513 18.6734 75.0314C17.7294 72.2117 20.7025 69.1548 23.952 68.2619L37.1031 65.786C40.1561 64.7619 42.8655 62.2289 41.7354 58.5299C39.8638 53.1087 37.8707 49.097 33.3345 45.5154L15.8634 32.0358C14.7087 30.8983 13.7804 28.6753 15.4944 27.103C17.2083 25.5305 20.045 26.4007 21.2806 27.4947L39.9948 40.1582C41.8088 40.9616 44.4057 40.504 43.3433 38.0313L29.376 15.4015C28.435 13.7797 28.7056 11.4316 30.9137 10.83C33.8117 10.0403 35.9282 10.5527 36.4009 12.1481L50.8434 34.296C51.7363 35.3222 53.4691 34.6805 53.5901 33.4766L47.643 9.73292C47.489 8.9658 48.1283 7.38138 50.2761 7.09004C52.4236 6.79864 54.2756 8.46387 54.3153 9.29258L61.4088 32.4216C62.508 34.3432 64.3814 34.1571 65.3814 32.6446L69.5255 15.6485C69.6648 14.2798 71.7243 13.4414 73.1267 13.5869C74.5078 13.9506 75.5653 14.6556 75.994 15.9363L75.9941 15.937Z"
-                      fill="#9981D5"
-                    />
-                  </svg>
 
-                  Hi! I am Abhijeet.</span>  This My Journey <br />of
+                <svg
+                  className="hello-hand-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="92"
+                  height="83"
+                  viewBox="0 0 92 83"
+                  fill="none"
+                >
+                  <path
+                    d="M75.9941 15.937C75.9941 15.937 73.8277 28.8919 74.1564 35.1306C74.5865 43.291 78.9216 48.3673 78.3184 56.5577C75.9078 66.63 76.0158 68.1217 56.6706 73.3732C49.5833 75.298 27.653 75.9527 27.653 75.9527C24.6371 76.0661 19.6174 77.8513 18.6734 75.0314C17.7294 72.2117 20.7025 69.1548 23.952 68.2619L37.1031 65.786C40.1561 64.7619 42.8655 62.2289 41.7354 58.5299C39.8638 53.1087 37.8707 49.097 33.3345 45.5154L15.8634 32.0358C14.7087 30.8983 13.7804 28.6753 15.4944 27.103C17.2083 25.5305 20.045 26.4007 21.2806 27.4947L39.9948 40.1582C41.8088 40.9616 44.4057 40.504 43.3433 38.0313L29.376 15.4015C28.435 13.7797 28.7056 11.4316 30.9137 10.83C33.8117 10.0403 35.9282 10.5527 36.4009 12.1481L50.8434 34.296C51.7363 35.3222 53.4691 34.6805 53.5901 33.4766L47.643 9.73292C47.489 8.9658 48.1283 7.38138 50.2761 7.09004C52.4236 6.79864 54.2756 8.46387 54.3153 9.29258L61.4088 32.4216C62.508 34.3432 64.3814 34.1571 65.3814 32.6446L69.5255 15.6485C69.6648 14.2798 71.7243 13.4414 73.1267 13.5869C74.5078 13.9506 75.5653 14.6556 75.994 15.9363L75.9941 15.937Z"
+                    fill="#9981D5"
+                  />
+                </svg>
+
+                Hi! I am Abhijeet.<br /> This My Journey <br />of
                 <div class="ms-slider">
                   <ul class="ms-slider__words">
                     <li class="ms-slider__word ms-slider-word-1">Marketing.</li>
@@ -304,9 +309,10 @@ const HomePage = () => {
                 Brands for Sustainable Success.
               </p>
               <div className="home-banner-buttons-div">
-                <button className="outline-button">
+
+                <Link to={resume} target="_blank" className="outline-button">
                   <BiDownload className="download-button-icon" /> Resume
-                </button>
+                </Link>
                 <button className="color-button"><BiSolidUserRectangle className="download-button-icon" /> Contact Me</button>
               </div>
             </motion.div>

@@ -173,7 +173,7 @@
 .bacend-form-login-div {
     color: black;
     padding: 50px;
-    padding-top: 130px;
+    /* padding-top: 130px; */
 }
 
 .backend-project-description-class {
@@ -256,7 +256,7 @@ label {
 
 
 .blue-button {
-    background-color: #0c7fb0;
+    background-color: #9981d5;
     padding: 10px 20px;
     border-radius: 5px;
     border: none;
@@ -267,11 +267,11 @@ label {
 }
 
 .blue-button:hover {
-    background-color: #1dabe7;
+    background-color: #8974bd;
 }
 
 .blue-button:active {
-    background-color: #024f70;
+    background-color: #9981d5;
 }
 
 .green-button {

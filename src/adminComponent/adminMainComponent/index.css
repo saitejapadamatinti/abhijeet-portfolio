@@ -1,0 +1,21 @@
+.admin-page-main-div {
+    padding: 120px 100px;
+    padding-bottom: 20px;
+}
+
+.admin-page-tabs-div {
+    display: flex;
+    align-items: center;
+    background-color: rgb(214, 214, 214);
+
+    font-size: 20px;
+}
+
+.admin-tab {
+    cursor: pointer;
+    padding: 20px;
+}
+
+.admin-tab-active {
+    background-color: #9981d5;
+}

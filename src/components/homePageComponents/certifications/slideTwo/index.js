@@ -59,29 +59,29 @@ const SlideTwo = () => {
           </div>
           <div className="certificate-card-main-div">
             <div className="certificate-imag-div">
-              <img src="/images/certificate1.png" />
+              <img src="/images/IIT_Kanpur_Logo.svg.png" />
             </div>
             <div className="certificate-card-content-box">
               <h1>Developing Soft Skills and Personality</h1>
-              <p>Indian Institute of Technology-Kanpu </p>
+              <p>Indian Institute of Technology-Kanpur </p>
               <span>Online</span>
             </div>
           </div>
           <div className="certificate-card-main-div">
             <div className="certificate-imag-div">
-              <img src="/images/certificate1.png" />
+              <img src="/images/etisalat_academy_logo-removebg-preview.png" />
             </div>
             <div className="certificate-card-content-box">
               <h1>Design Thinking Workshop</h1>
               <p>Etisalat Academy-Dubai </p>
-              <span>offline</span>
+              <span>Offline</span>
             </div>
           </div>
         </div>
         <div className="cetificate-div-slider">
           <div className="certificate-card-main-div">
             <div className="certificate-imag-div">
-              <img src="/images/certificate1.png" />
+              <img src="/images/london business school logo.jpg" />
             </div>
             <div className="certificate-card-content-box">
               <h1>Brand Management: Aligning Business, Brand and Behaviour</h1>
@@ -91,7 +91,7 @@ const SlideTwo = () => {
           </div>
           <div className="certificate-card-main-div">
             <div className="certificate-imag-div">
-              <img src="/images/certificate1.png" />
+              <img src="/images/google png.png" />
             </div>
             <div className="certificate-card-content-box">
               <h1>Google Digital Marketing & E-commerce Professional Certificate</h1>
@@ -101,7 +101,7 @@ const SlideTwo = () => {
           </div>
           <div className="certificate-card-main-div">
             <div className="certificate-imag-div">
-              <img src="/images/certificate1.png" />
+              <img src="/images/University_of_Virginia_1819_logo-removebg-preview.png" />
             </div>
             <div className="certificate-card-content-box">
               <h1>Marketing Analytics</h1>
@@ -113,7 +113,7 @@ const SlideTwo = () => {
         <div className="cetificate-div-slider">
           <div className="certificate-card-main-div">
             <div className="certificate-imag-div">
-              <img src="/images/certificate1.png" />
+              <img src="/images/U-M_Logo-Hex.png" />
             </div>
             <div className="certificate-card-content-box">
               <h1>Programming for everybody (Getting Started with Python)</h1>
@@ -123,7 +123,7 @@ const SlideTwo = () => {
           </div>
           <div className="certificate-card-main-div">
             <div className="certificate-imag-div">
-              <img src="/images/certificate1.png" />
+              <img src="/images/google png.png" />
             </div>
             <div className="certificate-card-content-box">
               <h1>Attract and Engage Customers with Digital Marketing by Google</h1>
@@ -133,7 +133,7 @@ const SlideTwo = () => {
           </div>
           <div className="certificate-card-main-div">
             <div className="certificate-imag-div">
-              <img src="/images/certificate1.png" />
+              <img src="/images/—Pngtree—linkedin icon logo_3584840.png" />
             </div>
             <div className="certificate-card-content-box">
               <h1>Learn Personal Branding</h1>

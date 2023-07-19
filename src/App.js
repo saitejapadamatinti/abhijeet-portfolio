@@ -7,6 +7,7 @@ import HomePage from "./components/HomePage";
 import UserEmailsAdmin from "./adminComponent/userEmailsAdmin";
 import Footer from "./components/Footer"
 import Navebar from "./components/navbar/header";
+import AdminMainComp from "./adminComponent/adminMainComponent";
 
 function App() {
   return (
@@ -16,8 +17,7 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/blogs" element={<BlogPage />} />
         <Route path="/blog/:id" element={<BlogDetails />} />
-        <Route path="/adminBlogForm" element={<BlogBaackendForm />} />
-        <Route path="/adminUsersEmails" element={<UserEmailsAdmin />} />
+        <Route path="/adminPage" element={<AdminMainComp />} />
       </Routes>
       <Footer />
     </>

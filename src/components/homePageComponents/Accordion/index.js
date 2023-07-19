@@ -116,7 +116,7 @@ export default function AccordionComponent() {
                 </div>
               </div>
             }
-            // initialEntered
+          // initialEntered
           >
             <div>
               <div className="Professional-accordionSection-content-card-div">
@@ -185,7 +185,7 @@ export default function AccordionComponent() {
                 <img
                   alt="img"
                   className="accordian-item-img"
-                  src="images/Original_Logo_Symbol-removebg-preview 1.png"
+                  src="/images/experiance-images/mams.png"
                 />
                 <div>
                   <p className="accordianItemhead">MAMS</p>
@@ -195,7 +195,7 @@ export default function AccordionComponent() {
                 </div>
               </div>
             }
-            // initialEntered
+          // initialEntered
           >
             <div>
               <div className="Professional-accordionSection-content-card-div">
@@ -249,7 +249,7 @@ export default function AccordionComponent() {
                 <img
                   alt="img"
                   className="accordian-item-img"
-                  src="images/Original_Logo_Symbol-removebg-preview 1.png"
+                  src="/images/experiance-images/BAFNA_LOGO-removebg-preview 1.png"
                 />
                 <div>
                   <p className="accordianItemhead">Bafna Cars</p>
@@ -259,7 +259,7 @@ export default function AccordionComponent() {
                 </div>
               </div>
             }
-            // initialEntered
+          // initialEntered
           >
             <div>
               <div className="Professional-accordionSection-content-card-div">
@@ -316,7 +316,7 @@ export default function AccordionComponent() {
                 <img
                   alt="img"
                   className="accordian-item-img"
-                  src="images/Original_Logo_Symbol-removebg-preview 1.png"
+                  src="/images/experiance-images/Frozen Creation Logo 1.png"
                 />
                 <div>
                   <p className="accordianItemhead">Frozen Creation</p>
@@ -324,7 +324,7 @@ export default function AccordionComponent() {
                 </div>
               </div>
             }
-            // initialEntered
+          // initialEntered
           >
             <div>
               <div className="Professional-accordionSection-content-card-div">

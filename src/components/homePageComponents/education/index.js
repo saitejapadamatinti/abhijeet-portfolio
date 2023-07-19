@@ -30,13 +30,13 @@ const Education = ({ educationData }) => {
     // </div>
     <div className="eaducation-component-card-div">
       <div>
-       <div className="education-unvercity-img-div">
-       <img
-          alt="univercity img"
-          className="education-college-image"
-          src="/images/education-image-1.png"
-        />
-       </div>
+        <div className="education-unvercity-img-div">
+          <img
+            alt="univercity img"
+            className="education-college-image"
+            src={educationData.univercityImage}
+          />
+        </div>
         <div className="education-img-div">
           <img
             className="education-logo"

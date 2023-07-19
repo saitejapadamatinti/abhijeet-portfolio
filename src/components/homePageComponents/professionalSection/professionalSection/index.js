@@ -8,21 +8,25 @@ const professionalTabs = [
     id: 1,
     companyName: "Innovation Hacks AI",
     role: "Product Marketing & Management",
+    tabImage: "/images/Original_Logo_Symbol-removebg-preview 1.png"
   },
   {
     id: 2,
     companyName: "MAMS",
     role: "Social Media Marketing Intern",
+    tabImage: "/images/experiance-images/mams.png"
   },
   {
     id: 3,
     companyName: "Bafna Cars",
     role: "Marketing & Brand Management Intern",
+    tabImage: "/images/experiance-images/BAFNA_LOGO-removebg-preview 1.png"
   },
   {
     id: 4,
     companyName: "Frozen Creation",
     role: "Co-Founder",
+    tabImage: "/images/experiance-images/Frozen Creation Logo 1.png"
   },
 ];
 
