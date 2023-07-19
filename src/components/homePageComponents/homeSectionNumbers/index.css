@@ -3,17 +3,17 @@
   align-items: last baseline;
   gap: 10px;
 }
+
 .home-section-number {
   font-size: 40px;
   font-style: normal;
   font-weight: 800;
-  background: -webkit-linear-gradient(
-    rgba(125, 125, 125, 1),
-    rgba(221, 221, 221, 1)
-  );
+  background: -webkit-linear-gradient(rgba(125, 125, 125, 1),
+      rgba(221, 221, 221, 1));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 .home-section-name {
   font-size: 15px;
   font-style: normal;
@@ -27,6 +27,7 @@
   .home-section-number {
     font-size: 128px;
   }
+
   .home-section-name {
     font-size: 50px;
     line-height: 43px;
