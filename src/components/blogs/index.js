@@ -2,8 +2,10 @@ import React, { useEffect, useState } from "react";
 import BlogCard from "../blogCard";
 import Axios from "axios";
 import { MoonLoader } from "react-spinners";
+import "./index.css"
+import HomeBlogCard from '../homePageComponents/HomeBlogs/homeBlogCard'
 
-const projectUrl = "http://localhost:3005/allProjects";
+const projectUrl = "http://localhost:3005/allBlogs";
 
 const BlogPage = () => {
   const [blogData, setBlogData] = useState([]);
@@ -37,8 +39,19 @@ const BlogPage = () => {
   return (
     <div className="main-width-container">
       <div className="middle-width-container">
+        <div className="blog-details-main-head-container blog-details-main-head-container-blogs">
+          <h1 className="blog-details-main-head-banner">Blogs</h1>
+        </div>
         {blogData.map((eachData) => (
-          <BlogCard blogData={eachData} />
+          <>
+            <div className="desktop-blog-cards">
+              <BlogCard blogData={eachData} />
+            </div>
+            <div className="mobole-blog-card">
+              <HomeBlogCard blogData={eachData} />
+            </div>
+          </>
+
         ))}
       </div>
     </div>

@@ -26,6 +26,7 @@
 .hello-hand-icon:hover {
   transform: scale(1);
   -webkit-transform: rotate(90deg) translateZ(0);
+  margin-bottom: 9px;
 }
 
 .home-banner-img-outline-2 {
@@ -150,6 +151,12 @@
   font-weight: 800;
   line-height: normal;
   text-align: start;
+}
+
+.home-main-icon-span {
+  display: flex;
+  align-items: flex-end;
+  /* justify-content: center; */
 }
 
 .ms-slider {
@@ -342,11 +349,19 @@
   .hello-hand-icon {
     width: 50px;
     height: 35px;
+
   }
 
   .ms-header__title {
     font-size: 45px;
     text-align: center;
+
+  }
+
+  .home-main-icon-span {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
   }
 
   .hello-hand-icon {
@@ -493,7 +508,7 @@
 
 @media screen and (max-width:576px) {
   .skill-cards-div-flex {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     row-gap: 20px;
   }
 }

@@ -30,10 +30,7 @@ const HorizentaLineWithDate = ({ blogDate, likes }) => {
             <span>
               <BsDot className="horizental-line-dot-icon" />
             </span>
-            <span>
-              <AiFillHeart className="horizental-line-heart-icon" />
-            </span>
-            <span className=" text-light-color">{likes}</span>
+            <span className=" text-light-color">3 min read</span>
           </div>
           <span className="horizental-line-read-more-text"><BsBoxArrowUp className="text-light-color" /></span>
         </div>

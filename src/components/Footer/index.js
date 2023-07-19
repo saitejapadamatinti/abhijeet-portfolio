@@ -77,7 +77,7 @@ const Footer = () => {
           </div>
 
           <div>
-            <p className='footer-copy-text'>Copyright      2023 Abhijeet Patil</p></div>
+            <p className='footer-copy-text'>Copyright &copy; 2023 Abhijeet Patil</p></div>
         </div>
 
       </div>
@@ -147,7 +147,7 @@ const Footer = () => {
           </div>
           <div className=''>
             <hr className='footer-hr-line footer-hr-line-color' />
-            <p className='footer-copy-text'>Copyright      2023 Abhijeet Patil</p>
+            <p className='footer-copy-text'>Copyright &copy; 2023 Abhijeet Patil</p>
           </div>
         </div>
       </div>

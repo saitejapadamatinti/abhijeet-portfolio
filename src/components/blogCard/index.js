@@ -58,12 +58,9 @@ const BlogCard = ({ blogData }) => {
             <span>
               <BsDot className="blog-card-dot-icon" />
             </span>
-            <span>
-              <AiFillHeart className="blog-card-heart-icon" />
-            </span>
-            <span className=" text-light-color">{blogData.likes}</span>
+            <span className=" text-light-color">3 min read</span>
           </div>
-          <Link
+          <Link className="blog-para-read-more-text-a"
             onClick={() => {
               window.location.href = `/blog/${blogData._id}`;
             }}

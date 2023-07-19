@@ -5,8 +5,10 @@ import HorizentaLineWithDate from "../horizentalLinesWIthDate";
 import { useParams, Link } from "react-router-dom";
 import Axios from "axios";
 import { MoonLoader } from "react-spinners";
+import HomeBlogCard from '../homePageComponents/HomeBlogs/homeBlogCard'
 
-const projectUrl = "http://localhost:3005/allProjects";
+
+const projectUrl = "http://localhost:3005/allBlogs";
 
 const BlogDetails = () => {
   const [recentBlogs, setRecentBlogs] = useState([]);
@@ -19,7 +21,7 @@ const BlogDetails = () => {
 
   const getBlogDetailsFromApi = async () => {
     setIsLoading(true);
-    const url = `http://localhost:3005/allProjects/${id}`;
+    const url = `http://localhost:3005/allBlogs/${id}`;
     const data = await Axios(url);
     setBlogDetails(data.data);
     const splitedDescription = data.data.blogLongDescription.split("/");
@@ -85,8 +87,16 @@ const BlogDetails = () => {
             likes={blogDetails.likes}
           />
           <div>
-            {recentBlogs.map((eachCard) => (
-              <BlogCard key={eachCard.id} blogData={eachCard} />
+            {recentBlogs.map((eachData) => (
+
+              <>
+                <div className="desktop-blog-cards">
+                  <BlogCard key={eachData.id} blogData={eachData} />
+                </div>
+                <div className="mobole-blog-card">
+                  <HomeBlogCard key={eachData.id} blogData={eachData} />
+                </div>
+              </>
             ))}
           </div>
         </div>

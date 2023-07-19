@@ -1,0 +1,286 @@
+/* .admin-backend-blog-div {
+    padding: 120px 80px;
+}
+
+.backend-login-form-main-div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.backend-select-class {
+    width: 95%;
+    height: 30px;
+    font-size: 18px;
+    padding-left: 5px;
+    margin-top: 10px;
+}
+
+.text-area-input {
+    width: 100%;
+    max-width: 100%;
+    height: 150px;
+    max-height: 200px;
+    margin-top: 10px;
+}
+
+.main-data-div {
+    background-color: #8adcff;
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    padding: 30px;
+    color: #343434;
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.bacend-form-login-div {
+    width: 100%;
+    height: 69vh;
+}
+
+.BackendForm,
+.bacend-form-login-div {
+    color: black;
+    padding: 50px;
+    padding-top: 130px;
+}
+
+.backend-project-description-class {
+    margin-top: 20px;
+}
+
+.backend-login-form-main-div {
+    width: 100%;
+    height: 69vh;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.backend-login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.backend-input-box {
+    width: 95%;
+    height: 30px;
+    font-size: 18px;
+    padding-left: 5px;
+    margin-top: 10px;
+}
+
+.backend-from-buttons-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.backend-hr-line {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.backend-table-description {
+    width: 300px;
+    height: 150px;
+    overflow-y: auto;
+}
+
+.backend-red-button {
+    background-color: red;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    outline: none;
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
+
+.backend-red-button:hover {
+    background-color: #fd3c3c;
+}
+
+.backend-red-button:active {
+    background-color: #ff0000;
+}
+
+.backend-results-button-div {
+    display: flex;
+    gap: 20px;
+    padding: 10px 0px;
+} */
+
+
+
+/* ------------------------------------------------------------ */
+.form-div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.backend-select-class {
+    width: 95%;
+    height: 30px;
+    font-size: 18px;
+    padding-left: 5px;
+    margin-top: 10px;
+}
+
+.text-area-input {
+    width: 100%;
+    max-width: 100%;
+    height: 150px;
+    max-height: 200px;
+    margin-top: 10px;
+}
+
+.main-data-div {
+    background-color: #8adcff;
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    padding: 30px;
+    color: #343434;
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.bacend-form-login-div {
+    width: 100%;
+    height: 69vh;
+}
+
+.BackendForm,
+.bacend-form-login-div {
+    color: black;
+    padding: 50px;
+    padding-top: 130px;
+}
+
+.backend-project-description-class {
+    margin-top: 20px;
+}
+
+.backend-login-form-main-div {
+    width: 100%;
+    height: 69vh;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.backend-login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.backend-input-box {
+    width: 95%;
+    height: 30px;
+    font-size: 18px;
+    padding-left: 5px;
+    margin-top: 10px;
+}
+
+.backend-from-buttons-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.backend-hr-line {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.backend-table-description {
+    width: 300px;
+    height: 150px;
+    overflow-y: auto;
+}
+
+.backend-red-button {
+    background-color: red;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    outline: none;
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
+
+.backend-red-button:hover {
+    background-color: #fd3c3c;
+}
+
+.backend-red-button:active {
+    background-color: #ff0000;
+}
+
+.backend-results-button-div {
+    display: flex;
+    gap: 20px;
+    padding: 10px 0px;
+}
+
+label {
+    display: block !important;
+    margin: 10px 0px !important;
+}
+
+
+.blue-button {
+    background-color: #0c7fb0;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    outline: none;
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
+
+.blue-button:hover {
+    background-color: #1dabe7;
+}
+
+.blue-button:active {
+    background-color: #024f70;
+}
+
+.green-button {
+    background-color: #008518;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    outline: none;
+    transition: all 0.3s linear;
+    cursor: pointer;
+}

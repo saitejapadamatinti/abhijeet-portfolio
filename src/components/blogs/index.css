@@ -1,0 +1,22 @@
+.blog-details-main-head-container-blogs {
+    margin-bottom: 100px;
+}
+
+.desktop-blog-cards {
+    display: block;
+}
+
+.mobole-blog-card {
+    display: none;
+}
+
+@media screen and (max-width : 1024px) {
+    .desktop-blog-cards {
+        display: none;
+    }
+
+    .mobole-blog-card {
+        display: block;
+        padding-top: 20px;
+    }
+}

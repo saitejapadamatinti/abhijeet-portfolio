@@ -6,10 +6,12 @@ import BlogBaackendForm from "./adminComponent/blogAdminForm";
 import HomePage from "./components/HomePage";
 import UserEmailsAdmin from "./adminComponent/userEmailsAdmin";
 import Footer from "./components/Footer"
+import Navebar from "./components/navbar/header";
 
 function App() {
   return (
     <>
+      <Navebar />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/blogs" element={<BlogPage />} />
