@@ -129,8 +129,8 @@ export default function Navebar() {
     <>
       {/* <header className={`header ${shadowStyle} ${hiddenStyle}`}> */}
       <nav className={`large-header-main-div ${shadowStyle} ${hiddenStyle}`}>
-        <div>
-          <img alt="header-logo" src="/images/header-logo.png" />
+        <div className="large-screen-header-logo">
+          <img alt="header-logo" src="/images/logo/Beige Ivory Minimalist Typography Logo (6).png" />
         </div>
         <div className="large-header-main-div-items">
           {headerList.map((eachHeader) => (
@@ -171,7 +171,7 @@ export default function Navebar() {
               <path d="M1.17686 1.17923C0.823505 1.45414 0.625 1.82696 0.625 2.21569C0.625 2.60442 0.823505 2.97723 1.17686 3.25215L10.5069 10.5089L1.17686 17.7656C0.833519 18.042 0.643535 18.4124 0.64783 18.7967C0.652124 19.1811 0.850353 19.5488 1.19982 19.8206C1.54929 20.0924 2.02203 20.2466 2.51624 20.2499C3.01044 20.2533 3.48656 20.1055 3.84205 19.8385L14.5047 11.5453C14.8581 11.2704 15.0566 10.8976 15.0566 10.5089C15.0566 10.1201 14.8581 9.7473 14.5047 9.47239L3.84205 1.17923C3.48859 0.904392 3.00925 0.75 2.50946 0.75C2.00966 0.75 1.53032 0.904392 1.17686 1.17923Z" fill="#5C4A8B" />
             </svg>
           </div>
-          <img src="images/Beige_Ivory_Minimalist_Typography_Logo__1_-removebg-preview 1.png" />
+          <img className="nav-mobile-logo" src="/images/logo/Beige Ivory Minimalist Typography Logo (6).png" />
           <p className="header-mobile-looking-para">Looking for a marketing virtuoso?
             Connect with me, and let's create a symphony of success together 🎻🎉</p>
           <hr className="header-looking-hr-line" />

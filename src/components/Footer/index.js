@@ -10,7 +10,7 @@ const Footer = () => {
           <div className='middle-width-container footer-div-container '>
             <div>
               <div>
-                <img className='footer-img-logo' alt="header-logo" src="/images/header-logo.png" />
+                <img className='footer-img-logo' alt="header-logo" src="/images/logo/Beige Ivory Minimalist Typography Logo (6).png" />
               </div>
               <p className='footer-questions-para'>Questions or Feedback? <br /> I would love to hear from you!</p>
               <div className='footer-social-media-logos'>
@@ -90,7 +90,7 @@ const Footer = () => {
           <div className='middle-width-container '>
             <div className='footer-loho-div-class'>
               <div>
-                <img className='footer-img-logo' alt="header-logo" src="/images/header-logo.png" />
+                <img className='footer-img-logo' alt="header-logo" src="/images/logo/Beige Ivory Minimalist Typography Logo (6).png" />
               </div>
               <div>
                 <p className='footer-questions-para'>Questions or Feedback? <br /> I would love to hear from you!</p>

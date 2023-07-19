@@ -38,6 +38,7 @@
 
     .footer-img-logo {
         margin-bottom: 20px;
+        width: 120px;
     }
 
     .footer-location-logo-para {
@@ -176,7 +177,7 @@
         .footer-loho-div-class {
             display: flex;
             flex-direction: row-reverse;
-            justify-content: left;
+            justify-content: space-between;
             align-items: flex-end;
             padding-bottom: 30px;
         }
@@ -211,4 +212,7 @@
             width: 85vw;
         }
 
+        .footer-img-logo {
+            width: 80px;
+        }
     }
