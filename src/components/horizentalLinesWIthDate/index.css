@@ -1,11 +1,13 @@
-.horizental-line-date-main-div{
+.horizental-line-date-main-div {
     margin: 40px 0px;
 }
-.horizental-line-line{
+
+.horizental-line-line {
     border-top: 1px solid;
     border-color: rgba(196, 196, 196, 1);
 }
-.horizental-line-date-div{
+
+.horizental-line-date-div {
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -13,25 +15,36 @@
     margin: 10px 0px;
     padding-right: 6px;
 }
-.horizental-line-date-and-heart-card{
+
+.horizental-line-date-and-heart-card {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 2px;
+    gap: 2px;
 }
-.horizental-line-dot-icon{
+
+.horizental-line-dot-icon {
     font-size: 28px;
     color: #aaa;
 }
-.horizental-line-heart-icon{
+
+.horizental-line-heart-icon {
     color: red;
     font-size: 16px;
     cursor: pointer;
 }
+
 .horizental-line-read-more-text {
     color: #0038ff;
     font-size: 20px;
     font-family: Montserrat;
     font-style: normal;
     font-weight: 600;
-  }
+}
+
+@media screen and (max-width : 576px) {
+    .horizental-line-date-div {
+        margin: 0px;
+    }
+}

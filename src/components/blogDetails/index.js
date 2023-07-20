@@ -60,28 +60,33 @@ const BlogDetails = () => {
     <div className="main-width-container">
       <div className="middle-width-container">
         <div>
-          <div className="blog-details-main-head-container">
-            <h1 className="blog-details-main-head-banner">Blogs</h1>
+          <div className="blog-details-width-less-main">
+            <div className="blog-details-width-less">
+              <div className="blog-details-main-head-container">
+                <h1 className="blog-details-main-head-banner">Blogs</h1>
+              </div>
+              <h1 className="main-head">{blogDetails.bloghead}</h1>
+              <HorizentaLineWithDate
+                blogDate={blogDetails.blogDate}
+                likes={blogDetails.likes}
+              />
+              <div className="blog-details-image-div">
+                <img
+                  alt="blog-details-imag"
+                  className="blog-details-image"
+                  src={blogDetails.blogImage}
+                />
+              </div>
+              <br />
+              <br />
+              <div className="blog-details-big-para-div">
+                {blogDescription.map((each) => (
+                  <p className="secondary-para"> {each} </p>
+                ))}
+              </div>
+            </div>
           </div>
-          <h1 className="main-head">{blogDetails.bloghead}</h1>
-          <HorizentaLineWithDate
-            blogDate={blogDetails.blogDate}
-            likes={blogDetails.likes}
-          />
-          <div className="blog-details-image-div">
-            <img
-              alt="blog-details-imag"
-              className="blog-details-image"
-              src="/images/blog-image-1.png"
-            />
-          </div>
-          <br />
-          <br />
-          <div className="blog-details-big-para-div">
-            {blogDescription.map((each) => (
-              <p className="secondary-para"> {each} </p>
-            ))}
-          </div>
+
           <HorizentaLineWithDate
             blogDate={blogDetails.blogDate}
             likes={blogDetails.likes}

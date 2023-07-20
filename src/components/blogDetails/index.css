@@ -31,6 +31,17 @@
   gap: 20px;
 }
 
+.blog-details-width-less-main {
+  display: flex;
+  justify-content: center;
+}
+
+.blog-details-width-less {
+  width: 80%;
+}
+
+.blog-details-big-para-div p {}
+
 @media screen and (min-width: 1024px) {
   .blog-details-main-head-container {
     height: 384px;

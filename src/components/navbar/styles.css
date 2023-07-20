@@ -279,7 +279,7 @@ input[type="number"]::-webkit-inner-spin-button {
   color: #185ee0;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 1023px) {
   .mobile-main-nav-div {
     display: block;
   }
