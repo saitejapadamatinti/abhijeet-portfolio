@@ -1,10 +1,12 @@
-.admin-user-email-div{
-    width: 100vw;
+.admin-user-email-div {
+    /* width: 100vw; */
     height: 100vh;
     max-height: 100vh;
     background-color: rgb(241, 241, 241);
+    padding: 30px;
 }
-.admi-user-emain-para{
+
+.admi-user-emain-para {
     width: 400px;
     background-color: rgb(205, 178, 231);
     border-radius: 5px;
@@ -12,4 +14,27 @@
     margin: 10px;
     font-weight: 400;
     font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.backend-red-button-icon {
+    background-color: red;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    outline: none;
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
+
+.backend-red-button-icon:hover {
+    background-color: #fd3c3c;
+}
+
+.backend-red-button-icon:active {
+    background-color: #ff0000;
 }

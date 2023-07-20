@@ -7,7 +7,7 @@ import { BiDownload } from "react-icons/bi";
 import HomeSectionNumber from "../homeSectionNumbers";
 import { Link } from "react-router-dom";
 
-const projectUrl = "http://localhost:3005/allProjects";
+const projectUrl = "http://localhost:3005/allBlogs";
 
 const blogApiLocalData = [
   {
@@ -89,23 +89,23 @@ const blogApiLocalData = [
 ];
 
 const BlogPage = () => {
-  const [blogData, setBlogData] = useState(blogApiLocalData);
+  const [blogData, setBlogData] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
 
-  // const getProjectDataFromApi = async () => {
-  //   setIsLoading(true);
-  //   const data = await Axios(projectUrl);
-  //   const soretedData = data.data.sort(
-  //     (objA, objB) =>
-  //       Number(new Date(objB.blogDate)) - Number(new Date(objA.blogDate))
-  //   );
-  //   setBlogData(soretedData);
-  //   setIsLoading(false);
-  // };
+  const getProjectDataFromApi = async () => {
+    setIsLoading(true);
+    const data = await Axios(projectUrl);
+    const soretedData = data.data.sort(
+      (objA, objB) =>
+        Number(new Date(objB.blogDate)) - Number(new Date(objA.blogDate))
+    );
+    setBlogData(soretedData);
+    setIsLoading(false);
+  };
 
-  // useEffect(() => {
-  //   getProjectDataFromApi();
-  // }, []);
+  useEffect(() => {
+    getProjectDataFromApi();
+  }, []);
 
   return (
     <>

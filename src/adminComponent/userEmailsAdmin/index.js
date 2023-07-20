@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./index.css";
 import axios from "axios";
+import { AiFillDelete } from "react-icons/ai"
 
 
 const UserEmailsAdmin = () => {
@@ -44,10 +45,9 @@ const UserEmailsAdmin = () => {
       <div>
         {userEmailData.map((eachEmail) => (
           <>
-            <p className="admi-user-emain-para">
-              {eachEmail.userEmail} --- {eachEmail.date.slice(0, 10)} --- <span onClick={() => onDeleteHandler(eachEmail._id)}>delete</span>
-            </p>
-
+            <div className="admi-user-emain-para">
+              <p>{eachEmail.userEmail} --- {eachEmail.date.slice(0, 10)}</p>  <button className="backend-red-button-icon" onClick={() => onDeleteHandler(eachEmail._id)}><AiFillDelete /></button>
+            </div>
           </>
         ))}
       </div>
