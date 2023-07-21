@@ -272,11 +272,11 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .header-active-tab {
-  background-color: #daeaff;
+  /* background-color: #daeaff; */
   z-index: 1;
   border-radius: 99px;
   transition: all 0.6s linear;
-  color: #185ee0;
+  /* color: #185ee0; */
 }
 
 @media screen and (max-width: 1023px) {
