@@ -4,6 +4,8 @@ import { IoMdSend } from "react-icons/io";
 import { safePreventDefault } from "react-slick/lib/utils/innerSliderUtils";
 import axios from "axios";
 
+const base_url = process.env.REACT_APP_MY_VARIABLE;
+
 const SubscribeSection = (e) => {
   const [inputEmail, setInputEmail] = useState("");
   const handlerSendButton = (e) => {
@@ -12,10 +14,11 @@ const SubscribeSection = (e) => {
       userEmail: inputEmail,
       date: new Date(),
     };
-    const url = "http://localhost:3005/subscribedEmails";
-    axios.post(url, data).then((res) => console.log(res));
+    const url = `${base_url}/subscribedEmails`;
+    axios.post(url, data).then((res) => (res));
     setInputEmail("");
   };
+
   return (
     <div id="Blogs" className="main-width-container">
       <div className="middle-width-container">

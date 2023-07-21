@@ -15,6 +15,14 @@ const SlideTwo = () => {
     initialSlide: 0,
     responsive: [
       {
+        breakpoint: 2900,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          dots: true,
+        },
+      },
+      {
         breakpoint: 1900,
         settings: {
           slidesToShow: 2,

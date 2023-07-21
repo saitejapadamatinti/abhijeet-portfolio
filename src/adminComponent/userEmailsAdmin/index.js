@@ -3,6 +3,7 @@ import "./index.css";
 import axios from "axios";
 import { AiFillDelete } from "react-icons/ai"
 
+const base_url = process.env.REACT_APP_MY_VARIABLE;
 
 const UserEmailsAdmin = () => {
   const [userEmailData, setUserEMailData] = useState([]);
@@ -22,7 +23,7 @@ const UserEmailsAdmin = () => {
 
   useEffect(() => {
     const fetcingDataFromEMailAp = async () => {
-      const response = await fetch("http://localhost:3005/subscribedEmails");
+      const response = await fetch(`${base_url}/subscribedEmails`);
       const data = await response.json();
       //   const soretedData = data.data.sort(
       //     (objA, objB) =>
@@ -36,7 +37,7 @@ const UserEmailsAdmin = () => {
   const onDeleteHandler = (id) => {
     console.log(id)
     axios
-      .delete(`http://localhost:3005/subscribedEmails/${id}`)
+      .delete(`${base_url}/subscribedEmails/${id}`)
       .then((res) => setUserEMailData(res.data));
   };
 

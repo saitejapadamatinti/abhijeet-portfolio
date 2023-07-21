@@ -3,6 +3,7 @@
   grid-template-columns: 5fr 7fr;
   gap: 40px;
 }
+
 .proffesional-section-content-top-card {
   padding: 20px 30px;
   box-shadow: rgba(0, 0, 0, 0.08) 0px 6px 6px;
@@ -12,12 +13,14 @@
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
+
 .professional-section-card-scrool {
   padding: 20px 30px;
   overflow: auto;
   height: 100%;
   margin-bottom: 30px;
 }
+
 .ProfessionalSection-content-card-div {
   width: 100%;
   height: 71vh;
@@ -31,14 +34,17 @@
   flex-direction: column;
   animation: fadeIn 2s;
 }
+
 @keyframes fadeIn {
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
 }
+
 .ProfessionalSection-taps-div {
   /* display: grid;
   grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -55,15 +61,18 @@
   grid-template-columns: 8fr 4fr;
   align-items: center;
 }
+
 .profession-section-my-role-content {
   display: flex;
   margin-top: 10px;
   flex-direction: row;
   gap: 0px;
 }
+
 .professional-secton-my-role-text {
   width: 93px;
 }
+
 .professional-secton-my-role-ul {
   padding-top: 15px;
   padding-left: 20px;
@@ -76,18 +85,22 @@
   .professional-accordian-section-main-div {
     display: none;
   }
+
   .ProfessionalSection-mai-div {
     display: block;
     display: grid;
   }
 }
+
 @media screen and (max-width: 992px) {
   .professional-accordian-section-main-div {
     display: block;
   }
+
   .ProfessionalSection-mai-div {
     display: none;
   }
+
   .profession-section-my-role-content {
     display: flex;
     flex-direction: column;

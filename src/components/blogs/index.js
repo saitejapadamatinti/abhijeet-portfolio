@@ -5,7 +5,8 @@ import { MoonLoader } from "react-spinners";
 import "./index.css"
 import HomeBlogCard from '../homePageComponents/HomeBlogs/homeBlogCard'
 
-const projectUrl = "http://localhost:3005/allBlogs";
+const base_url = process.env.REACT_APP_MY_VARIABLE;
+
 
 const BlogPage = () => {
   const [blogData, setBlogData] = useState([]);
@@ -13,7 +14,7 @@ const BlogPage = () => {
 
   const getProjectDataFromApi = async () => {
     setIsLoading(true);
-    const data = await Axios(projectUrl);
+    const data = await Axios(`${base_url}/allBlogs`);
     const soretedData = data.data.sort(
       (objA, objB) =>
         Number(new Date(objB.blogDate)) - Number(new Date(objA.blogDate))

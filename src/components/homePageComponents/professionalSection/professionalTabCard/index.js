@@ -8,7 +8,6 @@ const ProfessionalTabCard = (props) => {
     selectedCompany === professionalCardData.companyName
       ? "professional-tab-card-active"
       : "";
-  console.log(selectedCompany + selectedTabColor);
 
   return (
     <div className={`${selectedTabColor} professional-tab-card`}>

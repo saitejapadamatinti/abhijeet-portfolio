@@ -50,14 +50,11 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import ImageUpload from "../cloudnaryImage";
 
-const baseUrl = "https://projects-4kv4.onrender.com";
-
-
+const base_url = process.env.REACT_APP_MY_VARIABLE;
 
 function BlogBaackendForm() {
   // api data state
   const [fetchedData, setFetchedData] = useState([]);
-  console.log(fetchedData)
 
   // inputs states
   const [_id, setId] = useState("");
@@ -82,7 +79,7 @@ function BlogBaackendForm() {
   // fetch data from api
   const fetchingDataFromApi = async () => {
     const response = await fetch(
-      "http://localhost:3005/allBlogs"
+      `${base_url}/allBlogs`
     );
     const data = await response.json();
     setFetchedData(data);
@@ -96,7 +93,7 @@ function BlogBaackendForm() {
   const onSubmitHandler = (e) => {
     console.log("sss")
     e.preventDefault();
-    const url = "http://localhost:3005/addProject";
+    const url = `${base_url}/addProject`;
     axios
       .post(url, {
         bloghead: heading,
@@ -108,18 +105,18 @@ function BlogBaackendForm() {
       })
       .then((res) => setFetchedData(res.data));
 
-    // setHeading("");
-    // setDisplayImage("");
-    // setDescrption("");
-    // setReadMore("");
-    // setDate("");
-    // setBlogLongDescriptio("")
+    setHeading("");
+    setDisplayImage("");
+    setDescrption("");
+    setReadMore("");
+    setDate("");
+    setBlogLongDescriptio("")
   };
 
   // on delete
   const onDeleteHandler = (id) => {
     axios
-      .delete(`http://localhost:3005/deleteProject/${id}`)
+      .delete(`${base_url}/deleteProject/${id}`)
       .then((res) => setFetchedData(res.data));
   };
 
@@ -130,16 +127,16 @@ function BlogBaackendForm() {
     setId(editingProject._id);
     setHeading(editingProject.bloghead);
     setDisplayImage(editingProject.blogImage);
+    setDate(editingProject.blogDate);
     setDescrption(editingProject.blogContent);
-    setBlogLongDescriptio(editingProject.blogDate)
     setReadMore(editingProject.readTime);
-    setDate(editingProject.blogLongDescription);
+    setBlogLongDescriptio(editingProject.blogLongDescription)
   };
 
   // on edit submit form
   const onEditSubmitHandler = () => {
     console.log("is Edited");
-    const url = `http://localhost:3005/updateProject`;
+    const url = `${base_url}/updateProject`;
     axios
       .put(url, {
         _id,
@@ -184,7 +181,6 @@ function BlogBaackendForm() {
         <form className="backend-login-form" onSubmit={onLoginHandler}>
           <div>
             <label>User Name</label>
-
             <input
               className="backend-input-box"
               value={userName}

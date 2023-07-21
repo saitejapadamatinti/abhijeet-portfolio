@@ -1,8 +1,20 @@
 import React from 'react'
 import "./index.css"
+import { useState } from 'react'
+import { useEffect } from 'react'
 
 const Footer = () => {
   const webUrl = window.origin
+  const [resume, setResume] = useState([])
+
+  useEffect(() => {
+    const fetchingDataFromAPi = async () => {
+      const response = await fetch("http://localhost:3005/resume")
+      const data = await response.json()
+      setResume(data[0].resume)
+    }
+    fetchingDataFromAPi()
+  }, [])
   return (
     <>
       <div className='footer-desktop'>
@@ -61,7 +73,8 @@ const Footer = () => {
             <div className='ul-items-div footer-box-2'>
               <b>Get in Touch</b>
               <ul>
-                <li>Download resume
+
+                <li> <a href={resume} target='_blank' >Download resume</a>
                 </li>
                 <li>Contact me
                 </li>
@@ -136,7 +149,7 @@ const Footer = () => {
                 <div className='ul-items-div footer-box-2'>
                   <b>Get in Touch</b>
                   <ul>
-                    <li><a href=''>Download resume</a>
+                    <li><a href={resume} target='_blank' >Download resume</a>
                     </li>
                     <li><a href=''>Contact me</a></li>
                   </ul>

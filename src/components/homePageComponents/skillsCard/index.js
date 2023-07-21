@@ -2,7 +2,6 @@ import React from "react";
 import "./index.css";
 
 const SkillCard = ({ skillName }) => {
-  console.log(skillName);
   return (
     <div className="skillcard-bg-image ">
       <div className="skil-card-head-div">

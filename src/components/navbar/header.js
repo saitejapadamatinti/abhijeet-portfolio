@@ -53,37 +53,37 @@ function useMenuAnimation(isOpen) {
 const headerList = [
   {
     name: "About Me",
-    path: "AboutMe",
+    path: "#AboutMe",
     for: "radio-1",
   },
   {
     name: "Professional Experience",
-    path: "ProfessionalExperience",
+    path: "#ProfessionalExperience",
     for: "radio-2",
   },
   {
     name: "Skills",
-    path: "Skills",
+    path: "#Skills",
     for: "radio-3",
   },
   {
     name: "Contact Me",
-    path: "ContactMe",
+    path: "#ContactMe",
     for: "radio-4",
   },
   {
     name: "Newsletter",
-    path: "Newsletter",
+    path: "#Newsletter",
     for: "radio-5",
   },
   {
     name: "Education",
-    path: "Education",
+    path: "#Education",
     for: "radio-6",
   },
   {
     name: "Certifications",
-    path: "Certifications",
+    path: "#Certifications",
     for: "radio-7",
   },
   {
@@ -139,7 +139,7 @@ export default function Navebar() {
             <a
               className={activeTab === eachHeader.name && "header-active-tab"}
               onClick={() => setActiveTab(eachHeader.name)}
-              href={`${webUrl}/#${eachHeader.path}`}
+              href={`${webUrl}/${eachHeader.path}`}
             >
               {eachHeader.name}
             </a>
@@ -178,7 +178,7 @@ export default function Navebar() {
             Connect with me, and let's create a symphony of success together 🎻🎉</p>
           <hr className="header-looking-hr-line" />
           {headerList.map((eachHeader) => (
-            <a onClick={() => setIsOpen(false)} href={`${webUrl}/#${eachHeader.path}`}>
+            <a onClick={() => setIsOpen(false)} href={`${webUrl}/${eachHeader.path}`}>
               {eachHeader.name}
             </a>
           ))}

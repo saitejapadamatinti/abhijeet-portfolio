@@ -92,6 +92,12 @@
     .ul-items-div ul li a {
         text-decoration: none;
         color: #707070;
+        transition: all 0.3s linear;
+    }
+
+    .ul-items-div ul li a:hover {
+        color: #9981d5;
+        transition: all 0.3s linear;
     }
 
     @media screen and (min-width:998px) {

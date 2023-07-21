@@ -7,8 +7,7 @@ import Axios from "axios";
 import { MoonLoader } from "react-spinners";
 import HomeBlogCard from '../homePageComponents/HomeBlogs/homeBlogCard'
 
-
-const projectUrl = "http://localhost:3005/allBlogs";
+const base_url = process.env.REACT_APP_MY_VARIABLE;
 
 const BlogDetails = () => {
   const [recentBlogs, setRecentBlogs] = useState([]);
@@ -21,7 +20,8 @@ const BlogDetails = () => {
 
   const getBlogDetailsFromApi = async () => {
     setIsLoading(true);
-    const url = `http://localhost:3005/allBlogs/${id}`;
+    const url = `${base_url}/allBlogs/${id}`;
+    console.log(url)
     const data = await Axios(url);
     setBlogDetails(data.data);
     const splitedDescription = data.data.blogLongDescription.split("/");
@@ -34,7 +34,7 @@ const BlogDetails = () => {
   }, [id]);
 
   const getProjectDataFromApi = async () => {
-    const data = await Axios(projectUrl);
+    const data = await Axios(`${base_url}/allBlogs`);
     const soretedData = data.data.sort(
       (objA, objB) =>
         Number(new Date(objB.blogDate)) - Number(new Date(objA.blogDate))

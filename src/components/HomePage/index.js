@@ -132,14 +132,15 @@ const educationData = [
   },
 ];
 
+
+const base_url = process.env.REACT_APP_MY_VARIABLE;
+
 const HomePage = () => {
   const [resume, setResume] = useState([])
-  console.log(resume)
-
 
   useEffect(() => {
     const fetchingDataFromAPi = async () => {
-      const response = await fetch("http://localhost:3005/resume")
+      const response = await fetch(`${base_url}/resume`)
       const data = await response.json()
       setResume(data[0].resume)
     }
@@ -148,7 +149,6 @@ const HomePage = () => {
 
   return (
     <>
-
       <div className="main-width-container">
         <div className="middle-width-container">
           <div className="home-banner-div height-100vh">
