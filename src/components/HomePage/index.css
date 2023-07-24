@@ -333,8 +333,8 @@
 
 @media screen and (max-width:1023px) {
   .home-banner-image-icon {
-    width: 234px;
-    height: 234px;
+    width: 330px;
+    height: 330px;
     border-radius: 50%;
   }
 
@@ -604,4 +604,24 @@ section {
   100% {
     transform: translateX(-200%);
   }
+}
+
+
+.the-best-decision-section {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.the-best-decision-section h1 {
+  font-size: 50px;
+}
+
+.the-best-decision-section h1 span {
+  color: #424242;
+  transition: all 0.3s linear;
+}
+
+.the-best-decision-section h1 span:hover {
+  color: #ACACAC;
+  transition: all 0.3s linear;
 }

@@ -52,6 +52,7 @@
         margin-top: 30px;
         display: flex;
         gap: 15px;
+        align-items: center;
     }
 
     .footer-div-container b {
@@ -98,6 +99,17 @@
     .ul-items-div ul li a:hover {
         color: #9981d5;
         transition: all 0.3s linear;
+    }
+
+
+    .footer-share-icons {
+        fill: #545454
+    }
+
+    .footer-share-icons:hover {
+        fill: #9981d5;
+        transition: all 0.3s linear;
+        cursor: pointer;
     }
 
     @media screen and (min-width:998px) {
@@ -200,7 +212,8 @@
         }
 
         .footer-location-logo-para {
-            margin-top: 20px;
+            /* margin-top: 20px; */
+            margin: 0px;
         }
 
         .footer-copy-text {
@@ -220,5 +233,12 @@
 
         .footer-img-logo {
             width: 80px;
+        }
+
+        .footer-location-div {
+            display: flex;
+            align-items: center;
+            margin-top: 25px;
+            gap: 10px;
         }
     }

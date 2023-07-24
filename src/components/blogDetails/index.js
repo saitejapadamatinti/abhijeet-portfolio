@@ -21,7 +21,6 @@ const BlogDetails = () => {
   const getBlogDetailsFromApi = async () => {
     setIsLoading(true);
     const url = `${base_url}/allBlogs/${id}`;
-    console.log(url)
     const data = await Axios(url);
     setBlogDetails(data.data);
     const splitedDescription = data.data.blogLongDescription.split("/");

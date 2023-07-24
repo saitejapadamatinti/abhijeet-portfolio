@@ -359,9 +359,23 @@ const HomePage = () => {
           </div>
         </div>
       </div>
-      {/* <marquee scrollamount="10"> */}
-
-      {/* </marquee> */}
+      <div className="main-width-container">
+        <div className="middle-width-container the-best-decision-section">
+          <h1>
+            <span>The </span>
+            <span>best </span>
+            <span>decision </span>
+            <span>you'll </span>
+            <span>make </span>
+            <span>since </span>
+            <span>adding </span>
+            <span>extra </span>
+            <span>cheese </span>
+            <span>on </span>
+            <span>your </span>
+            <span>pizza.</span>
+          </h1>
+        </div></div>
       <div id="Education" className="main-width-container height-100vh">
         <div className="middle-width-container">
           <div>

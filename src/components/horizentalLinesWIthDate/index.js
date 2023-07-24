@@ -2,30 +2,10 @@ import React from "react";
 import "./index.css";
 import { BsBoxArrowUp, BsDot } from "react-icons/bs";
 import { AiFillHeart } from "react-icons/ai";
-
-import {
-  EmailShareButton,
-  FacebookShareButton,
-  HatenaShareButton,
-  InstapaperShareButton,
-  LineShareButton,
-  LinkedinShareButton,
-  LivejournalShareButton,
-  MailruShareButton,
-  OKShareButton,
-  PinterestShareButton,
-  PocketShareButton,
-  RedditShareButton,
-  TelegramShareButton,
-  TumblrShareButton,
-  TwitterShareButton,
-  ViberShareButton,
-  VKShareButton,
-  WhatsappShareButton,
-  WorkplaceShareButton
-} from "react-share";
+import { useParams, Link } from "react-router-dom";
 
 const base_url = process.env.REACT_APP_MY_VARIABLE;
+const page_url = window.origin
 
 const HorizentaLineWithDate = ({ blogDate, likes }) => {
   const blogYear = new Date(blogDate).getFullYear();
@@ -38,7 +18,16 @@ const HorizentaLineWithDate = ({ blogDate, likes }) => {
     return date.toLocaleString("en-US", { month: "short" });
   }
 
+  const params = useParams();
+  const { id } = params;
+  const url = `${page_url}/blog/${id}`;
+
   const blogMonth = getMonthName(blogMonthnumber);
+
+  const onClickShareButton = async () => {
+    await navigator.clipboard.writeText(url);
+    alert('Text copied');
+  }
 
   return (
     <div className="horizental-line-date-main-div">
@@ -56,19 +45,7 @@ const HorizentaLineWithDate = ({ blogDate, likes }) => {
             <span className=" text-light-color">3 min read</span>
           </div>
           <span className="horizental-line-read-more-text">
-            <div class="tooltip"><BsBoxArrowUp className="text-light-color" />
-              <span class="tooltiptext">
-                <FacebookShareButton url={base_url} >
-                  F
-                </FacebookShareButton>
-                <WhatsappShareButton url={base_url} >
-                  w
-                </WhatsappShareButton>
-                <LinkedinShareButton url={base_url} >
-                  L
-                </LinkedinShareButton>
-              </span>
-            </div>
+            <BsBoxArrowUp onClick={onClickShareButton} className="text-light-color" />
           </span>
         </div>
       </div>
