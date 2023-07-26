@@ -3,11 +3,13 @@
   left: 0;
   bottom: 0;
 }
+
 .about-section-arrow-icon {
   position: absolute;
   right: 145px;
   bottom: 107px;
 }
+
 .about-main-container {
   display: grid;
   grid-template-columns: 1fr;
@@ -25,10 +27,12 @@
   display: grid;
   grid-template-columns: 8fr 4fr;
 }
+
 .about-images-div-2 {
   display: grid;
   grid-template-columns: 4fr 8fr;
 }
+
 .about-images-div-3 {
   display: grid;
   grid-template-columns: 4fr 4fr 4fr;
@@ -39,48 +43,57 @@
   min-height: 110px;
   border-radius: 120px;
 }
+
 .about-images-2 {
   width: 100%;
   min-height: 110px;
   border-radius: 50%;
 }
+
 .about-images-2 img {
   width: 100%;
   object-fit: cover;
   height: 100%;
   border-radius: 50%;
 }
+
 .about-images-3 {
   width: 100%;
   min-height: 110px;
   background-color: rgba(199, 179, 255, 1);
   border-radius: 120px;
 }
+
 .about-images-4 {
   width: 100%;
   min-height: 110px;
   border-radius: 120px;
 }
+
 .about-images-4 img {
   object-fit: cover;
 }
+
 .about-images-5 {
   width: 100%;
   min-height: 110px;
   border-radius: 50%;
 }
+
 .about-images-6 {
   width: 100%;
   min-height: 110px;
   background-color: rgba(167, 197, 253, 1);
   border-radius: 120px;
 }
+
 .about-images-7 {
   width: 100%;
   min-height: 110px;
   background-color: rgba(199, 179, 255, 1);
   border-radius: 120px;
 }
+
 .about-section-content p {
   color: #343434;
   font-size: 14px;
@@ -108,10 +121,12 @@ width : 90%
   border-radius: 100px;
   box-shadow: 0px 16px 20px 0px rgba(0, 0, 0, 0.25);
 }
+
 .about-card-user-box-image {
   width: 100%;
   border-radius: 100px;
 }
+
 .about-images-container-content-div {
   display: flex;
   flex-direction: column;
@@ -122,28 +137,35 @@ width : 90%
   margin: 40px;
   margin-top: 20px;
 }
+
 .about-icons-div {
   display: flex;
   align-items: center;
   gap: 35px;
 }
+
 .about-icon {
   width: 30px;
   height: 30px;
   color: #545454;
 }
+
 .about-section-content-mobile {
   display: block;
 }
+
 .about-section-content {
   display: none;
 }
+
 .mobile-about-read-more {
   transition: all 0.5s linear;
 }
+
 .about-section-content-mobile p {
   line-height: 24px;
 }
+
 .about-user-image-person {
   width: 170px;
 }
@@ -153,6 +175,7 @@ width : 90%
   .about-main-container {
     grid-template-columns: 5fr 7fr;
   }
+
   .about-images-container {
     display: flex;
     flex-direction: column;
@@ -162,10 +185,12 @@ width : 90%
     display: grid;
     grid-template-columns: 8fr 4fr;
   }
+
   .about-images-div-2 {
     display: grid;
     grid-template-columns: 4fr 8fr;
   }
+
   .about-images-div-3 {
     display: grid;
     grid-template-columns: 4fr 4fr 4fr;
@@ -176,53 +201,65 @@ width : 90%
     height: 240px;
     border-radius: 120px;
   }
+
   .about-images-2 {
     width: 241px;
     height: 240px;
     border-radius: 50%;
   }
+
   .about-images-3 {
     width: 241px;
     height: 190px;
     border-radius: 120px;
   }
+
   .about-images-4 {
     width: 100%;
     height: 190px;
     border-radius: 120px;
   }
+
   .about-images-5 {
     width: 240px;
     height: 240px;
     border-radius: 50%;
   }
+
   .about-images-6 {
     width: 100%;
     height: 240px;
     border-radius: 120px;
   }
+
   .about-images-7 {
     width: 100%;
     height: 240px;
     border-radius: 120px;
   }
+
   .about-card-user-box {
     width: 80% !important;
     height: 595px;
   }
+
   .about-section-content p {
     font-size: 18px;
   }
+
   .about-section-content-mobile {
     display: none;
   }
+
   .about-section-content {
     display: block;
   }
+
   .about-section-content p {
     line-height: 30px;
   }
 }
+
 @media screen and (max-width: 991px) {
   .about-card-user-box {
     width: 401px;

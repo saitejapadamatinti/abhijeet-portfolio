@@ -269,6 +269,16 @@
   /* height: 100vh; */
 }
 
+.contacte-head-text {
+  color: #424242;
+  font-family: Montserrat;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  margin-bottom: 60px;
+}
+
 @media screen and (min-width: 1024px) {
   .home-banner-img-outline {
     width: 450px;
@@ -368,6 +378,12 @@
   .hello-hand-icon {
     height: 50px;
   }
+
+  .contacte-head-text {
+
+    font-size: 34px;
+
+  }
 }
 
 @media screen and (max-width:576px) {
@@ -376,14 +392,15 @@
   }
 
   .home-banner-image-icon {
-
-    top: 47px;
-    left: 49px;
+    width: 295px;
+    height: 295px;
+    top: 22px;
+    left: 22px;
   }
 
   .home-svg-4 {
 
-    transform: rotate(342deg);
+    transform: rotate(367deg);
   }
 
   .download-button-icon {
@@ -624,4 +641,10 @@ section {
 .the-best-decision-section h1 span:hover {
   color: #ACACAC;
   transition: all 0.3s linear;
+}
+
+@media screen and (max-width : 576px) {
+  .the-best-decision-section h1 {
+    font-size: 15px;
+  }
 }

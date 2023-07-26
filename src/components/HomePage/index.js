@@ -16,6 +16,7 @@ import AboutSection from "../homePageComponents/About";
 import SubscribeSection from "../homePageComponents/Subscribe";
 import { motion } from "framer-motion";
 import Footer from "react-multi-date-picker/plugins/range_picker_footer";
+import Contact from "../homePageComponents/Contact";
 
 const skills = [
   {
@@ -376,6 +377,17 @@ const HomePage = () => {
             <span>pizza.</span>
           </h1>
         </div></div>
+      <div id="AboutMe">
+        {/* <img className="about-section-line" src="/images/Vector 2.png" />
+          <img className="about-section-arrow-icon" src="/images/Add a heading (12) 1.png" /> */}
+        {/* <div className="">
+          <HomeSectionNumber number={"01"} content={"About Me"} />
+        </div> */}
+        <div className="">
+          <h1 className="contacte-head-text"><center>Contact</center></h1>
+          <Contact />
+        </div>
+      </div>
       <div id="Education" className="main-width-container height-100vh">
         <div className="middle-width-container">
           <div>
@@ -409,7 +421,6 @@ const HomePage = () => {
         <SubscribeSection />
       </div>
       <div>
-        {/* <Footer /> */}
       </div>
     </>
   );
