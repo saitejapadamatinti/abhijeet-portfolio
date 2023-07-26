@@ -262,14 +262,18 @@
 }
 
 @media screen and (max-width: 576px) {
+    .contact-page-main-main-div {
+        grid-template-columns: 4.5fr 7.5fr;
+    }
+
     .contact-card-user-box {
-        width: 118px;
-        height: 160px;
+        width: 83%;
+        height: 210px;
         border-radius: 30px;
     }
 
     .contact-user-image-person {
-        width: 40px;
+        width: 50px;
     }
 
     .contact-main-name-heading {
@@ -288,16 +292,17 @@
     }
 
     .contact-about-images-container-content-div {
-        gap: 0px;
+        gap: 4px;
         margin: 0px;
     }
 
     .contact-images-div {
         background-image: url("../../../../public/images/card/contact-card-mobile.png");
         background-repeat: no-repeat;
-        height: 100px;
+        height: 118px;
         border-top-left-radius: 30px;
         border-top-right-radius: 30px;
+        background-size: cover;
     }
 
     .contact-card-para {
@@ -325,16 +330,18 @@
     }
 
     .contacte-data-div {
-        height: 150px;
+        height: 180px;
+        width: 96%;
         padding: 15px;
         gap: 5px;
         padding-left: 30px;
         justify-content: space-between;
+        border-radius: 7px;
     }
 
     .contact-laber-text {
         margin: 0px !important;
-        font-size: 8px;
+        font-size: 10px;
     }
 
     .contact-input-feild {

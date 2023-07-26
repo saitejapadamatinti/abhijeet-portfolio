@@ -269,15 +269,7 @@
   /* height: 100vh; */
 }
 
-.contacte-head-text {
-  color: #424242;
-  font-family: Montserrat;
-  font-size: 64px;
-  font-style: normal;
-  font-weight: 800;
-  line-height: normal;
-  margin-bottom: 60px;
-}
+
 
 @media screen and (min-width: 1024px) {
   .home-banner-img-outline {
@@ -623,19 +615,39 @@ section {
   }
 }
 
+.contacte-head-text {
+  color: #424242;
+  font-family: Montserrat;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  margin-bottom: 60px;
+}
+
+
 
 .the-best-decision-section {
   text-align: center;
-  margin-top: 50px;
+  margin-top: 120px;
+  margin-bottom: 30px;
+  padding: 0px 230px;
 }
 
 .the-best-decision-section h1 {
-  font-size: 50px;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+
 }
 
 .the-best-decision-section h1 span {
   color: #424242;
   transition: all 0.3s linear;
+
 }
 
 .the-best-decision-section h1 span:hover {
@@ -643,7 +655,28 @@ section {
   transition: all 0.3s linear;
 }
 
-@media screen and (max-width : 576px) {
+@media screen and (max-width:992px) {
+  .the-best-decision-section h1 {
+    font-size: 30px;
+  }
+
+  .contacte-head-text {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width:576px) {
+  .the-best-decision-section {
+    font-size: 16px;
+    margin-bottom: 20px;
+    padding: 0px 30px;
+  }
+
+  .contacte-head-text {
+    font-size: 16px !important;
+    margin-bottom: 22px;
+  }
+
   .the-best-decision-section h1 {
     font-size: 15px;
   }

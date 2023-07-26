@@ -360,8 +360,8 @@ const HomePage = () => {
           </div>
         </div>
       </div>
-      <div className="main-width-container">
-        <div className="middle-width-container the-best-decision-section">
+      <div className="">
+        <div className=" the-best-decision-section">
           <h1>
             <span>The </span>
             <span>best </span>
@@ -378,11 +378,6 @@ const HomePage = () => {
           </h1>
         </div></div>
       <div id="AboutMe">
-        {/* <img className="about-section-line" src="/images/Vector 2.png" />
-          <img className="about-section-arrow-icon" src="/images/Add a heading (12) 1.png" /> */}
-        {/* <div className="">
-          <HomeSectionNumber number={"01"} content={"About Me"} />
-        </div> */}
         <div className="">
           <h1 className="contacte-head-text"><center>Contact</center></h1>
           <Contact />
