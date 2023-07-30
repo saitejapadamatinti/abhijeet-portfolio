@@ -379,7 +379,7 @@ const HomePage = () => {
         </div></div>
       <div id="AboutMe">
         <div className="">
-          <h1 className="contacte-head-text"><center>Contact</center></h1>
+          <h1 className="contacte-head-text"><center>Contact Me</center></h1>
           <Contact />
         </div>
       </div>
@@ -412,6 +412,24 @@ const HomePage = () => {
           <HomeBlogs />
         </div>
       </div>
+      <div className="">
+        <div className="subscribe-the-best-decision-section the-best-decision-section">
+          <h1>
+            <span>Bored </span>
+            <span>with </span>
+            <span>ordinary </span>
+            <span>emails? </span>
+            <span>Spice </span>
+            <span>up </span>
+            <span>your </span>
+            <span>inbox </span>
+            <span>by </span>
+            <span>subscribing </span>
+            <span>to </span>
+            <span>my </span>
+            <span>newsletter. </span>
+          </h1>
+        </div></div>
       <div>
         <SubscribeSection />
       </div>

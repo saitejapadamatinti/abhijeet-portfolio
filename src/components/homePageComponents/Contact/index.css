@@ -104,8 +104,16 @@
     border-bottom: 2px solid #8C8C8C;
     outline: none;
     width: 100%;
-
 }
+
+.contact-input-feild:focus {
+    border-bottom: 2px solid #8927C5;
+}
+
+.contact-input-feild:focus .contact-laber-text {
+    color: #8927C5 !important;
+}
+
 
 .contact-hit-button {
     display: flex;
@@ -128,6 +136,78 @@
     cursor: pointer;
     border: none;
 }
+
+.contact-hit-button:hover::before {
+    content: "sssss";
+}
+
+.contact-hit-button:hover::after {
+    content: "sai";
+}
+
+/* Styles for the button */
+.hover-button {
+    width: 257px;
+    height: 79px;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    border-radius: 52px;
+    background: #9981D5;
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    transition: box-shadow 0.3s ease;
+}
+
+/* Styles for both old and new content */
+.old-content,
+.new-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Initial styles for the old content */
+.old-content {
+    opacity: 1;
+    z-index: 1;
+}
+
+/* Styles for the new content to be shown on hover */
+.new-content {
+    opacity: 0;
+    z-index: 2;
+}
+
+/* Show the new content on hover and hide the old content */
+.hover-button:hover .old-content {
+    opacity: 0;
+}
+
+.hover-button:hover .new-content {
+    opacity: 1;
+    box-shadow: 0px 16px 20px 0px rgba(0, 0, 0, 0.25);
+    transition: box-shadow 0.3s ease;
+    border-radius: 52px;
+}
+
 
 .contact-about-images-container-content-div {
     display: flex;
@@ -202,7 +282,7 @@
         text-align: center;
         font-family: Montserrat;
         width: 80%;
-        font-size: 8px;
+        font-size: 9px;
         font-style: normal;
         font-weight: 400;
         line-height: 133.9%;
@@ -215,7 +295,7 @@
     }
 
     .contact-icons-div {
-        gap: 5px;
+        gap: 15px;
     }
 
     .contact-main-name-heading {
@@ -242,7 +322,7 @@
         padding: 0px;
     }
 
-    .contact-hit-button {
+    .hover-button {
         display: flex;
         width: 130px;
         height: 35px;
@@ -268,7 +348,7 @@
 
     .contact-card-user-box {
         width: 83%;
-        height: 210px;
+        height: 190px;
         border-radius: 30px;
     }
 
@@ -322,15 +402,16 @@
     }
 
     .contact-icons-div {
-        gap: 5px;
+        gap: 10px;
     }
 
     .contact-main-name-heading {
         height: 10px;
+        margin-bottom: 0px;
     }
 
     .contacte-data-div {
-        height: 180px;
+        height: 156px;
         width: 96%;
         padding: 15px;
         gap: 5px;
@@ -350,7 +431,7 @@
         padding: 0px;
     }
 
-    .contact-hit-button {
+    .hover-button {
         display: flex;
         width: 76px;
         height: 19px;

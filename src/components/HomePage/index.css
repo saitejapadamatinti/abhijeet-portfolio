@@ -634,6 +634,10 @@ section {
   padding: 0px 230px;
 }
 
+.subscribe-the-best-decision-section {
+  margin: 100px 0px !important;
+}
+
 .the-best-decision-section h1 {
   text-align: center;
   font-family: Montserrat;
@@ -645,23 +649,34 @@ section {
 }
 
 .the-best-decision-section h1 span {
-  color: #424242;
+
+  color: #ACACAC;
   transition: all 0.3s linear;
+
 
 }
 
 .the-best-decision-section h1 span:hover {
-  color: #ACACAC;
+  color: #424242;
   transition: all 0.3s linear;
+  cursor: default;
 }
 
 @media screen and (max-width:992px) {
+  .the-best-decision-section {
+    padding: 0px 60px;
+  }
+
   .the-best-decision-section h1 {
-    font-size: 30px;
+    font-size: 22px;
   }
 
   .contacte-head-text {
     font-size: 18px;
+  }
+
+  .subscribe-the-best-decision-section {
+    margin: 40px 0px !important;
   }
 }
 
@@ -680,5 +695,9 @@ section {
 
   .the-best-decision-section h1 {
     font-size: 15px;
+  }
+
+  .subscribe-the-best-decision-section {
+    margin: 0px 0px !important;
   }
 }

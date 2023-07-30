@@ -72,7 +72,10 @@ const Contact = () => {
                         <input className='contact-input-feild' type='text' />
                     </div>
                     <div>
-                        <button className='contact-hit-button'>Hit me up! 😎</button>
+                        <button className=' hover-button'>
+                            <span class="old-content">Hit me up! 😎</span>
+                            <span class="new-content">I’m Waiting 🥺</span>
+                        </button>
 
                     </div>
                 </div>
