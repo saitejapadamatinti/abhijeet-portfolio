@@ -7,7 +7,7 @@ import Axios from "axios";
 import { MoonLoader } from "react-spinners";
 import HomeBlogCard from '../homePageComponents/HomeBlogs/homeBlogCard'
 
-const base_url = "https://abhijeet.onrender.com";
+const base_url = process.env.REACT_APP_MY_VARIABLE;
 
 const BlogDetails = () => {
   const [recentBlogs, setRecentBlogs] = useState([]);
