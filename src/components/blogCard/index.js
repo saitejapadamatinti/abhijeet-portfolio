@@ -19,24 +19,7 @@ const BlogCard = ({ blogData }) => {
   const blogMonth = getMonthName(blogMonthnumber);
 
   return (
-    <motion.div
-      initial={{
-        x: -1500,
-        y: 0,
-        scale: 1,
-        rotate: 0,
-      }}
-      animate={{
-        x: 0,
-        y: 0,
-        scale: 1,
-        rotate: 0,
-      }}
-      transition={{
-        ease: "linear",
-        duration: 2,
-        x: { duration: 1 },
-      }}
+    <div
       className="blog-card-main-div"
     >
       <div className="blog-card-image-div">
@@ -70,7 +53,7 @@ const BlogCard = ({ blogData }) => {
           </Link>
         </div>
       </div>
-    </motion.div>
+    </div>
   );
 };
 

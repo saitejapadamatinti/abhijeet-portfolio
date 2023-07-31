@@ -39,7 +39,12 @@ const BlogPage = () => {
           <HomeBlogCard blogData={eachData} />
         ))}
       </div>
-      <Link className="home-blog-section-link-button" to="/blogs">
+      <Link className="home-blog-section-link-button"
+        onClick={() => {
+          window.location.href = `/blogs`;
+        }}
+        to={`/blogs`}
+      >
         <div className="home-blog-button-section">
           <button className="outline-button-2">View More</button>
         </div>

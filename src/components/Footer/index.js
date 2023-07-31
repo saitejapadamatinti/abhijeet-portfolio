@@ -3,18 +3,22 @@ import "./index.css"
 import { useState } from 'react'
 import { useEffect } from 'react'
 
+
+const base_url = process.env.REACT_APP_MY_VARIABLE;
+
 const Footer = () => {
   const webUrl = window.origin
   const [resume, setResume] = useState([])
 
   useEffect(() => {
     const fetchingDataFromAPi = async () => {
-      const response = await fetch("http://localhost:3005/resume")
+      const response = await fetch(`${base_url}/resume`)
       const data = await response.json()
       setResume(data[0].resume)
     }
     fetchingDataFromAPi()
   }, [])
+
   return (
     <>
       <div className='footer-desktop'>
