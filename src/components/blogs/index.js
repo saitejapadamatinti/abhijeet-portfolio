@@ -5,7 +5,7 @@ import { MoonLoader } from "react-spinners";
 import "./index.css"
 import HomeBlogCard from '../homePageComponents/HomeBlogs/homeBlogCard'
 
-const base_url = process.env.REACT_APP_MY_VARIABLE;
+const base_url = "https://abhijeet.onrender.com";
 
 
 const BlogPage = () => {
