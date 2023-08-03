@@ -63,24 +63,16 @@ function BlogBaackendForm() {
   const [descrption, setDescrption] = useState("");
   const [readMore, setReadMore] = useState("");
   const [date, setDate] = useState("");
-  const [blogLongDescription, setBlogLongDescriptio] = useState("")
+  const [blogLongDescription, setBlogLongDescriptio] = useState("");
 
-  console.log(heading, displayImage, descrption, readMore, date)
-
+  console.log(heading, displayImage, descrption, readMore, date);
 
   // is editing state
   const [isEditing, setIsEditing] = useState(false);
 
-  // login details
-  const [userName, setUserName] = useState("");
-  const [password, setPassword] = useState("");
-  const [isLogined, setIslogined] = useState(true);
-
   // fetch data from api
   const fetchingDataFromApi = async () => {
-    const response = await fetch(
-      `${base_url}/allBlogs`
-    );
+    const response = await fetch(`${base_url}/allBlogs`);
     const data = await response.json();
     setFetchedData(data);
   };
@@ -91,7 +83,7 @@ function BlogBaackendForm() {
 
   // on submit fetching data
   const onSubmitHandler = (e) => {
-    console.log("sss")
+    console.log("sss");
     e.preventDefault();
     const url = `${base_url}/addProject`;
     axios
@@ -101,7 +93,7 @@ function BlogBaackendForm() {
         blogContent: descrption,
         readTime: readMore,
         blogDate: date,
-        blogLongDescription: blogLongDescription
+        blogLongDescription: blogLongDescription,
       })
       .then((res) => setFetchedData(res.data));
 
@@ -110,7 +102,7 @@ function BlogBaackendForm() {
     setDescrption("");
     setReadMore("");
     setDate("");
-    setBlogLongDescriptio("")
+    setBlogLongDescriptio("");
   };
 
   // on delete
@@ -130,7 +122,7 @@ function BlogBaackendForm() {
     setDate(editingProject.blogDate);
     setDescrption(editingProject.blogContent);
     setReadMore(editingProject.readTime);
-    setBlogLongDescriptio(editingProject.blogLongDescription)
+    setBlogLongDescriptio(editingProject.blogLongDescription);
   };
 
   // on edit submit form
@@ -145,7 +137,7 @@ function BlogBaackendForm() {
         blogContent: descrption,
         readTime: readMore,
         blogDate: date,
-        blogLongDescription: blogLongDescription
+        blogLongDescription: blogLongDescription,
       })
       .then((res) => setFetchedData(res.data));
     setIsEditing(false);
@@ -154,185 +146,129 @@ function BlogBaackendForm() {
     setDescrption("");
     setReadMore("");
     setDate("");
-    setBlogLongDescriptio("")
+    setBlogLongDescriptio("");
   };
 
-  // on login form
-  const onLoginHandler = (e) => {
-    e.preventDefault();
-    if (userName === "abhijeet@242081" && password === "abhi030609") {
-      setIslogined(true);
-      setUserName("");
-      setPassword("");
-    } else {
-      alert("username and password not matched");
-    }
-  };
+  return (
+    <div className="BackendForm">
+      <hr />
+      <ImageUpload />
+      <hr />
 
-  // onlogout form
-  const onLogoutHandler = () => {
-    setIslogined(false);
-  };
-
-  if (isLogined === false) {
-    return (
-      <div className="backend-login-form-main-div">
-        <h2>Owner Login Form</h2>
-        <form className="backend-login-form" onSubmit={onLoginHandler}>
-          <div>
-            <label>User Name</label>
-            <input
-              className="backend-input-box"
-              value={userName}
-              onChange={(e) => setUserName(e.target.value)}
-              type="text"
-            />
+      <>
+        <form onSubmit={onSubmitHandler}>
+          <div className="form-div">
+            <div>
+              <label>Heading</label>
+              <input
+                className="backend-input-box"
+                value={heading}
+                onChange={(e) => setHeading(e.target.value)}
+                type="text"
+              />
+            </div>
+            <div>
+              <label>Image url</label>
+              <input
+                className="backend-input-box"
+                value={displayImage}
+                placeholder="Please provide url"
+                onChange={(e) => setDisplayImage(e.target.value)}
+                type="text"
+              />
+            </div>
+            <div>
+              <label>Read time</label>
+              <input
+                className="backend-input-box"
+                value={readMore}
+                onChange={(e) => setReadMore(e.target.value)}
+                type="number"
+              />
+            </div>
+            <div>
+              <label>Date</label>
+              <input onChange={(e) => setDate(e.target.value)} type="date" />
+            </div>
           </div>
-          <div>
-            <label>Password</label>
-            <input
-              className="backend-input-box"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-              type="password"
-            />
+          <div className="backend-project-description-class">
+            <label>Description</label>
+            <textarea
+              value={descrption}
+              onChange={(e) => setDescrption(e.target.value)}
+              className="text-area-input"
+            >
+              {descrption}
+            </textarea>
           </div>
-          <div>
-            <button className="blue-button" type="submit">
-              submit
-            </button>
+          <div className="backend-project-description-class">
+            <label>Long Description</label>
+            <textarea
+              value={blogLongDescription}
+              onChange={(e) => setBlogLongDescriptio(e.target.value)}
+              className="text-area-input"
+            >
+              {blogLongDescription}
+            </textarea>
+          </div>
+          <div className="backend-from-buttons-div">
+            {isEditing === false ? (
+              <button className="blue-button" type="submit">
+                Submit
+              </button>
+            ) : (
+              <button className="green-button" onClick={onEditSubmitHandler}>
+                Edit
+              </button>
+            )}
           </div>
         </form>
-      </div>
-    );
-  } else {
-    return (
-      <div className="BackendForm">
-        <hr />
-        <ImageUpload />
-        <hr />
 
-        <>
-          <form onSubmit={onSubmitHandler}>
-            <div className="form-div">
-              <div>
-                <label>Heading</label>
-                <input
-                  className="backend-input-box"
-                  value={heading}
-                  onChange={(e) => setHeading(e.target.value)}
-                  type="text"
-                />
-              </div>
-              <div>
-                <label>Image url</label>
-                <input
-                  className="backend-input-box"
-                  value={displayImage}
-                  placeholder="Please provide url"
-                  onChange={(e) => setDisplayImage(e.target.value)}
-                  type="text"
-                />
-              </div>
-              <div>
-                <label>Read time</label>
-                <input
-                  className="backend-input-box"
-                  value={readMore}
-                  onChange={(e) => setReadMore(e.target.value)}
-                  type="number"
-                />
-              </div>
-              <div>
-                <label>Date</label>
-                <input onChange={(e) => setDate(e.target.value)}
-                  type="date"
-                />
-              </div>
-            </div>
-            <div className="backend-project-description-class">
-              <label>Description</label>
-              <textarea
-                value={descrption}
-                onChange={(e) => setDescrption(e.target.value)}
-                className="text-area-input"
-              >
-                {descrption}
-              </textarea>
-            </div>
-            <div className="backend-project-description-class">
-              <label>Long Description</label>
-              <textarea
-                value={blogLongDescription}
-                onChange={(e) => setBlogLongDescriptio(e.target.value)}
-                className="text-area-input"
-              >
-                {blogLongDescription}
-              </textarea>
-            </div>
-            <div className="backend-from-buttons-div">
-              {isEditing === false ? (
-                <button className="blue-button" type="submit">
-                  Submit
-                </button>
-              ) : (
-                <button className="green-button" onClick={onEditSubmitHandler}>
-                  Edit
-                </button>
-              )}
-              <button className="blue-button" onClick={onLogoutHandler}>
-                Logout
-              </button>
-            </div>
-          </form>
+        <hr className="backend-hr-line" />
+        <div>
+          {fetchedData.map((each) => (
+            <>
+              <div className="main-data-div">
+                <span>
+                  <b>Blog Heading</b> : {each.bloghead}
+                </span>
+                <span>
+                  <b>Blog Date</b> : {each.blogDate}
+                </span>
+                <span>
+                  <b>Display Image</b> : {each.blogImage}
+                </span>
+                <span>
+                  <b>Read TIme</b> : {each.readTime}
+                </span>
+                <span>
+                  <b>Blog Content</b> : {each.blogContent}
+                </span>
+                <span>
+                  <b>Blog Long Description</b> : {each.blogLongDescription}
+                </span>
 
-          <hr className="backend-hr-line" />
-          <div>
-            {fetchedData.map((each) => (
-              <>
-                <div className="main-data-div">
-                  <span>
-                    <b>Blog Heading</b> : {each.bloghead}
-                  </span>
-                  <span>
-                    <b>Blog Date</b> : {each.blogDate}
-                  </span>
-                  <span>
-                    <b>Display Image</b> : {each.blogImage}
-                  </span>
-                  <span>
-                    <b>Read TIme</b> : {each.readTime}
-                  </span>
-                  <span>
-                    <b>Blog Content</b> : {each.blogContent}
-                  </span>
-                  <span>
-                    <b>Blog Long Description</b> : {each.blogLongDescription}
-                  </span>
-
-
-                  <div className="backend-results-button-div">
-                    <button
-                      className="backend-red-button"
-                      onClick={() => onDeleteHandler(each._id)}
-                    >
-                      delete
-                    </button>
-                    <button
-                      className="green-button"
-                      onClick={() => onEditHandler(each._id)}
-                    >
-                      Edit
-                    </button>
-                  </div>
+                <div className="backend-results-button-div">
+                  <button
+                    className="backend-red-button"
+                    onClick={() => onDeleteHandler(each._id)}
+                  >
+                    delete
+                  </button>
+                  <button
+                    className="green-button"
+                    onClick={() => onEditHandler(each._id)}
+                  >
+                    Edit
+                  </button>
                 </div>
-              </>
-            ))}
-          </div>
-        </>
-      </div>
-    );
-  }
+              </div>
+            </>
+          ))}
+        </div>
+      </>
+    </div>
+  );
 }
 
 export default BlogBaackendForm;

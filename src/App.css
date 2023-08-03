@@ -229,6 +229,17 @@
     rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
 }
 
+.socialmedia-icons-color {
+  text-decoration: none;
+  color: #707070;
+  transition: all 0.3s linear;
+}
+
+.socialmedia-icons-color:hover {
+  color: #9981d5;
+  transition: all 0.3s linear;
+}
+
 @media screen and (max-width: 576px) {
   .heading-1 {
     font-size: 18px !important;

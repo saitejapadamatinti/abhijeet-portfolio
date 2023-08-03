@@ -40,12 +40,15 @@
   width: 80%;
 }
 
-.blog-details-big-para-div p {}
+
 
 @media screen and (min-width: 1024px) {
   .blog-details-main-head-container {
     height: 384px;
     margin-top: 50px;
+  }
+  .blog-details-big-para-div p {
+    font-size: 24px;
   }
 
   .blog-details-main-head-banner {
