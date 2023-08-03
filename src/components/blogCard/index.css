@@ -45,6 +45,11 @@
   font-style: normal;
   font-weight: 400;
   line-height: 28px;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  
 }
 
 .blog-card-date-text {

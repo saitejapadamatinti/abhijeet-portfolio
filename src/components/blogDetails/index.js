@@ -38,7 +38,7 @@ const BlogDetails = () => {
       (objA, objB) =>
         Number(new Date(objB.blogDate)) - Number(new Date(objA.blogDate))
     );
-    setRecentBlogs(soretedData.splice(0, 3));
+    setRecentBlogs(soretedData.splice(1, 4));
   };
 
   useEffect(() => {
