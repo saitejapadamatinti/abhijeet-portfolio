@@ -170,6 +170,15 @@ width : 90%
   width: 170px;
 }
 
+.about-link-a-item:hover{
+  transform: scale(1.4);
+  transition: all 0.2s linear;
+}
+.about-link-a-item{
+  transition: all 0.2s linear;
+  transform-origin: bottom center;
+}
+
 /* about section css from laptop */
 @media screen and (min-width: 1024px) {
   .about-main-container {

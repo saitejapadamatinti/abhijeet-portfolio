@@ -1,9 +1,6 @@
 import React from "react";
 import "./index.css";
 import { BsDot } from "react-icons/bs";
-import { AiFillHeart } from "react-icons/ai";
-import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
 
 const BlogCard = ({ blogData }) => {
   const blogYear = new Date(blogData.blogDate).getFullYear();
@@ -19,9 +16,7 @@ const BlogCard = ({ blogData }) => {
   const blogMonth = getMonthName(blogMonthnumber);
 
   return (
-    <div
-      className="blog-card-main-div"
-    >
+    <div className="blog-card-main-div">
       <div className="blog-card-image-div">
         <img
           className="blog-card-image"
@@ -43,14 +38,12 @@ const BlogCard = ({ blogData }) => {
             </span>
             <span className=" text-light-color">3 min read</span>
           </div>
-          <Link className="blog-para-read-more-text-a"
-            onClick={() => {
-              window.location.href = `/blog/${blogData._id}`;
-            }}
-            to={`/blog/${blogData._id}`}
+          <a
+            className="blog-para-read-more-text-a"
+            href={`/blog/${blogData._id}`}
           >
             <span className="blog-para-read-more-text">Read more</span>
-          </Link>
+          </a>
         </div>
       </div>
     </div>

@@ -83,7 +83,6 @@ function BlogBaackendForm() {
 
   // on submit fetching data
   const onSubmitHandler = (e) => {
-    console.log("sss");
     e.preventDefault();
     const url = `${base_url}/addProject`;
     axios
