@@ -23,6 +23,7 @@
 
 .blog-details-image {
   width: 100%;
+  border-radius: 34px;
 }
 
 .blog-details-big-para-div {
