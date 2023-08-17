@@ -3,6 +3,7 @@ import "./index.css";
 import BlogBaackendForm from "../blogAdminForm";
 import UserEmailsAdmin from "../userEmailsAdmin";
 import ResumePage from "../resumePage";
+import UserContactData from "../userContactData";
 
 const AdminMainComp = () => {
   const [activeTab, setActiveTab] = useState("blogs");
@@ -12,13 +13,14 @@ const AdminMainComp = () => {
   const [password, setPassword] = useState("");
   const [isLogined, setIslogined] = useState(true);
 
-
   const activeColor =
     activeTab === "blogs" ? "admin-tab admin-tab-active" : "admin-tab";
   const activeColorResume =
     activeTab === "emails" ? "admin-tab admin-tab-active" : "admin-tab";
   const activeColoraddResume =
     activeTab === "addResume" ? "admin-tab admin-tab-active" : "admin-tab";
+  const activeUserContactData =
+    activeTab === "userContact" ? "admin-tab admin-tab-active" : "admin-tab";
 
   // on login form
   const onLoginHandler = (e) => {
@@ -89,21 +91,25 @@ const AdminMainComp = () => {
               >
                 add Resume
               </p>
-              
+              <p
+                className={activeUserContactData}
+                onClick={() => setActiveTab("userContact")}
+              >
+                User Contact
+              </p>
+
               <button className="blue-button" onClick={onLogoutHandler}>
                 Logout
               </button>
             </div>
           </div>
-          
+
           <div>
-            
             {activeTab === "blogs" && <BlogBaackendForm />}
             {activeTab === "emails" && <UserEmailsAdmin />}
             {activeTab === "addResume" && <ResumePage />}
-            
+            {activeTab === "userContact" && <UserContactData />}
           </div>
-          
         </div>
       </>
     );

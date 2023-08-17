@@ -4,8 +4,8 @@ import { Image, CloudinaryContext } from "cloudinary-react";
 import "./index.css"
 
 const ImageUpload = () => {
-    const cloudName = "dj2ghn49v"; // Replace with your Cloudinary cloud name
-    const uploadPreset = "lpjg9nif"; // Replace with your Cloudinary upload preset name
+    const cloudName = "di6dcxlcd"; // Replace with your Cloudinary cloud name
+    const uploadPreset = "lseygnbe"; // Replace with your Cloudinary upload preset name
 
     const [selectedImage, setSelectedImage] = useState(null);
     const [uploadedImageUrl, setUploadedImageUrl] = useState("");

@@ -8,13 +8,15 @@ const base_url = process.env.REACT_APP_MY_VARIABLE;
 const Footer = () => {
   const webUrl = window.origin;
   const [resume, setResume] = useState([]);
+  console.log(resume)
 
   useEffect(() => {
     const fetchingDataFromAPi = async () => {
       const response = await fetch(`${base_url}/resume`);
       const data = await response.json();
-      setResume(data[0].resume);
+      setResume(data);
     };
+
     fetchingDataFromAPi();
   }, []);
 

@@ -25,7 +25,7 @@ const ResumePage = () => {
             `${base_url}/resume`
         );
         const data = await response.json();
-        setResumeData(data);
+        setResumeData(data[0].resume);
     };
 
     useEffect(() => {

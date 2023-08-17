@@ -1,0 +1,13 @@
+.user-contact-container{
+    padding: 60px;
+}
+
+.user-contact-card-div{
+    background-color: rgb(226, 226, 226);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
